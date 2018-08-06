@@ -1,0 +1,11 @@
+c:\users\access_denied\documents\visual studio 2010\Projects\EIMCS\EIMCS\bin\Debug\EIMCS.exe
+c:\users\access_denied\documents\visual studio 2010\Projects\EIMCS\EIMCS\bin\Debug\EIMCS.pdb
+c:\users\access_denied\documents\visual studio 2010\Projects\EIMCS\EIMCS\bin\Debug\EIMCS.xml
+c:\users\access_denied\documents\visual studio 2010\Projects\EIMCS\EIMCS\obj\x86\Debug\EIMCS.Form1.resources
+c:\users\access_denied\documents\visual studio 2010\Projects\EIMCS\EIMCS\obj\x86\Debug\EIMCS.Resources.resources
+c:\users\access_denied\documents\visual studio 2010\Projects\EIMCS\EIMCS\obj\x86\Debug\EIMCS.vbproj.GenerateResource.Cache
+c:\users\access_denied\documents\visual studio 2010\Projects\EIMCS\EIMCS\obj\x86\Debug\EIMCS.exe
+c:\users\access_denied\documents\visual studio 2010\Projects\EIMCS\EIMCS\obj\x86\Debug\EIMCS.xml
+c:\users\access_denied\documents\visual studio 2010\Projects\EIMCS\EIMCS\obj\x86\Debug\EIMCS.pdb
+C:\Users\Access_Denied\Documents\Visual Studio 2010\Projects\EIMCS\EIMCS\obj\x86\Debug\EIMCS.Form2.resources
+C:\Users\Access_Denied\Documents\Visual Studio 2010\Projects\EIMCS\EIMCS\obj\x86\Debug\EIMCS.vbprojResolveAssemblyReference.cache
