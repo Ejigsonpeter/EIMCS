@@ -47,10 +47,72 @@
         imgPsignature.Image = BackgroundImage
     End Sub
 
-  
-  
-  
+    'This method handles the field confirmation and ensures no field is left blank....1/3'
+    Sub empty1()
+        Try
+            If txtSurname.Text = "" Then
+                MsgBox("Please Provide Surname ,Field cannot be empty", vbCritical)
+                txtSurname.Focus()
+            ElseIf txtFirstname.Text = "" Then
+                MsgBox("Please Provide Surname,Field cannot be empty", vbCritical)
+                txtFirstname.Focus()
+            ElseIf txtMiddlename.Text = "" Then
+                MsgBox("Please Provide Middlename,Field cannot be empty", vbCritical)
+                txtMiddlename.Focus()
+            ElseIf txtippsno.Text = "" Then
+                MsgBox("Please Provide IPPS No ,Field cannot be empty", vbCritical)
+                txtippsno.Focus()
+            ElseIf txtfileno.Text = "" Then
+                MsgBox("Please Provide File number Field cannot be empty", vbCritical)
+                txtfileno.Focus()
+            ElseIf txtdeptunit.Text = "" Then
+                MsgBox("Please Provide Department  unit ,Field cannot be empty", vbCritical)
+                txtdeptunit.Focus()
+            ElseIf txtrank.Text = "" Then
+                MsgBox("Please Provide Rank,Field cannot be empty", vbCritical)
+                txtrank.Focus()
+            ElseIf txtlocation.Text = "" Then
+                MsgBox("Please Provide Location,Field cannot be empty", vbCritical)
+                txtlocation.Focus()
+            ElseIf txtphoneno1.Text = "" Then
+                MsgBox("Please Provide Phone number, Field cannot be empty", vbCritical)
+                txtphoneno1.Focus()
+            ElseIf txtphoneno2.Text = "" Then
+                MsgBox("Please Provide Phone number ,Field cannot be empty", vbCritical)
+                txtphoneno2.Focus()
+            ElseIf txtresidentialaddress.Text = "" Then
+                MsgBox("Please Provide Residential Address ,Field cannot be empty", vbCritical)
+                ' ElseIf imgpix.Image = BackgroundImage Then
+            Else
+                nextbutton()
+            End If
 
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+    End Sub
+    'next button function
+    Sub nextbutton()
+        group1.Visible = False
+        group2.Visible = True
+        group3.Visible = False
+    End Sub
+
+    'this metho add the fields confirmation and ensures no field is blank for .....2/3
+    Sub empty2()
+        txtRegFee.Text = ""
+        txtSavings.Text = ""
+        txtshares.Text = ""
+        nokAddress1.Text = ""
+        nokAddress2.Text = ""
+        nokName1.Text = ""
+        nokName2.Text = ""
+        nokPhone1.Text = ""
+        nokPhoneno2.Text = ""
+        nokRelationship1.Text = ""
+        nokRelationship2.Text = ""
+    End Sub
 
 
     'this button loads the previous form 1/3
@@ -61,9 +123,7 @@
     End Sub
     'this button loads the next form 2 / 3
     Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
-        group1.Visible = False
-        group2.Visible = True
-        group3.Visible = False
+        empty1()
     End Sub
     'This button loads the final form 3/3
     Private Sub btnnext2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnnext2.Click
@@ -78,7 +138,7 @@
         group3.Visible = False
     End Sub
 
-  
+
 
     Private Sub btnclear_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnclear.Click
         clear()
@@ -106,17 +166,12 @@
         End Try
     End Sub
 
-   
 
 
-   
 
-    
-    
-    Private Sub rdFemale_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-    End Sub
-    Private Sub rdMale_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-    End Sub
+
+
+
 End Class

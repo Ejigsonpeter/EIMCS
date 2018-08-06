@@ -33,8 +33,6 @@ Partial Class Form1
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtid = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.BunifuCards1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,8 +43,6 @@ Partial Class Form1
         Me.BunifuCards1.BorderRadius = 5
         Me.BunifuCards1.BottomSahddow = True
         Me.BunifuCards1.color = System.Drawing.Color.Tomato
-        Me.BunifuCards1.Controls.Add(Me.CheckBox2)
-        Me.BunifuCards1.Controls.Add(Me.CheckBox1)
         Me.BunifuCards1.Controls.Add(Me.BunifuFlatButton2)
         Me.BunifuCards1.Controls.Add(Me.BunifuFlatButton1)
         Me.BunifuCards1.Controls.Add(Me.PictureBox1)
@@ -222,26 +218,6 @@ Partial Class Form1
         Me.BunifuCustomLabel1.TabIndex = 28
         Me.BunifuCustomLabel1.Text = "Username"
         '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(85, 412)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox1.TabIndex = 37
-        Me.CheckBox1.Text = "CheckBox1"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(193, 412)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox2.TabIndex = 38
-        Me.CheckBox2.Text = "CheckBox2"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -270,7 +246,5 @@ Partial Class Form1
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtid As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
 
 End Class
