@@ -24,8 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.BunifuCards1 = New Bunifu.Framework.UI.BunifuCards()
-        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btncancel = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.btnlogin = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -43,8 +43,8 @@ Partial Class Form1
         Me.BunifuCards1.BorderRadius = 5
         Me.BunifuCards1.BottomSahddow = True
         Me.BunifuCards1.color = System.Drawing.Color.Tomato
-        Me.BunifuCards1.Controls.Add(Me.BunifuFlatButton2)
-        Me.BunifuCards1.Controls.Add(Me.BunifuFlatButton1)
+        Me.BunifuCards1.Controls.Add(Me.btncancel)
+        Me.BunifuCards1.Controls.Add(Me.btnlogin)
         Me.BunifuCards1.Controls.Add(Me.PictureBox1)
         Me.BunifuCards1.Controls.Add(Me.Label2)
         Me.BunifuCards1.Controls.Add(Me.Label1)
@@ -60,73 +60,73 @@ Partial Class Form1
         Me.BunifuCards1.Size = New System.Drawing.Size(437, 521)
         Me.BunifuCards1.TabIndex = 1
         '
-        'BunifuFlatButton2
+        'btncancel
         '
-        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton2.BorderRadius = 0
-        Me.BunifuFlatButton2.ButtonText = "Cancel"
-        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton2.Iconimage = CType(resources.GetObject("BunifuFlatButton2.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton2.Iconimage_right = Nothing
-        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton2.IconMarginLeft = 0
-        Me.BunifuFlatButton2.IconMarginRight = 0
-        Me.BunifuFlatButton2.IconRightVisible = True
-        Me.BunifuFlatButton2.IconRightZoom = 0.0R
-        Me.BunifuFlatButton2.IconVisible = True
-        Me.BunifuFlatButton2.IconZoom = 90.0R
-        Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(219, 337)
-        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
-        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.Green
-        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.selected = False
-        Me.BunifuFlatButton2.Size = New System.Drawing.Size(124, 38)
-        Me.BunifuFlatButton2.TabIndex = 36
-        Me.BunifuFlatButton2.Text = "Cancel"
-        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btncancel.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btncancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btncancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btncancel.BorderRadius = 0
+        Me.btncancel.ButtonText = "Cancel"
+        Me.btncancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btncancel.DisabledColor = System.Drawing.Color.Gray
+        Me.btncancel.Iconcolor = System.Drawing.Color.Transparent
+        Me.btncancel.Iconimage = CType(resources.GetObject("btncancel.Iconimage"), System.Drawing.Image)
+        Me.btncancel.Iconimage_right = Nothing
+        Me.btncancel.Iconimage_right_Selected = Nothing
+        Me.btncancel.Iconimage_Selected = Nothing
+        Me.btncancel.IconMarginLeft = 0
+        Me.btncancel.IconMarginRight = 0
+        Me.btncancel.IconRightVisible = True
+        Me.btncancel.IconRightZoom = 0.0R
+        Me.btncancel.IconVisible = True
+        Me.btncancel.IconZoom = 90.0R
+        Me.btncancel.IsTab = False
+        Me.btncancel.Location = New System.Drawing.Point(219, 337)
+        Me.btncancel.Name = "btncancel"
+        Me.btncancel.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btncancel.OnHovercolor = System.Drawing.Color.Green
+        Me.btncancel.OnHoverTextColor = System.Drawing.Color.White
+        Me.btncancel.selected = False
+        Me.btncancel.Size = New System.Drawing.Size(124, 38)
+        Me.btncancel.TabIndex = 36
+        Me.btncancel.Text = "Cancel"
+        Me.btncancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btncancel.Textcolor = System.Drawing.Color.White
+        Me.btncancel.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'BunifuFlatButton1
+        'btnlogin
         '
-        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = "Login"
-        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = CType(resources.GetObject("BunifuFlatButton1.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton1.Iconimage_right = Nothing
-        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton1.IconMarginLeft = 0
-        Me.BunifuFlatButton1.IconMarginRight = 0
-        Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0.0R
-        Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 90.0R
-        Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(81, 337)
-        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
-        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.Green
-        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(124, 38)
-        Me.BunifuFlatButton1.TabIndex = 35
-        Me.BunifuFlatButton1.Text = "Login"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnlogin.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnlogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnlogin.BorderRadius = 0
+        Me.btnlogin.ButtonText = "Login"
+        Me.btnlogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnlogin.DisabledColor = System.Drawing.Color.Gray
+        Me.btnlogin.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnlogin.Iconimage = CType(resources.GetObject("btnlogin.Iconimage"), System.Drawing.Image)
+        Me.btnlogin.Iconimage_right = Nothing
+        Me.btnlogin.Iconimage_right_Selected = Nothing
+        Me.btnlogin.Iconimage_Selected = Nothing
+        Me.btnlogin.IconMarginLeft = 0
+        Me.btnlogin.IconMarginRight = 0
+        Me.btnlogin.IconRightVisible = True
+        Me.btnlogin.IconRightZoom = 0.0R
+        Me.btnlogin.IconVisible = True
+        Me.btnlogin.IconZoom = 90.0R
+        Me.btnlogin.IsTab = False
+        Me.btnlogin.Location = New System.Drawing.Point(81, 337)
+        Me.btnlogin.Name = "btnlogin"
+        Me.btnlogin.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnlogin.OnHovercolor = System.Drawing.Color.Green
+        Me.btnlogin.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnlogin.selected = False
+        Me.btnlogin.Size = New System.Drawing.Size(124, 38)
+        Me.btnlogin.TabIndex = 35
+        Me.btnlogin.Text = "Login"
+        Me.btnlogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnlogin.Textcolor = System.Drawing.Color.White
+        Me.btnlogin.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'PictureBox1
         '
@@ -237,8 +237,8 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents BunifuCards1 As Bunifu.Framework.UI.BunifuCards
-    Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btncancel As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents btnlogin As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label

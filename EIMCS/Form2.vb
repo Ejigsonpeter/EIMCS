@@ -145,7 +145,6 @@
         group3.Visible = True
     End Sub
 
-
     'this button loads the previous form 1/3
     Private Sub btnprev1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnprev1.Click
         group1.Visible = True
@@ -167,13 +166,9 @@
         group3.Visible = False
     End Sub
 
-
-
     Private Sub btnclear_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnclear.Click
         clear()
     End Sub
-
-
     'Method to handle Uploading user profile picture via button click
     Private Sub btnUploadPicture_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUploadPicture.Click
         Try
@@ -194,13 +189,4 @@
             MessageBox.Show(ex.Message.ToString())
         End Try
     End Sub
-
-
-
-
-
-
-
-
-
 End Class

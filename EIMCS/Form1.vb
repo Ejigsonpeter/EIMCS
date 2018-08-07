@@ -1,6 +1,15 @@
-﻿Public Class Form1
+﻿Imports System.IO
+Imports MySql.Data.MySqlClient
 
-    Private Sub BunifuFlatButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BunifuFlatButton1.Click
+Public Class Form1
+    ' creating mysql connection
+    Dim Myconnection As New MySqlConnection With {.ConnectionString = "server = localhost; userid = root ; password =; database = bas ;"}
+    Dim dr As MySqlDataReader
+    Dim da As MySqlDataAdapter
+    Dim cmd As MySqlCommand
+
+
+    Private Sub BunifuFlatButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnlogin.Click
         If txtid.Text = "" Then
             MsgBox("Enter user ID", vbCritical)
         ElseIf txtpass.Text = "" Then
@@ -9,7 +18,39 @@
             MsgBox("Access Granted", vbInformation)
             Form2.Show()
         Else
-            MsgBox("Access Denied",vbCritical)
+            Try
+                Myconnection.Open()
+                Dim query As String
+                Dim reader As MySqlDataReader
+                query = "Select * from users where userid = '" & txtid.Text & "'and password = '" & txtpass.Text & "'"
+                cmd = New MySqlCommand(query, Myconnection)
+                reader = cmd.ExecuteReader
+                Dim count As Integer
+                count = 0
+                While reader.Read
+                    count = count + 1
+                End While
+                If count > 0 Then
+                    MsgBox("Access Granted ", vbInformation)
+                    Me.Hide()
+                    Form2.Show()
+                Else
+                    MsgBox("Access Denied! Incorret Login Details",vbCritical)
+                    clear()
+
+                End If
+
+
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
         End If
+    End Sub
+    Sub clear()
+        txtid.Text = ""
+        txtpass.Text = ""
+    End Sub
+    Private Sub btncancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btncancel.Click
+        clear()
     End Sub
 End Class
