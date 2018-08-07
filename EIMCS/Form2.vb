@@ -101,17 +101,48 @@
 
     'this metho add the fields confirmation and ensures no field is blank for .....2/3
     Sub empty2()
-        txtRegFee.Text = ""
-        txtSavings.Text = ""
-        txtshares.Text = ""
-        nokAddress1.Text = ""
-        nokAddress2.Text = ""
-        nokName1.Text = ""
-        nokName2.Text = ""
-        nokPhone1.Text = ""
-        nokPhoneno2.Text = ""
-        nokRelationship1.Text = ""
-        nokRelationship2.Text = ""
+        If nokName1.Text = "" Then
+            MsgBox("Please provide Name , Space cannot be empty")
+            nokName1.Focus()
+        ElseIf nokPhone1.Text = "" Then
+            MsgBox("Please provide Phone number  , Space cannot be empty")
+            nokPhone1.Focus()
+        ElseIf nokRelationship1.Text = "" Then
+            MsgBox("Please provide Relationship with next of kin , Space cannot be empty")
+            nokRelationship1.Focus()
+        ElseIf nokAddress1.Text = "" Then
+            MsgBox("Please provide Address, Space cannot be empty")
+            nokAddress1.Focus()
+        ElseIf nokName2.Text = "" Then
+            MsgBox("Please provide Name , Space cannot be empty")
+            nokName2.Focus()
+        ElseIf nokPhoneno2.Text = "" Then
+            MsgBox("Please provide Phone number , Space cannot be empty")
+            nokPhoneno2.Focus()
+        ElseIf nokRelationship2.Text = "" Then
+            MsgBox("Please provide Relationship , Space cannot be empty")
+            nokRelationship2.Focus()
+        ElseIf nokAddress2.Text = "" Then
+            MsgBox("Please provide Address, Space cannot be empty")
+            nokAddress2.Focus()
+        ElseIf txtRegFee.Text = "" Then
+            MsgBox("Please provide Amount, Space cannot be empty")
+            txtRegFee.Focus()
+        ElseIf txtSavings.Text = "" Then
+            MsgBox("Please provide Amount , Space cannot be empty")
+            txtSavings.Focus()
+        ElseIf txtshares.Text = "" Then
+            MsgBox("Please provide Amount , Space cannot be empty")
+            txtshares.Focus()
+        Else
+            nextbutton2()
+        End If
+    End Sub
+    'nextbutton2 function
+    Sub nextbutton2()
+        group1.Visible = False
+        group2.Visible = False
+        group3.Visible = True
     End Sub
 
 
@@ -127,9 +158,7 @@
     End Sub
     'This button loads the final form 3/3
     Private Sub btnnext2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnnext2.Click
-        group1.Visible = False
-        group2.Visible = False
-        group3.Visible = True
+        empty2()
     End Sub
     'this button loads the previous form 2/3
     Private Sub btnprevious_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnprevious.Click
