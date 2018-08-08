@@ -1,7 +1,16 @@
-﻿Public Class Form2
-    Dim imgName1 As String
+﻿Imports System.IO
+Imports MySql.Data.MySqlClient
 
-   
+Public Class Form2
+
+    Dim imgName1 As String
+    Dim dr As MySqlDataReader
+    Dim da As MySqlDataAdapter
+    Dim cmd As MySqlCommand
+    Dim Myconnection As New MySqlConnection With {.ConnectionString = "server = localhost; userid = root ; password =; database = eimcs ;"}
+
+
+
     'method to handle clearing fields in the registration form
     Sub clear()
         'group 1

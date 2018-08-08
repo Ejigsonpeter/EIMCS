@@ -3,7 +3,7 @@ Imports MySql.Data.MySqlClient
 
 Public Class Form1
     ' creating mysql connection
-    Dim Myconnection As New MySqlConnection With {.ConnectionString = "server = localhost; userid = root ; password =; database = bas ;"}
+    Dim Myconnection As New MySqlConnection With {.ConnectionString = "server = localhost; userid = root ; password =; database = eimcs ;"}
     Dim dr As MySqlDataReader
     Dim da As MySqlDataAdapter
     Dim cmd As MySqlCommand
@@ -22,7 +22,9 @@ Public Class Form1
                 Myconnection.Open()
                 Dim query As String
                 Dim reader As MySqlDataReader
-                query = "Select * from users where userid = '" & txtid.Text & "'and password = '" & txtpass.Text & "'"
+                Dim status As String
+                status = "active"
+                query = "Select * from users where userid = '" & txtid.Text & "' and password = '" & txtpass.Text & "' and status = '" & status & "'"
                 cmd = New MySqlCommand(query, Myconnection)
                 reader = cmd.ExecuteReader
                 Dim count As Integer
@@ -37,7 +39,6 @@ Public Class Form1
                 Else
                     MsgBox("Access Denied! Incorret Login Details",vbCritical)
                     clear()
-
                 End If
 
 
