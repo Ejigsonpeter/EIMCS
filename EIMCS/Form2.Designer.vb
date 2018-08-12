@@ -120,25 +120,23 @@ Partial Class Form2
         Me.BunifuCustomLabel82 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel81 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel80 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.ITalk_Button_211 = New EIMCS.iTalk.iTalk_Button_2()
+        Me.supload = New EIMCS.iTalk.iTalk_Button_2()
         Me.imgGSignature = New System.Windows.Forms.PictureBox()
         Me.txtGdate = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel79 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.ITalk_Button_210 = New EIMCS.iTalk.iTalk_Button_2()
+        Me.puppload = New EIMCS.iTalk.iTalk_Button_2()
         Me.imgPsignature = New System.Windows.Forms.PictureBox()
         Me.txtPdate = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.txtEimcs = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel77 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel78 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.TxtNotApproved = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.txtApproved = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.BunifuCustomLabel63 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel61 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel62 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel60 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnprevious = New EIMCS.iTalk.iTalk_Button_2()
         Me.BunifuCustomLabel29 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.ITalk_Button_27 = New EIMCS.iTalk.iTalk_Button_2()
+        Me.aupload = New EIMCS.iTalk.iTalk_Button_2()
         Me.imgMsignature = New System.Windows.Forms.PictureBox()
         Me.txtMDate = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel27 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -302,7 +300,7 @@ Partial Class Form2
         Me.ITalk_TabControl1.Multiline = True
         Me.ITalk_TabControl1.Name = "ITalk_TabControl1"
         Me.ITalk_TabControl1.SelectedIndex = 0
-        Me.ITalk_TabControl1.Size = New System.Drawing.Size(1365, 759)
+        Me.ITalk_TabControl1.Size = New System.Drawing.Size(1378, 759)
         Me.ITalk_TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed
         Me.ITalk_TabControl1.TabIndex = 0
         '
@@ -336,7 +334,7 @@ Partial Class Form2
         Me.TabPage2.Location = New System.Drawing.Point(139, 4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1222, 751)
+        Me.TabPage2.Size = New System.Drawing.Size(1235, 751)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Register"
         '
@@ -354,7 +352,7 @@ Partial Class Form2
         Me.BunifuCards2.Name = "BunifuCards2"
         Me.BunifuCards2.RightSahddow = False
         Me.BunifuCards2.ShadowDepth = 20
-        Me.BunifuCards2.Size = New System.Drawing.Size(1216, 745)
+        Me.BunifuCards2.Size = New System.Drawing.Size(1229, 745)
         Me.BunifuCards2.TabIndex = 3
         '
         'GroupBox2
@@ -370,7 +368,7 @@ Partial Class Form2
         Me.GroupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1216, 148)
+        Me.GroupBox2.Size = New System.Drawing.Size(1229, 148)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         '
@@ -431,7 +429,7 @@ Partial Class Form2
         '
         Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Right
         Me.PictureBox4.Image = Global.EIMCS.My.Resources.Resources.LOGO
-        Me.PictureBox4.Location = New System.Drawing.Point(1077, 22)
+        Me.PictureBox4.Location = New System.Drawing.Point(1090, 22)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(136, 123)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -463,7 +461,7 @@ Partial Class Form2
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 151)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1208, 589)
+        Me.GroupBox1.Size = New System.Drawing.Size(1221, 589)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
@@ -511,7 +509,7 @@ Partial Class Form2
         Me.group1.Controls.Add(Me.BunifuCustomLabel1)
         Me.group1.Location = New System.Drawing.Point(3, 90)
         Me.group1.Name = "group1"
-        Me.group1.Size = New System.Drawing.Size(1219, 477)
+        Me.group1.Size = New System.Drawing.Size(1223, 511)
         Me.group1.TabIndex = 141
         Me.group1.TabStop = False
         '
@@ -1105,7 +1103,7 @@ Partial Class Form2
         Me.group2.Controls.Add(Me.BunifuCustomLabel108)
         Me.group2.Location = New System.Drawing.Point(6, 81)
         Me.group2.Name = "group2"
-        Me.group2.Size = New System.Drawing.Size(1196, 477)
+        Me.group2.Size = New System.Drawing.Size(1220, 520)
         Me.group2.TabIndex = 104
         Me.group2.TabStop = False
         Me.group2.Visible = False
@@ -1627,25 +1625,23 @@ Partial Class Form2
         Me.group3.Controls.Add(Me.BunifuCustomLabel82)
         Me.group3.Controls.Add(Me.BunifuCustomLabel81)
         Me.group3.Controls.Add(Me.BunifuCustomLabel80)
-        Me.group3.Controls.Add(Me.ITalk_Button_211)
+        Me.group3.Controls.Add(Me.supload)
         Me.group3.Controls.Add(Me.imgGSignature)
         Me.group3.Controls.Add(Me.txtGdate)
         Me.group3.Controls.Add(Me.BunifuCustomLabel79)
-        Me.group3.Controls.Add(Me.ITalk_Button_210)
+        Me.group3.Controls.Add(Me.puppload)
         Me.group3.Controls.Add(Me.imgPsignature)
         Me.group3.Controls.Add(Me.txtPdate)
         Me.group3.Controls.Add(Me.txtEimcs)
         Me.group3.Controls.Add(Me.BunifuCustomLabel77)
         Me.group3.Controls.Add(Me.BunifuCustomLabel78)
-        Me.group3.Controls.Add(Me.TxtNotApproved)
         Me.group3.Controls.Add(Me.txtApproved)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel63)
         Me.group3.Controls.Add(Me.BunifuCustomLabel61)
         Me.group3.Controls.Add(Me.BunifuCustomLabel62)
         Me.group3.Controls.Add(Me.BunifuCustomLabel60)
         Me.group3.Controls.Add(Me.btnprevious)
         Me.group3.Controls.Add(Me.BunifuCustomLabel29)
-        Me.group3.Controls.Add(Me.ITalk_Button_27)
+        Me.group3.Controls.Add(Me.aupload)
         Me.group3.Controls.Add(Me.imgMsignature)
         Me.group3.Controls.Add(Me.txtMDate)
         Me.group3.Controls.Add(Me.BunifuCustomLabel27)
@@ -1715,19 +1711,19 @@ Partial Class Form2
         Me.BunifuCustomLabel80.TabIndex = 134
         Me.BunifuCustomLabel80.Text = "Date:"
         '
-        'ITalk_Button_211
+        'supload
         '
-        Me.ITalk_Button_211.BackColor = System.Drawing.Color.Transparent
-        Me.ITalk_Button_211.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.ITalk_Button_211.ForeColor = System.Drawing.Color.White
-        Me.ITalk_Button_211.Image = Nothing
-        Me.ITalk_Button_211.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ITalk_Button_211.Location = New System.Drawing.Point(625, 427)
-        Me.ITalk_Button_211.Name = "ITalk_Button_211"
-        Me.ITalk_Button_211.Size = New System.Drawing.Size(123, 28)
-        Me.ITalk_Button_211.TabIndex = 133
-        Me.ITalk_Button_211.Text = "Upload"
-        Me.ITalk_Button_211.TextAlignment = System.Drawing.StringAlignment.Center
+        Me.supload.BackColor = System.Drawing.Color.Transparent
+        Me.supload.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.supload.ForeColor = System.Drawing.Color.White
+        Me.supload.Image = Nothing
+        Me.supload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.supload.Location = New System.Drawing.Point(625, 427)
+        Me.supload.Name = "supload"
+        Me.supload.Size = New System.Drawing.Size(123, 28)
+        Me.supload.TabIndex = 133
+        Me.supload.Text = "Upload"
+        Me.supload.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'imgGSignature
         '
@@ -1771,19 +1767,19 @@ Partial Class Form2
         Me.BunifuCustomLabel79.TabIndex = 130
         Me.BunifuCustomLabel79.Text = "Date:"
         '
-        'ITalk_Button_210
+        'puppload
         '
-        Me.ITalk_Button_210.BackColor = System.Drawing.Color.Transparent
-        Me.ITalk_Button_210.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.ITalk_Button_210.ForeColor = System.Drawing.Color.White
-        Me.ITalk_Button_210.Image = Nothing
-        Me.ITalk_Button_210.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ITalk_Button_210.Location = New System.Drawing.Point(305, 427)
-        Me.ITalk_Button_210.Name = "ITalk_Button_210"
-        Me.ITalk_Button_210.Size = New System.Drawing.Size(123, 28)
-        Me.ITalk_Button_210.TabIndex = 129
-        Me.ITalk_Button_210.Text = "Upload"
-        Me.ITalk_Button_210.TextAlignment = System.Drawing.StringAlignment.Center
+        Me.puppload.BackColor = System.Drawing.Color.Transparent
+        Me.puppload.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.puppload.ForeColor = System.Drawing.Color.White
+        Me.puppload.Image = Nothing
+        Me.puppload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.puppload.Location = New System.Drawing.Point(305, 427)
+        Me.puppload.Name = "puppload"
+        Me.puppload.Size = New System.Drawing.Size(123, 28)
+        Me.puppload.TabIndex = 129
+        Me.puppload.Text = "Upload"
+        Me.puppload.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'imgPsignature
         '
@@ -1858,25 +1854,6 @@ Partial Class Form2
         Me.BunifuCustomLabel78.TabIndex = 124
         Me.BunifuCustomLabel78.Text = "EIMCS NUMBER:"
         '
-        'TxtNotApproved
-        '
-        Me.TxtNotApproved.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TxtNotApproved.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.TxtNotApproved.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TxtNotApproved.HintForeColor = System.Drawing.Color.Gray
-        Me.TxtNotApproved.HintText = ""
-        Me.TxtNotApproved.isPassword = False
-        Me.TxtNotApproved.LineFocusedColor = System.Drawing.Color.Gray
-        Me.TxtNotApproved.LineIdleColor = System.Drawing.Color.Gray
-        Me.TxtNotApproved.LineMouseHoverColor = System.Drawing.Color.SlateGray
-        Me.TxtNotApproved.LineThickness = 3
-        Me.TxtNotApproved.Location = New System.Drawing.Point(763, 245)
-        Me.TxtNotApproved.Margin = New System.Windows.Forms.Padding(4)
-        Me.TxtNotApproved.Name = "TxtNotApproved"
-        Me.TxtNotApproved.Size = New System.Drawing.Size(179, 27)
-        Me.TxtNotApproved.TabIndex = 123
-        Me.TxtNotApproved.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
         'txtApproved
         '
         Me.txtApproved.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -1892,21 +1869,9 @@ Partial Class Form2
         Me.txtApproved.Location = New System.Drawing.Point(435, 245)
         Me.txtApproved.Margin = New System.Windows.Forms.Padding(4)
         Me.txtApproved.Name = "txtApproved"
-        Me.txtApproved.Size = New System.Drawing.Size(179, 27)
+        Me.txtApproved.Size = New System.Drawing.Size(238, 27)
         Me.txtApproved.TabIndex = 122
         Me.txtApproved.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'BunifuCustomLabel63
-        '
-        Me.BunifuCustomLabel63.AutoSize = True
-        Me.BunifuCustomLabel63.BackColor = System.Drawing.Color.White
-        Me.BunifuCustomLabel63.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel63.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomLabel63.Location = New System.Drawing.Point(627, 251)
-        Me.BunifuCustomLabel63.Name = "BunifuCustomLabel63"
-        Me.BunifuCustomLabel63.Size = New System.Drawing.Size(135, 21)
-        Me.BunifuCustomLabel63.TabIndex = 121
-        Me.BunifuCustomLabel63.Text = "NOT APPROVED"
         '
         'BunifuCustomLabel61
         '
@@ -1970,19 +1935,19 @@ Partial Class Form2
         Me.BunifuCustomLabel29.TabIndex = 116
         Me.BunifuCustomLabel29.Text = "Date:"
         '
-        'ITalk_Button_27
+        'aupload
         '
-        Me.ITalk_Button_27.BackColor = System.Drawing.Color.Transparent
-        Me.ITalk_Button_27.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.ITalk_Button_27.ForeColor = System.Drawing.Color.White
-        Me.ITalk_Button_27.Image = Nothing
-        Me.ITalk_Button_27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ITalk_Button_27.Location = New System.Drawing.Point(540, 173)
-        Me.ITalk_Button_27.Name = "ITalk_Button_27"
-        Me.ITalk_Button_27.Size = New System.Drawing.Size(156, 39)
-        Me.ITalk_Button_27.TabIndex = 115
-        Me.ITalk_Button_27.Text = "Upload"
-        Me.ITalk_Button_27.TextAlignment = System.Drawing.StringAlignment.Center
+        Me.aupload.BackColor = System.Drawing.Color.Transparent
+        Me.aupload.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.aupload.ForeColor = System.Drawing.Color.White
+        Me.aupload.Image = Nothing
+        Me.aupload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.aupload.Location = New System.Drawing.Point(540, 173)
+        Me.aupload.Name = "aupload"
+        Me.aupload.Size = New System.Drawing.Size(156, 39)
+        Me.aupload.TabIndex = 115
+        Me.aupload.Text = "Upload"
+        Me.aupload.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'imgMsignature
         '
@@ -3222,7 +3187,7 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1365, 759)
+        Me.ClientSize = New System.Drawing.Size(1378, 759)
         Me.Controls.Add(Me.ITalk_TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form2"
@@ -3406,25 +3371,23 @@ Partial Class Form2
     Friend WithEvents BunifuCustomLabel82 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel81 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel80 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents ITalk_Button_211 As EIMCS.iTalk.iTalk_Button_2
+    Friend WithEvents supload As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents imgGSignature As System.Windows.Forms.PictureBox
     Friend WithEvents txtGdate As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel79 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents ITalk_Button_210 As EIMCS.iTalk.iTalk_Button_2
+    Friend WithEvents puppload As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents imgPsignature As System.Windows.Forms.PictureBox
     Friend WithEvents txtPdate As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents txtEimcs As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel77 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel78 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents TxtNotApproved As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents txtApproved As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents BunifuCustomLabel63 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel61 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel62 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel60 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents btnprevious As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents BunifuCustomLabel29 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents ITalk_Button_27 As EIMCS.iTalk.iTalk_Button_2
+    Friend WithEvents aupload As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents imgMsignature As System.Windows.Forms.PictureBox
     Friend WithEvents txtMDate As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel27 As Bunifu.Framework.UI.BunifuCustomLabel

@@ -4,6 +4,9 @@ Imports MySql.Data.MySqlClient
 Public Class Form2
 
     Dim imgName1 As String
+    Dim imgName2 As String
+    Dim imgName3 As String
+    Dim imgName4 As String
     Dim dr As MySqlDataReader
     Dim da As MySqlDataAdapter
     Dim cmd As MySqlCommand
@@ -47,13 +50,14 @@ Public Class Form2
         txtEimcs.Text = ""
         txtApproved.Text = ""
         txtMDate.Text = ""
-        TxtNotApproved.Text = ""
         txtPdate.Text = ""
         txtGdate.Text = ""
         txtFullname.Text = ""
         imgGSignature.Image = BackgroundImage
         imgMsignature.Image = BackgroundImage
         imgPsignature.Image = BackgroundImage
+
+        Call datetime()
     End Sub
 
     'This method handles the field confirmation and ensures no field is left blank....1/3'
@@ -196,6 +200,233 @@ Public Class Form2
             MessageBox.Show(ae.Message.ToString())
         Catch ex As Exception
             MessageBox.Show(ex.Message.ToString())
+        End Try
+    End Sub
+
+    Private Sub btnsubmit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnsubmit.Click
+        If txtFullname.Text = "" Then
+            MsgBox("Please Provide Fullname ,Field cannot be empty", vbCritical)
+            txtFullname.Focus()
+        ElseIf txtEimcs.Text = "" Then
+            MsgBox("Please Provide eimcsno ,Field cannot be empty", vbCritical)
+            txtEimcs.Focus()
+        ElseIf txtApproved.Text = "" Then
+            MsgBox("Please Provide yes or no as an answer ,Field cannot be empty", vbCritical)
+            txtApproved.Focus()
+       
+        Else
+
+        End If
+
+
+    End Sub
+    'method to handle date and time
+    Sub datetime()
+        Dim a As Date
+        Dim b As Date
+        Dim c As Date
+        txtMDate.Text = a.Date
+        txtPdate.Text = b.Date
+        txtGdate.Text = c.Date
+    End Sub
+    'Method to handle Uploading general secretary signature
+    Private Sub supload_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles supload.Click
+        Try
+            Dim dlgimage As FileDialog = New OpenFileDialog
+            dlgimage.Filter = "Image File (*.jpg;*.bmp;*.gif)|*.jpg;*.bmp;*.gif"
+            If dlgimage.ShowDialog() = DialogResult.OK Then
+                imgName2 = dlgimage.FileName
+
+                Dim newImg As New Bitmap(imgName2)
+                imgGSignature.SizeMode = PictureBoxSizeMode.StretchImage
+                imgGSignature.Image = DirectCast(newImg, Image)
+            End If
+            dlgimage = Nothing
+        Catch ae As System.ArgumentException
+            imgName2 = " "
+            MessageBox.Show(ae.Message.ToString())
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString())
+        End Try
+    End Sub
+
+    'Method to handle Uploading presidents signature
+    Private Sub puppload_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles puppload.Click
+        Try
+            Dim dlgimage As FileDialog = New OpenFileDialog
+            dlgimage.Filter = "Image File (*.jpg;*.bmp;*.gif)|*.jpg;*.bmp;*.gif"
+            If dlgimage.ShowDialog() = DialogResult.OK Then
+                imgName3 = dlgimage.FileName
+
+                Dim newImg As New Bitmap(imgName3)
+                imgPsignature.SizeMode = PictureBoxSizeMode.StretchImage
+                imgPsignature.Image = DirectCast(newImg, Image)
+            End If
+            dlgimage = Nothing
+        Catch ae As System.ArgumentException
+            imgName3 = " "
+            MessageBox.Show(ae.Message.ToString())
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString())
+        End Try
+    End Sub
+
+    'Method to handle Uploading Applicant signature
+    Private Sub aupload_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles aupload.Click
+        Try
+            Dim dlgimage As FileDialog = New OpenFileDialog
+            dlgimage.Filter = "Image File (*.jpg;*.bmp;*.gif)|*.jpg;*.bmp;*.gif"
+            If dlgimage.ShowDialog() = DialogResult.OK Then
+                imgName4 = dlgimage.FileName
+
+                Dim newImg As New Bitmap(imgName4)
+                imgGSignature.SizeMode = PictureBoxSizeMode.StretchImage
+                imgGSignature.Image = DirectCast(newImg, Image)
+            End If
+            dlgimage = Nothing
+        Catch ae As System.ArgumentException
+            imgName4 = " "
+            MessageBox.Show(ae.Message.ToString())
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString())
+        End Try
+    End Sub
+
+    Private Sub Form2_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Call datetime()
+
+    End Sub
+    ' this method handles the save query
+
+    Sub savemember()
+        Try
+            Myconnection.Close()
+            Myconnection.Open()
+
+            If imgName1 <> "" And imgName2 <> "" And imgName3 <> "" And imgName4 <> "" Then
+                Dim fs1 As FileStream
+                Dim fs2 As FileStream
+                Dim fs3 As FileStream
+                Dim fs4 As FileStream
+
+                fs1 = New FileStream(imgName1, FileMode.Open, FileAccess.Read)
+                Dim picByte As Byte() = New Byte(fs1.Length - 1) {}
+                fs1.Read(picByte, 0, System.Convert.ToInt32(fs1.Length))
+                fs1.Close()
+
+                fs2 = New FileStream(imgName2, FileMode.Open, FileAccess.Read)
+                Dim picByte2 As Byte() = New Byte(fs2.Length - 1) {}
+                fs2.Read(picByte2, 0, System.Convert.ToInt32(fs2.Length))
+                fs2.Close()
+
+                fs3 = New FileStream(imgName3, FileMode.Open, FileAccess.Read)
+                Dim picByte3 As Byte() = New Byte(fs3.Length - 1) {}
+                fs3.Read(picByte3, 0, System.Convert.ToInt32(fs3.Length))
+                fs3.Close()
+
+                fs4 = New FileStream(imgName4, FileMode.Open, FileAccess.Read)
+                Dim picByte4 As Byte() = New Byte(fs4.Length - 1) {}
+                fs4.Read(picByte4, 0, System.Convert.ToInt32(fs4.Length))
+                fs4.Close()
+
+
+                Dim sql As String
+                sql = "insert into members (surname,firstname,middlename,ippsno,fileno,deptunit,rank,phoneno1,phoneno2,residentialaddress,nextofkinname1,nextofkinphoneno1,nextofkinrelationship1,nextofkinaddress1,nextofkinname2,nextofkinphoneno2,nextofkinrelationship2,nextofkinaddress2,shares,savings,Registrationfees,eimcsno,approvalstatus,fullname,presidentdate,gensecdate,applicantdate,passport,signature,presidentsignature,secretarysignature)" _
+                    & "VALUES(@surname,@firstname,@middlename,@ippsno,@fileno,@deptunit,@rank,@phoneno1,@phoneno2,@residentialaddress,@nextofkinname1,@nextofkinphoneno1,@nextofkinrelationship1, @nextofkinaddress1,@nextofkinname2, @nextofkinphoneno2, @nextofkinrelationship2,@nextofkinaddress2,@shares, @savings,@Registrationfees, @eimcsno, @approvalstatus, @fullname,@presidentdate,@gensecdate,@applicantdate,@passport,@signature,@president,@sec)"
+
+                Dim imgParam As New MySqlParameter()
+                imgParam.MySqlDbType = MySqlDbType.Binary
+                imgParam.ParameterName = "passport"
+                imgParam.Value = picByte
+
+                Dim imgParam1 As New MySqlParameter()
+                imgParam1.MySqlDbType = MySqlDbType.Binary
+                imgParam1.ParameterName = "signature"
+                imgParam1.Value = picByte2
+
+                Dim imgParam2 As New MySqlParameter()
+                imgParam2.MySqlDbType = MySqlDbType.Binary
+                imgParam2.ParameterName = "president"
+                imgParam2.Value = picByte2
+
+                Dim imgParam3 As New MySqlParameter()
+                imgParam3.MySqlDbType = MySqlDbType.Binary
+                imgParam3.ParameterName = "sec"
+                imgParam3.Value = picByte3
+
+                Dim cmdx As New MySqlCommand(sql, Myconnection)
+                cmdx.Parameters.AddWithValue("@surname", txtSurname.Text)
+                cmdx.Parameters.AddWithValue("@firstname", txtFirstname.Text)
+                cmdx.Parameters.AddWithValue("@middlename", txtMiddlename.Text)
+                cmdx.Parameters.AddWithValue("@ippsno", txtippsno.Text)
+                cmdx.Parameters.AddWithValue("@fileno", txtfileno.Text)
+                cmdx.Parameters.AddWithValue("@deptunit", txtdeptunit.Text)
+                cmdx.Parameters.AddWithValue("@rank", txtrank.Text)
+                cmdx.Parameters.AddWithValue("@phoneno1", txtphoneno1.Text)
+                cmdx.Parameters.AddWithValue("@phoneno2", txtphoneno2.Text)
+                cmdx.Parameters.AddWithValue("@residentialaddress", txtresidentialaddress.Text)
+                cmdx.Parameters.AddWithValue("@nextofkinname1", nokName1.Text)
+                cmdx.Parameters.AddWithValue("@nextofkinphoneno1", nokPhone1.Text)
+                cmdx.Parameters.AddWithValue("@nextofkinrelationship1", nokRelationship1.Text)
+                cmdx.Parameters.AddWithValue("@nextofkinaddress1", nokAddress1.Text)
+                cmdx.Parameters.AddWithValue("@nextofkinname2", nokName2.Text)
+                cmdx.Parameters.AddWithValue("@nextofkinphoneno2", nokPhoneno2.Text)
+                cmdx.Parameters.AddWithValue("@nextofkinrelationship2", nokRelationship2.Text)
+                cmdx.Parameters.AddWithValue("@nextofkinaddress2", nokAddress2.Text)
+                cmdx.Parameters.AddWithValue("@shares", txtshares.Text)
+                cmdx.Parameters.AddWithValue("@savings", txtSavings.Text)
+                cmdx.Parameters.AddWithValue("@Registrationfees", txtRegFee.Text)
+                cmdx.Parameters.AddWithValue("@eimcsno", txtEimcs.Text)
+                cmdx.Parameters.AddWithValue("@approvalstatus", txtApproved.Text)
+                cmdx.Parameters.AddWithValue("@fullname", txtFullname.Text)
+                cmdx.Parameters.AddWithValue("@presidentdate", txtPdate.Text)
+                cmdx.Parameters.AddWithValue("@gensecdate", txtGdate.Text)
+                cmdx.Parameters.AddWithValue("@applicantdate", txtMDate.Text)
+                cmdx.Parameters.Add(imgParam)
+                cmdx.Parameters.Add(imgParam1)
+                cmdx.Parameters.Add(imgParam2)
+                cmdx.Parameters.Add(imgParam3)
+                cmdx.ExecuteNonQuery()
+                MsgBox("Information Saved Successfully ", vbInformation)
+                clear()
+                'grid()
+
+                Myconnection.Close()
+            Else
+                MsgBox("Upload all the necccessary documents first",MsgBoxStyle.Information)
+
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+        End Try
+    End Sub
+
+    ' this method checks for duplicate data
+    Sub save()
+        Try
+            Myconnection.Open()
+            Dim reader As MySqlDataReader
+            Dim query As String
+            query = "select * from bas.members where ippsno = '" & txtippsno.Text & "'"
+            cmd = New MySqlCommand(query, Myconnection)
+            reader = cmd.ExecuteReader
+            Dim count As Integer
+            count = 0
+            While reader.Read
+                count = count + 1
+
+            End While
+            If count > 0 Then
+                MsgBox("IPPS Number already Exist in Database", vbInformation)
+                Myconnection.Close()
+            Else
+                savemember()
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
         End Try
     End Sub
 End Class
