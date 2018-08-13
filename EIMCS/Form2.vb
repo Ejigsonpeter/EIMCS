@@ -296,6 +296,7 @@ Public Class Form2
 
     Private Sub Form2_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Call datetime()
+        Call grid()
 
     End Sub
     ' this method handles the save query
@@ -312,7 +313,13 @@ Public Class Form2
             command.CommandText = "SELECT * FROM members WHERE ippsno = '" & txtSearch.Text & "'"
 
             reader = command.ExecuteReader(CommandBehavior.CloseConnection)
-            reader.Read()
+            Dim count As Integer
+            count = 0
+            While reader.Read
+                count = count + 1
+            End While
+            If count > 0 Then
+                MsgBox(count & " Matching Record found in Database  ", vbInformation)
 
             txtSurname.Text = reader.Item("surname").ToString
             txtFirstname.Text = reader.Item("firstname").ToString
@@ -381,6 +388,11 @@ Public Class Form2
             imgGSignature.Refresh()
             Myconnection.Close()
 
+
+            Else
+                MsgBox("No Matching record found in Database", vbCritical)
+                clear()
+            End If
             '---reset the timer to another five seconds---
             'Timer1.Enabled = False
             'Timer1.Enabled = True
@@ -864,7 +876,7 @@ Public Class Form2
             Myconnection.Close()
             Myconnection.Open()
 
-            Dim selectQuery As String = "select surname,firstname,middlename,ippsno,fileno,deptunit,rank,location,phoneno1,phoneno2,residentialaddress,nextofkinname1,nextofkinphoneno1,nextofkinrelationship1,nextofkinaddress1,nextofkinname2,nextofkinphoneno2,nextofkinrelationship2,nextofkinaddress2,shares,savings,Registrationfees,eimcsno,approvalstatus,fullname,presidentdate,gensecdate,applicantdate from members"
+            Dim selectQuery As String = "select sno,surname,firstname,middlename,ippsno,fileno,deptunit,rank,location,phoneno1,phoneno2,residentialaddress,nextofkinname1,nextofkinphoneno1,nextofkinrelationship1,nextofkinaddress1,nextofkinname2,nextofkinphoneno2,nextofkinrelationship2,nextofkinaddress2,shares,savings,Registrationfees,eimcsno,approvalstatus,fullname,presidentdate,gensecdate,applicantdate from members"
             cmd = New MySql.Data.MySqlClient.MySqlCommand(selectQuery, Myconnection)
             da = New MySql.Data.MySqlClient.MySqlDataAdapter(cmd)
             ds = New DataSet
@@ -877,5 +889,82 @@ Public Class Form2
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub txtm_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtm.SelectedIndexChanged
+
+        If txtm.SelectedIndex = 0 Then  'LTCL
+            txtmonth.Text = "24"
+            txtinterestRate.Text = "0"
+        ElseIf txtm.SelectedIndex = 1 Then 'STCL
+            txtmonth.Text = "6"
+            txtinterestRate.Text = "0"
+        ElseIf txtm.SelectedIndex = 2 Then 'LMTS
+            txtmonth.Text = "36"
+            txtinterestRate.Text = "10"
+        ElseIf txtm.SelectedIndex = 3 Then 'STML i
+            txtmonth.Text = "4"
+            txtinterestRate.Text = "5"
+        ElseIf txtm.SelectedIndex = 4 Then 'STML ii
+            txtmonth.Text = "12"
+            txtinterestRate.Text = "10"
+        ElseIf txtm.SelectedIndex = 5 Then ' emergencyloan
+            txtmonth.Text = "4"
+            txtinterestRate.Text = "0"
+        ElseIf txtm.SelectedIndex = 6 Then ' saving
+            txtmonth.Text = "1"
+            txtinterestRate.Text = "0"
+        ElseIf txtm.SelectedIndex = 7 Then 'emergency savings
+            txtmonth.Text = "1"
+            txtinterestRate.Text = "0"
+
+
+        End If
+    End Sub
+
+    Private Sub txtamountneeded_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtamountneeded.Leave
+
+    End Sub
+
+   
+
+    Private Sub txtamountneeded_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtamountneeded.Validated
+        If txtm.SelectedIndex = 0 Then  'LTCL
+            If Val(txtamountneeded.Text) > 2000000 Then
+                MsgBox("Maximum Amount for this Loan is 2,000,000", vbCritical)
+                txtamountneeded.Text = ""
+                txtamountneeded.Focus()
+            Else
+                txtamountpayable.Text = (Val(txtamountneeded.Text) + Val(txtinterestRate.Text)) / Val(txtmonth.Text)
+            End If
+        ElseIf txtm.SelectedIndex = 1 Then 'STCL
+            If Val(txtamountneeded.Text) > 100000 Then
+                MsgBox("Maximum Amount for this Loan is 100,000", vbCritical)
+                txtamountneeded.Text = ""
+                txtamountneeded.Focus()
+            Else
+                txtamountpayable.Text = (Val(txtamountneeded.Text) + Val(txtinterestRate.Text)) / Val(txtmonth.Text)
+            End If
+        ElseIf txtm.SelectedIndex = 2 Then 'LMTS
+           
+                txtamountpayable.Text = (Val(txtamountneeded.Text) + Val(txtinterestRate.Text)) / Val(txtmonth.Text)
+
+        ElseIf txtm.SelectedIndex = 3 Then 'STML i
+            txtmonth.Text = "4"
+            txtinterestRate.Text = "5"
+        ElseIf txtm.SelectedIndex = 4 Then 'STML ii
+            txtmonth.Text = "12"
+            txtinterestRate.Text = "10"
+        ElseIf txtm.SelectedIndex = 5 Then ' emergencyloan
+            txtmonth.Text = "4"
+            txtinterestRate.Text = "0"
+        ElseIf txtm.SelectedIndex = 6 Then ' saving
+            txtmonth.Text = "1"
+            txtinterestRate.Text = "0"
+        ElseIf txtm.SelectedIndex = 7 Then 'emergency savings
+            txtmonth.Text = "1"
+            txtinterestRate.Text = "0"
+        End If
+
     End Sub
 End Class

@@ -16,6 +16,7 @@ Public Class Form1
             MsgBox("Enter user pass ", vbCritical)
         ElseIf txtid.Text = "admin" And txtpass.Text = "12345" Then
             MsgBox("Access Granted", vbInformation)
+            Me.Hide()
             Form2.Show()
         Else
             Try

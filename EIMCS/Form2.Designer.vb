@@ -161,6 +161,7 @@ Partial Class Form2
         Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.ITalk_GroupBox2 = New EIMCS.iTalk.iTalk_GroupBox()
+        Me.BunifuCustomLabel48 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuMetroTextbox6 = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel47 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuMetroTextbox5 = New Bunifu.Framework.UI.BunifuMetroTextbox()
@@ -169,10 +170,10 @@ Partial Class Form2
         Me.ITalk_Button_22 = New EIMCS.iTalk.iTalk_Button_2()
         Me.BunifuCustomLabel44 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel18 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuMetroTextbox4 = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.BunifuMetroTextbox3 = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.BunifuMetroTextbox2 = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.BunifuMetroTextbox1 = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.txtamountpayable = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.txtamountneeded = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.txtinterestRate = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.txtmonth = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.txtm = New System.Windows.Forms.ComboBox()
         Me.BunifuCustomLabel51 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel52 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -2237,6 +2238,7 @@ Partial Class Form2
         'ITalk_GroupBox2
         '
         Me.ITalk_GroupBox2.BackColor = System.Drawing.Color.White
+        Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel48)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuMetroTextbox6)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel47)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuMetroTextbox5)
@@ -2245,10 +2247,10 @@ Partial Class Form2
         Me.ITalk_GroupBox2.Controls.Add(Me.ITalk_Button_22)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel44)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel18)
-        Me.ITalk_GroupBox2.Controls.Add(Me.BunifuMetroTextbox4)
-        Me.ITalk_GroupBox2.Controls.Add(Me.BunifuMetroTextbox3)
-        Me.ITalk_GroupBox2.Controls.Add(Me.BunifuMetroTextbox2)
-        Me.ITalk_GroupBox2.Controls.Add(Me.BunifuMetroTextbox1)
+        Me.ITalk_GroupBox2.Controls.Add(Me.txtamountpayable)
+        Me.ITalk_GroupBox2.Controls.Add(Me.txtamountneeded)
+        Me.ITalk_GroupBox2.Controls.Add(Me.txtinterestRate)
+        Me.ITalk_GroupBox2.Controls.Add(Me.txtmonth)
         Me.ITalk_GroupBox2.Controls.Add(Me.txtm)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel51)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel52)
@@ -2262,6 +2264,15 @@ Partial Class Form2
         Me.ITalk_GroupBox2.Size = New System.Drawing.Size(572, 450)
         Me.ITalk_GroupBox2.TabIndex = 1
         Me.ITalk_GroupBox2.Text = "Loan Form"
+        '
+        'BunifuCustomLabel48
+        '
+        Me.BunifuCustomLabel48.AutoSize = True
+        Me.BunifuCustomLabel48.Location = New System.Drawing.Point(281, 164)
+        Me.BunifuCustomLabel48.Name = "BunifuCustomLabel48"
+        Me.BunifuCustomLabel48.Size = New System.Drawing.Size(21, 22)
+        Me.BunifuCustomLabel48.TabIndex = 42
+        Me.BunifuCustomLabel48.Text = "%"
         '
         'BunifuMetroTextbox6
         '
@@ -2361,73 +2372,73 @@ Partial Class Form2
         Me.BunifuCustomLabel18.TabIndex = 34
         Me.BunifuCustomLabel18.Text = "Months"
         '
-        'BunifuMetroTextbox4
+        'txtamountpayable
         '
-        Me.BunifuMetroTextbox4.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox4.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox4.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox4.BorderThickness = 3
-        Me.BunifuMetroTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMetroTextbox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox4.isPassword = False
-        Me.BunifuMetroTextbox4.Location = New System.Drawing.Point(220, 230)
-        Me.BunifuMetroTextbox4.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox4.Name = "BunifuMetroTextbox4"
-        Me.BunifuMetroTextbox4.Size = New System.Drawing.Size(194, 31)
-        Me.BunifuMetroTextbox4.TabIndex = 33
-        Me.BunifuMetroTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtamountpayable.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtamountpayable.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtamountpayable.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtamountpayable.BorderThickness = 3
+        Me.txtamountpayable.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtamountpayable.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtamountpayable.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtamountpayable.isPassword = False
+        Me.txtamountpayable.Location = New System.Drawing.Point(220, 230)
+        Me.txtamountpayable.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtamountpayable.Name = "txtamountpayable"
+        Me.txtamountpayable.Size = New System.Drawing.Size(194, 31)
+        Me.txtamountpayable.TabIndex = 33
+        Me.txtamountpayable.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'BunifuMetroTextbox3
+        'txtamountneeded
         '
-        Me.BunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox3.BorderThickness = 3
-        Me.BunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMetroTextbox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox3.isPassword = False
-        Me.BunifuMetroTextbox3.Location = New System.Drawing.Point(220, 197)
-        Me.BunifuMetroTextbox3.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox3.Name = "BunifuMetroTextbox3"
-        Me.BunifuMetroTextbox3.Size = New System.Drawing.Size(194, 31)
-        Me.BunifuMetroTextbox3.TabIndex = 32
-        Me.BunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtamountneeded.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtamountneeded.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtamountneeded.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtamountneeded.BorderThickness = 3
+        Me.txtamountneeded.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtamountneeded.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtamountneeded.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtamountneeded.isPassword = False
+        Me.txtamountneeded.Location = New System.Drawing.Point(220, 197)
+        Me.txtamountneeded.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtamountneeded.Name = "txtamountneeded"
+        Me.txtamountneeded.Size = New System.Drawing.Size(194, 31)
+        Me.txtamountneeded.TabIndex = 32
+        Me.txtamountneeded.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'BunifuMetroTextbox2
+        'txtinterestRate
         '
-        Me.BunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox2.BorderThickness = 3
-        Me.BunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox2.isPassword = False
-        Me.BunifuMetroTextbox2.Location = New System.Drawing.Point(219, 159)
-        Me.BunifuMetroTextbox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox2.Name = "BunifuMetroTextbox2"
-        Me.BunifuMetroTextbox2.Size = New System.Drawing.Size(55, 31)
-        Me.BunifuMetroTextbox2.TabIndex = 31
-        Me.BunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtinterestRate.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtinterestRate.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtinterestRate.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtinterestRate.BorderThickness = 3
+        Me.txtinterestRate.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtinterestRate.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtinterestRate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtinterestRate.isPassword = False
+        Me.txtinterestRate.Location = New System.Drawing.Point(219, 159)
+        Me.txtinterestRate.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtinterestRate.Name = "txtinterestRate"
+        Me.txtinterestRate.Size = New System.Drawing.Size(55, 31)
+        Me.txtinterestRate.TabIndex = 31
+        Me.txtinterestRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'BunifuMetroTextbox1
+        'txtmonth
         '
-        Me.BunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderThickness = 3
-        Me.BunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox1.isPassword = False
-        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(219, 120)
-        Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
-        Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(55, 31)
-        Me.BunifuMetroTextbox1.TabIndex = 30
-        Me.BunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtmonth.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtmonth.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtmonth.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtmonth.BorderThickness = 3
+        Me.txtmonth.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtmonth.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtmonth.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtmonth.isPassword = False
+        Me.txtmonth.Location = New System.Drawing.Point(219, 120)
+        Me.txtmonth.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtmonth.Name = "txtmonth"
+        Me.txtmonth.Size = New System.Drawing.Size(55, 31)
+        Me.txtmonth.TabIndex = 30
+        Me.txtmonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'txtm
         '
@@ -3425,10 +3436,10 @@ Partial Class Form2
     Friend WithEvents BunifuCustomLabel36 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel37 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents ITalk_GroupBox2 As EIMCS.iTalk.iTalk_GroupBox
-    Friend WithEvents BunifuMetroTextbox4 As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents BunifuMetroTextbox3 As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents BunifuMetroTextbox2 As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents txtamountpayable As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents txtamountneeded As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents txtinterestRate As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents txtmonth As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents txtm As System.Windows.Forms.ComboBox
     Friend WithEvents BunifuCustomLabel51 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel52 As Bunifu.Framework.UI.BunifuCustomLabel
@@ -3471,4 +3482,5 @@ Partial Class Form2
     Friend WithEvents BunifuMetroTextbox5 As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel46 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents BunifuCustomLabel48 As Bunifu.Framework.UI.BunifuCustomLabel
 End Class
