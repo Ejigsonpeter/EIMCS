@@ -313,7 +313,7 @@ Partial Class Form2
         Me.TabPage1.Location = New System.Drawing.Point(139, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1222, 751)
+        Me.TabPage1.Size = New System.Drawing.Size(1235, 751)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Home"
         '
@@ -554,7 +554,8 @@ Partial Class Form2
         '
         'imgpix
         '
-        Me.imgpix.BackgroundImage = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
+        Me.imgpix.BackgroundImage = Global.EIMCS.My.Resources.Resources.login1
+        Me.imgpix.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imgpix.Image = Global.EIMCS.My.Resources.Resources.login1
         Me.imgpix.Location = New System.Drawing.Point(522, 63)
         Me.imgpix.Name = "imgpix"
@@ -1728,6 +1729,7 @@ Partial Class Form2
         'imgGSignature
         '
         Me.imgGSignature.BackgroundImage = CType(resources.GetObject("imgGSignature.BackgroundImage"), System.Drawing.Image)
+        Me.imgGSignature.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imgGSignature.Image = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
         Me.imgGSignature.Location = New System.Drawing.Point(625, 375)
         Me.imgGSignature.Name = "imgGSignature"
@@ -1784,6 +1786,7 @@ Partial Class Form2
         'imgPsignature
         '
         Me.imgPsignature.BackgroundImage = CType(resources.GetObject("imgPsignature.BackgroundImage"), System.Drawing.Image)
+        Me.imgPsignature.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imgPsignature.Image = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
         Me.imgPsignature.Location = New System.Drawing.Point(305, 375)
         Me.imgPsignature.Name = "imgPsignature"
@@ -1952,6 +1955,7 @@ Partial Class Form2
         'imgMsignature
         '
         Me.imgMsignature.BackgroundImage = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
+        Me.imgMsignature.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imgMsignature.Image = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
         Me.imgMsignature.Location = New System.Drawing.Point(540, 111)
         Me.imgMsignature.Name = "imgMsignature"
@@ -2165,7 +2169,7 @@ Partial Class Form2
         Me.TabPage3.Controls.Add(Me.BunifuCards1)
         Me.TabPage3.Location = New System.Drawing.Point(139, 4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1222, 751)
+        Me.TabPage3.Size = New System.Drawing.Size(1235, 751)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Loan"
         '
@@ -2183,7 +2187,7 @@ Partial Class Form2
         Me.BunifuCards1.Name = "BunifuCards1"
         Me.BunifuCards1.RightSahddow = False
         Me.BunifuCards1.ShadowDepth = 20
-        Me.BunifuCards1.Size = New System.Drawing.Size(1222, 751)
+        Me.BunifuCards1.Size = New System.Drawing.Size(1235, 751)
         Me.BunifuCards1.TabIndex = 2
         '
         'GroupBox3
@@ -2196,7 +2200,7 @@ Partial Class Form2
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox3.Location = New System.Drawing.Point(0, 148)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(1222, 603)
+        Me.GroupBox3.Size = New System.Drawing.Size(1235, 603)
         Me.GroupBox3.TabIndex = 4
         Me.GroupBox3.TabStop = False
         '
@@ -2205,7 +2209,7 @@ Partial Class Form2
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripProgressBar1})
         Me.StatusStrip1.Location = New System.Drawing.Point(3, 578)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1216, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1229, 22)
         Me.StatusStrip1.TabIndex = 12
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -2749,7 +2753,7 @@ Partial Class Form2
         Me.GroupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox6.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(1222, 148)
+        Me.GroupBox6.Size = New System.Drawing.Size(1235, 148)
         Me.GroupBox6.TabIndex = 3
         Me.GroupBox6.TabStop = False
         '
@@ -2810,7 +2814,7 @@ Partial Class Form2
         '
         Me.PictureBox5.Dock = System.Windows.Forms.DockStyle.Right
         Me.PictureBox5.Image = Global.EIMCS.My.Resources.Resources.LOGO
-        Me.PictureBox5.Location = New System.Drawing.Point(1083, 22)
+        Me.PictureBox5.Location = New System.Drawing.Point(1096, 22)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(136, 123)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2834,7 +2838,7 @@ Partial Class Form2
         Me.TabPage4.Controls.Add(Me.BunifuCards3)
         Me.TabPage4.Location = New System.Drawing.Point(139, 4)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1222, 751)
+        Me.TabPage4.Size = New System.Drawing.Size(1235, 751)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Records"
         '
@@ -2851,7 +2855,7 @@ Partial Class Form2
         Me.BunifuCards3.Name = "BunifuCards3"
         Me.BunifuCards3.RightSahddow = False
         Me.BunifuCards3.ShadowDepth = 20
-        Me.BunifuCards3.Size = New System.Drawing.Size(1222, 751)
+        Me.BunifuCards3.Size = New System.Drawing.Size(1235, 751)
         Me.BunifuCards3.TabIndex = 0
         '
         'BunifuCards4
@@ -2868,7 +2872,7 @@ Partial Class Form2
         Me.BunifuCards4.Name = "BunifuCards4"
         Me.BunifuCards4.RightSahddow = False
         Me.BunifuCards4.ShadowDepth = 20
-        Me.BunifuCards4.Size = New System.Drawing.Size(1222, 751)
+        Me.BunifuCards4.Size = New System.Drawing.Size(1235, 751)
         Me.BunifuCards4.TabIndex = 5
         '
         'GroupBox7
@@ -2885,7 +2889,7 @@ Partial Class Form2
         Me.GroupBox7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox7.Location = New System.Drawing.Point(0, 148)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(1222, 603)
+        Me.GroupBox7.Size = New System.Drawing.Size(1235, 603)
         Me.GroupBox7.TabIndex = 4
         Me.GroupBox7.TabStop = False
         '
@@ -2936,7 +2940,7 @@ Partial Class Form2
         Me.StatusStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel2, Me.ToolStripProgressBar2})
         Me.StatusStrip2.Location = New System.Drawing.Point(3, 578)
         Me.StatusStrip2.Name = "StatusStrip2"
-        Me.StatusStrip2.Size = New System.Drawing.Size(1216, 22)
+        Me.StatusStrip2.Size = New System.Drawing.Size(1229, 22)
         Me.StatusStrip2.TabIndex = 12
         Me.StatusStrip2.Text = "StatusStrip2"
         '
@@ -3086,7 +3090,7 @@ Partial Class Form2
         Me.GroupBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox9.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(1222, 148)
+        Me.GroupBox9.Size = New System.Drawing.Size(1235, 148)
         Me.GroupBox9.TabIndex = 3
         Me.GroupBox9.TabStop = False
         '
@@ -3147,7 +3151,7 @@ Partial Class Form2
         '
         Me.PictureBox10.Dock = System.Windows.Forms.DockStyle.Right
         Me.PictureBox10.Image = Global.EIMCS.My.Resources.Resources.LOGO
-        Me.PictureBox10.Location = New System.Drawing.Point(1083, 22)
+        Me.PictureBox10.Location = New System.Drawing.Point(1096, 22)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(136, 123)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -3170,7 +3174,7 @@ Partial Class Form2
         Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.TabPage5.Location = New System.Drawing.Point(139, 4)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(1222, 751)
+        Me.TabPage5.Size = New System.Drawing.Size(1235, 751)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "TabPage5"
         '
@@ -3179,7 +3183,7 @@ Partial Class Form2
         Me.TabPage6.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.TabPage6.Location = New System.Drawing.Point(139, 4)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(1222, 751)
+        Me.TabPage6.Size = New System.Drawing.Size(1235, 751)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "TabPage6"
         '
