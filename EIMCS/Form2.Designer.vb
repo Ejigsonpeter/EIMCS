@@ -116,17 +116,18 @@ Partial Class Form2
         Me.btnnext2 = New EIMCS.iTalk.iTalk_Button_2()
         Me.BunifuCustomLabel108 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.group3 = New System.Windows.Forms.GroupBox()
+        Me.txtGdate = New System.Windows.Forms.DateTimePicker()
+        Me.txtpdate = New System.Windows.Forms.DateTimePicker()
+        Me.txtMDate = New System.Windows.Forms.DateTimePicker()
         Me.btnclear = New EIMCS.iTalk.iTalk_Button_2()
         Me.BunifuCustomLabel82 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel81 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel80 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.supload = New EIMCS.iTalk.iTalk_Button_2()
         Me.imgGSignature = New System.Windows.Forms.PictureBox()
-        Me.txtGdate = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel79 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.puppload = New EIMCS.iTalk.iTalk_Button_2()
         Me.imgPsignature = New System.Windows.Forms.PictureBox()
-        Me.txtPdate = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.txtEimcs = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel77 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel78 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -138,7 +139,6 @@ Partial Class Form2
         Me.BunifuCustomLabel29 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.aupload = New EIMCS.iTalk.iTalk_Button_2()
         Me.imgMsignature = New System.Windows.Forms.PictureBox()
-        Me.txtMDate = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.BunifuCustomLabel27 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.BunifuCustomLabel28 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -161,10 +161,10 @@ Partial Class Form2
         Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.ITalk_GroupBox2 = New EIMCS.iTalk.iTalk_GroupBox()
+        Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
         Me.BunifuCustomLabel48 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuMetroTextbox6 = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel47 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuMetroTextbox5 = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.BunifuCustomLabel46 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.ITalk_Button_23 = New EIMCS.iTalk.iTalk_Button_2()
         Me.ITalk_Button_22 = New EIMCS.iTalk.iTalk_Button_2()
@@ -181,29 +181,31 @@ Partial Class Form2
         Me.BunifuCustomLabel56 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel57 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.ITalk_GroupBox1 = New EIMCS.iTalk.iTalk_GroupBox()
+        Me.BunifuCustomLabel25 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel26 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.BunifuCustomLabel34 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel41 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtltms = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtstms = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel42 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel43 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel30 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel38 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtltcl = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtstcl = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel39 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel40 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel31 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel32 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel33 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtsavgs = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtshare = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtmd = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel35 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel36 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel37 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel25 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel26 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtipps = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.txtfname = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel16 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel15 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtl = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.ITalk_Button_21 = New EIMCS.iTalk.iTalk_Button_2()
+        Me.btnloansearch = New EIMCS.iTalk.iTalk_Button_2()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
@@ -510,7 +512,7 @@ Partial Class Form2
         Me.group1.Controls.Add(Me.BunifuCustomLabel1)
         Me.group1.Location = New System.Drawing.Point(3, 90)
         Me.group1.Name = "group1"
-        Me.group1.Size = New System.Drawing.Size(1223, 511)
+        Me.group1.Size = New System.Drawing.Size(1195, 463)
         Me.group1.TabIndex = 141
         Me.group1.TabStop = False
         '
@@ -1105,7 +1107,7 @@ Partial Class Form2
         Me.group2.Controls.Add(Me.BunifuCustomLabel108)
         Me.group2.Location = New System.Drawing.Point(6, 81)
         Me.group2.Name = "group2"
-        Me.group2.Size = New System.Drawing.Size(1220, 520)
+        Me.group2.Size = New System.Drawing.Size(1192, 462)
         Me.group2.TabIndex = 104
         Me.group2.TabStop = False
         Me.group2.Visible = False
@@ -1301,7 +1303,7 @@ Partial Class Form2
         Me.nokAddress2.LineIdleColor = System.Drawing.Color.Gray
         Me.nokAddress2.LineMouseHoverColor = System.Drawing.Color.SlateGray
         Me.nokAddress2.LineThickness = 3
-        Me.nokAddress2.Location = New System.Drawing.Point(436, 189)
+        Me.nokAddress2.Location = New System.Drawing.Point(440, 189)
         Me.nokAddress2.Margin = New System.Windows.Forms.Padding(4)
         Me.nokAddress2.Name = "nokAddress2"
         Me.nokAddress2.Size = New System.Drawing.Size(498, 27)
@@ -1406,7 +1408,7 @@ Partial Class Form2
         Me.nokRelationship2.LineIdleColor = System.Drawing.Color.Gray
         Me.nokRelationship2.LineMouseHoverColor = System.Drawing.Color.SlateGray
         Me.nokRelationship2.LineThickness = 3
-        Me.nokRelationship2.Location = New System.Drawing.Point(436, 156)
+        Me.nokRelationship2.Location = New System.Drawing.Point(449, 156)
         Me.nokRelationship2.Margin = New System.Windows.Forms.Padding(4)
         Me.nokRelationship2.Name = "nokRelationship2"
         Me.nokRelationship2.Size = New System.Drawing.Size(498, 27)
@@ -1623,17 +1625,18 @@ Partial Class Form2
         '
         'group3
         '
+        Me.group3.Controls.Add(Me.txtGdate)
+        Me.group3.Controls.Add(Me.txtpdate)
+        Me.group3.Controls.Add(Me.txtMDate)
         Me.group3.Controls.Add(Me.btnclear)
         Me.group3.Controls.Add(Me.BunifuCustomLabel82)
         Me.group3.Controls.Add(Me.BunifuCustomLabel81)
         Me.group3.Controls.Add(Me.BunifuCustomLabel80)
         Me.group3.Controls.Add(Me.supload)
         Me.group3.Controls.Add(Me.imgGSignature)
-        Me.group3.Controls.Add(Me.txtGdate)
         Me.group3.Controls.Add(Me.BunifuCustomLabel79)
         Me.group3.Controls.Add(Me.puppload)
         Me.group3.Controls.Add(Me.imgPsignature)
-        Me.group3.Controls.Add(Me.txtPdate)
         Me.group3.Controls.Add(Me.txtEimcs)
         Me.group3.Controls.Add(Me.BunifuCustomLabel77)
         Me.group3.Controls.Add(Me.BunifuCustomLabel78)
@@ -1645,7 +1648,6 @@ Partial Class Form2
         Me.group3.Controls.Add(Me.BunifuCustomLabel29)
         Me.group3.Controls.Add(Me.aupload)
         Me.group3.Controls.Add(Me.imgMsignature)
-        Me.group3.Controls.Add(Me.txtMDate)
         Me.group3.Controls.Add(Me.BunifuCustomLabel27)
         Me.group3.Controls.Add(Me.Label27)
         Me.group3.Controls.Add(Me.BunifuCustomLabel28)
@@ -1662,6 +1664,33 @@ Partial Class Form2
         Me.group3.TabIndex = 102
         Me.group3.TabStop = False
         Me.group3.Visible = False
+        '
+        'txtGdate
+        '
+        Me.txtGdate.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.txtGdate.Location = New System.Drawing.Point(854, 426)
+        Me.txtGdate.Name = "txtGdate"
+        Me.txtGdate.Size = New System.Drawing.Size(162, 26)
+        Me.txtGdate.TabIndex = 140
+        '
+        'txtpdate
+        '
+        Me.txtpdate.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtpdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.txtpdate.Location = New System.Drawing.Point(495, 428)
+        Me.txtpdate.Name = "txtpdate"
+        Me.txtpdate.Size = New System.Drawing.Size(158, 26)
+        Me.txtpdate.TabIndex = 139
+        '
+        'txtMDate
+        '
+        Me.txtMDate.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.txtMDate.Location = New System.Drawing.Point(762, 187)
+        Me.txtMDate.Name = "txtMDate"
+        Me.txtMDate.Size = New System.Drawing.Size(184, 26)
+        Me.txtMDate.TabIndex = 138
         '
         'btnclear
         '
@@ -1683,7 +1712,7 @@ Partial Class Form2
         Me.BunifuCustomLabel82.BackColor = System.Drawing.Color.White
         Me.BunifuCustomLabel82.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel82.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomLabel82.Location = New System.Drawing.Point(621, 351)
+        Me.BunifuCustomLabel82.Location = New System.Drawing.Point(664, 351)
         Me.BunifuCustomLabel82.Name = "BunifuCustomLabel82"
         Me.BunifuCustomLabel82.Size = New System.Drawing.Size(293, 21)
         Me.BunifuCustomLabel82.TabIndex = 136
@@ -1707,7 +1736,7 @@ Partial Class Form2
         Me.BunifuCustomLabel80.BackColor = System.Drawing.Color.White
         Me.BunifuCustomLabel80.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel80.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomLabel80.Location = New System.Drawing.Point(754, 429)
+        Me.BunifuCustomLabel80.Location = New System.Drawing.Point(797, 429)
         Me.BunifuCustomLabel80.Name = "BunifuCustomLabel80"
         Me.BunifuCustomLabel80.Size = New System.Drawing.Size(54, 21)
         Me.BunifuCustomLabel80.TabIndex = 134
@@ -1720,7 +1749,7 @@ Partial Class Form2
         Me.supload.ForeColor = System.Drawing.Color.White
         Me.supload.Image = Nothing
         Me.supload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.supload.Location = New System.Drawing.Point(625, 427)
+        Me.supload.Location = New System.Drawing.Point(668, 427)
         Me.supload.Name = "supload"
         Me.supload.Size = New System.Drawing.Size(123, 28)
         Me.supload.TabIndex = 133
@@ -1732,31 +1761,12 @@ Partial Class Form2
         Me.imgGSignature.BackgroundImage = CType(resources.GetObject("imgGSignature.BackgroundImage"), System.Drawing.Image)
         Me.imgGSignature.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imgGSignature.Image = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
-        Me.imgGSignature.Location = New System.Drawing.Point(625, 375)
+        Me.imgGSignature.Location = New System.Drawing.Point(668, 375)
         Me.imgGSignature.Name = "imgGSignature"
         Me.imgGSignature.Size = New System.Drawing.Size(123, 46)
         Me.imgGSignature.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.imgGSignature.TabIndex = 132
         Me.imgGSignature.TabStop = False
-        '
-        'txtGdate
-        '
-        Me.txtGdate.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtGdate.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtGdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtGdate.HintForeColor = System.Drawing.Color.Gray
-        Me.txtGdate.HintText = ""
-        Me.txtGdate.isPassword = False
-        Me.txtGdate.LineFocusedColor = System.Drawing.Color.Gray
-        Me.txtGdate.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtGdate.LineMouseHoverColor = System.Drawing.Color.SlateGray
-        Me.txtGdate.LineThickness = 3
-        Me.txtGdate.Location = New System.Drawing.Point(815, 423)
-        Me.txtGdate.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtGdate.Name = "txtGdate"
-        Me.txtGdate.Size = New System.Drawing.Size(127, 27)
-        Me.txtGdate.TabIndex = 131
-        Me.txtGdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel79
         '
@@ -1795,25 +1805,6 @@ Partial Class Form2
         Me.imgPsignature.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.imgPsignature.TabIndex = 128
         Me.imgPsignature.TabStop = False
-        '
-        'txtPdate
-        '
-        Me.txtPdate.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtPdate.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtPdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtPdate.HintForeColor = System.Drawing.Color.Gray
-        Me.txtPdate.HintText = ""
-        Me.txtPdate.isPassword = False
-        Me.txtPdate.LineFocusedColor = System.Drawing.Color.Gray
-        Me.txtPdate.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtPdate.LineMouseHoverColor = System.Drawing.Color.SlateGray
-        Me.txtPdate.LineThickness = 3
-        Me.txtPdate.Location = New System.Drawing.Point(495, 423)
-        Me.txtPdate.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPdate.Name = "txtPdate"
-        Me.txtPdate.Size = New System.Drawing.Size(119, 27)
-        Me.txtPdate.TabIndex = 127
-        Me.txtPdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'txtEimcs
         '
@@ -1964,25 +1955,6 @@ Partial Class Form2
         Me.imgMsignature.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.imgMsignature.TabIndex = 114
         Me.imgMsignature.TabStop = False
-        '
-        'txtMDate
-        '
-        Me.txtMDate.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtMDate.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txtMDate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtMDate.HintForeColor = System.Drawing.Color.Gray
-        Me.txtMDate.HintText = ""
-        Me.txtMDate.isPassword = False
-        Me.txtMDate.LineFocusedColor = System.Drawing.Color.Gray
-        Me.txtMDate.LineIdleColor = System.Drawing.Color.Gray
-        Me.txtMDate.LineMouseHoverColor = System.Drawing.Color.SlateGray
-        Me.txtMDate.LineThickness = 3
-        Me.txtMDate.Location = New System.Drawing.Point(763, 185)
-        Me.txtMDate.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtMDate.Name = "txtMDate"
-        Me.txtMDate.Size = New System.Drawing.Size(179, 27)
-        Me.txtMDate.TabIndex = 113
-        Me.txtMDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel27
         '
@@ -2197,7 +2169,7 @@ Partial Class Form2
         Me.GroupBox3.Controls.Add(Me.GroupBox4)
         Me.GroupBox3.Controls.Add(Me.BunifuCustomLabel6)
         Me.GroupBox3.Controls.Add(Me.txtl)
-        Me.GroupBox3.Controls.Add(Me.ITalk_Button_21)
+        Me.GroupBox3.Controls.Add(Me.btnloansearch)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox3.Location = New System.Drawing.Point(0, 148)
         Me.GroupBox3.Name = "GroupBox3"
@@ -2238,10 +2210,10 @@ Partial Class Form2
         'ITalk_GroupBox2
         '
         Me.ITalk_GroupBox2.BackColor = System.Drawing.Color.White
+        Me.ITalk_GroupBox2.Controls.Add(Me.DateTimePicker4)
+        Me.ITalk_GroupBox2.Controls.Add(Me.DateTimePicker3)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel48)
-        Me.ITalk_GroupBox2.Controls.Add(Me.BunifuMetroTextbox6)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel47)
-        Me.ITalk_GroupBox2.Controls.Add(Me.BunifuMetroTextbox5)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel46)
         Me.ITalk_GroupBox2.Controls.Add(Me.ITalk_Button_23)
         Me.ITalk_GroupBox2.Controls.Add(Me.ITalk_Button_22)
@@ -2265,6 +2237,24 @@ Partial Class Form2
         Me.ITalk_GroupBox2.TabIndex = 1
         Me.ITalk_GroupBox2.Text = "Loan Form"
         '
+        'DateTimePicker4
+        '
+        Me.DateTimePicker4.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker4.Location = New System.Drawing.Point(220, 302)
+        Me.DateTimePicker4.Name = "DateTimePicker4"
+        Me.DateTimePicker4.Size = New System.Drawing.Size(184, 26)
+        Me.DateTimePicker4.TabIndex = 44
+        '
+        'DateTimePicker3
+        '
+        Me.DateTimePicker3.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker3.Location = New System.Drawing.Point(219, 269)
+        Me.DateTimePicker3.Name = "DateTimePicker3"
+        Me.DateTimePicker3.Size = New System.Drawing.Size(184, 26)
+        Me.DateTimePicker3.TabIndex = 43
+        '
         'BunifuCustomLabel48
         '
         Me.BunifuCustomLabel48.AutoSize = True
@@ -2274,23 +2264,6 @@ Partial Class Form2
         Me.BunifuCustomLabel48.TabIndex = 42
         Me.BunifuCustomLabel48.Text = "%"
         '
-        'BunifuMetroTextbox6
-        '
-        Me.BunifuMetroTextbox6.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox6.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox6.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox6.BorderThickness = 3
-        Me.BunifuMetroTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMetroTextbox6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox6.isPassword = False
-        Me.BunifuMetroTextbox6.Location = New System.Drawing.Point(219, 294)
-        Me.BunifuMetroTextbox6.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox6.Name = "BunifuMetroTextbox6"
-        Me.BunifuMetroTextbox6.Size = New System.Drawing.Size(194, 31)
-        Me.BunifuMetroTextbox6.TabIndex = 41
-        Me.BunifuMetroTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
         'BunifuCustomLabel47
         '
         Me.BunifuCustomLabel47.AutoSize = True
@@ -2299,23 +2272,6 @@ Partial Class Form2
         Me.BunifuCustomLabel47.Size = New System.Drawing.Size(76, 22)
         Me.BunifuCustomLabel47.TabIndex = 40
         Me.BunifuCustomLabel47.Text = "End Date"
-        '
-        'BunifuMetroTextbox5
-        '
-        Me.BunifuMetroTextbox5.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox5.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox5.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox5.BorderThickness = 3
-        Me.BunifuMetroTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMetroTextbox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox5.isPassword = False
-        Me.BunifuMetroTextbox5.Location = New System.Drawing.Point(220, 262)
-        Me.BunifuMetroTextbox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox5.Name = "BunifuMetroTextbox5"
-        Me.BunifuMetroTextbox5.Size = New System.Drawing.Size(194, 31)
-        Me.BunifuMetroTextbox5.TabIndex = 39
-        Me.BunifuMetroTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'BunifuCustomLabel46
         '
@@ -2497,23 +2453,25 @@ Partial Class Form2
         'ITalk_GroupBox1
         '
         Me.ITalk_GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel25)
+        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel26)
         Me.ITalk_GroupBox1.Controls.Add(Me.PictureBox7)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel34)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel41)
+        Me.ITalk_GroupBox1.Controls.Add(Me.txtltms)
+        Me.ITalk_GroupBox1.Controls.Add(Me.txtstms)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel42)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel43)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel30)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel38)
+        Me.ITalk_GroupBox1.Controls.Add(Me.txtltcl)
+        Me.ITalk_GroupBox1.Controls.Add(Me.txtstcl)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel39)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel40)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel31)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel32)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel33)
+        Me.ITalk_GroupBox1.Controls.Add(Me.txtsavgs)
+        Me.ITalk_GroupBox1.Controls.Add(Me.txtshare)
+        Me.ITalk_GroupBox1.Controls.Add(Me.txtmd)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel35)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel36)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel37)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel25)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel26)
+        Me.ITalk_GroupBox1.Controls.Add(Me.txtipps)
+        Me.ITalk_GroupBox1.Controls.Add(Me.txtfname)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel16)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel15)
         Me.ITalk_GroupBox1.Controls.Add(Me.PictureBox2)
@@ -2524,6 +2482,24 @@ Partial Class Form2
         Me.ITalk_GroupBox1.Size = New System.Drawing.Size(545, 452)
         Me.ITalk_GroupBox1.TabIndex = 0
         Me.ITalk_GroupBox1.Text = "BioData"
+        '
+        'BunifuCustomLabel25
+        '
+        Me.BunifuCustomLabel25.AutoSize = True
+        Me.BunifuCustomLabel25.Location = New System.Drawing.Point(189, 329)
+        Me.BunifuCustomLabel25.Name = "BunifuCustomLabel25"
+        Me.BunifuCustomLabel25.Size = New System.Drawing.Size(89, 22)
+        Me.BunifuCustomLabel25.TabIndex = 31
+        Me.BunifuCustomLabel25.Text = "FullName :"
+        '
+        'BunifuCustomLabel26
+        '
+        Me.BunifuCustomLabel26.AutoSize = True
+        Me.BunifuCustomLabel26.Location = New System.Drawing.Point(8, 327)
+        Me.BunifuCustomLabel26.Name = "BunifuCustomLabel26"
+        Me.BunifuCustomLabel26.Size = New System.Drawing.Size(48, 22)
+        Me.BunifuCustomLabel26.TabIndex = 30
+        Me.BunifuCustomLabel26.Text = "LTMS"
         '
         'PictureBox7
         '
@@ -2536,23 +2512,23 @@ Partial Class Form2
         Me.PictureBox7.TabIndex = 29
         Me.PictureBox7.TabStop = False
         '
-        'BunifuCustomLabel34
+        'txtltms
         '
-        Me.BunifuCustomLabel34.AutoSize = True
-        Me.BunifuCustomLabel34.Location = New System.Drawing.Point(189, 296)
-        Me.BunifuCustomLabel34.Name = "BunifuCustomLabel34"
-        Me.BunifuCustomLabel34.Size = New System.Drawing.Size(89, 22)
-        Me.BunifuCustomLabel34.TabIndex = 28
-        Me.BunifuCustomLabel34.Text = "FullName :"
+        Me.txtltms.AutoSize = True
+        Me.txtltms.Location = New System.Drawing.Point(189, 296)
+        Me.txtltms.Name = "txtltms"
+        Me.txtltms.Size = New System.Drawing.Size(89, 22)
+        Me.txtltms.TabIndex = 28
+        Me.txtltms.Text = "FullName :"
         '
-        'BunifuCustomLabel41
+        'txtstms
         '
-        Me.BunifuCustomLabel41.AutoSize = True
-        Me.BunifuCustomLabel41.Location = New System.Drawing.Point(189, 264)
-        Me.BunifuCustomLabel41.Name = "BunifuCustomLabel41"
-        Me.BunifuCustomLabel41.Size = New System.Drawing.Size(89, 22)
-        Me.BunifuCustomLabel41.TabIndex = 27
-        Me.BunifuCustomLabel41.Text = "FullName :"
+        Me.txtstms.AutoSize = True
+        Me.txtstms.Location = New System.Drawing.Point(189, 264)
+        Me.txtstms.Name = "txtstms"
+        Me.txtstms.Size = New System.Drawing.Size(89, 22)
+        Me.txtstms.TabIndex = 27
+        Me.txtstms.Text = "FullName :"
         '
         'BunifuCustomLabel42
         '
@@ -2572,23 +2548,23 @@ Partial Class Form2
         Me.BunifuCustomLabel43.TabIndex = 25
         Me.BunifuCustomLabel43.Text = "STMS"
         '
-        'BunifuCustomLabel30
+        'txtltcl
         '
-        Me.BunifuCustomLabel30.AutoSize = True
-        Me.BunifuCustomLabel30.Location = New System.Drawing.Point(189, 237)
-        Me.BunifuCustomLabel30.Name = "BunifuCustomLabel30"
-        Me.BunifuCustomLabel30.Size = New System.Drawing.Size(89, 22)
-        Me.BunifuCustomLabel30.TabIndex = 24
-        Me.BunifuCustomLabel30.Text = "FullName :"
+        Me.txtltcl.AutoSize = True
+        Me.txtltcl.Location = New System.Drawing.Point(189, 237)
+        Me.txtltcl.Name = "txtltcl"
+        Me.txtltcl.Size = New System.Drawing.Size(89, 22)
+        Me.txtltcl.TabIndex = 24
+        Me.txtltcl.Text = "FullName :"
         '
-        'BunifuCustomLabel38
+        'txtstcl
         '
-        Me.BunifuCustomLabel38.AutoSize = True
-        Me.BunifuCustomLabel38.Location = New System.Drawing.Point(189, 206)
-        Me.BunifuCustomLabel38.Name = "BunifuCustomLabel38"
-        Me.BunifuCustomLabel38.Size = New System.Drawing.Size(89, 22)
-        Me.BunifuCustomLabel38.TabIndex = 23
-        Me.BunifuCustomLabel38.Text = "FullName :"
+        Me.txtstcl.AutoSize = True
+        Me.txtstcl.Location = New System.Drawing.Point(189, 206)
+        Me.txtstcl.Name = "txtstcl"
+        Me.txtstcl.Size = New System.Drawing.Size(89, 22)
+        Me.txtstcl.TabIndex = 23
+        Me.txtstcl.Text = "FullName :"
         '
         'BunifuCustomLabel39
         '
@@ -2608,32 +2584,32 @@ Partial Class Form2
         Me.BunifuCustomLabel40.TabIndex = 21
         Me.BunifuCustomLabel40.Text = "STCL"
         '
-        'BunifuCustomLabel31
+        'txtsavgs
         '
-        Me.BunifuCustomLabel31.AutoSize = True
-        Me.BunifuCustomLabel31.Location = New System.Drawing.Point(189, 175)
-        Me.BunifuCustomLabel31.Name = "BunifuCustomLabel31"
-        Me.BunifuCustomLabel31.Size = New System.Drawing.Size(89, 22)
-        Me.BunifuCustomLabel31.TabIndex = 20
-        Me.BunifuCustomLabel31.Text = "FullName :"
+        Me.txtsavgs.AutoSize = True
+        Me.txtsavgs.Location = New System.Drawing.Point(189, 175)
+        Me.txtsavgs.Name = "txtsavgs"
+        Me.txtsavgs.Size = New System.Drawing.Size(89, 22)
+        Me.txtsavgs.TabIndex = 20
+        Me.txtsavgs.Text = "FullName :"
         '
-        'BunifuCustomLabel32
+        'txtshare
         '
-        Me.BunifuCustomLabel32.AutoSize = True
-        Me.BunifuCustomLabel32.Location = New System.Drawing.Point(189, 144)
-        Me.BunifuCustomLabel32.Name = "BunifuCustomLabel32"
-        Me.BunifuCustomLabel32.Size = New System.Drawing.Size(89, 22)
-        Me.BunifuCustomLabel32.TabIndex = 19
-        Me.BunifuCustomLabel32.Text = "FullName :"
+        Me.txtshare.AutoSize = True
+        Me.txtshare.Location = New System.Drawing.Point(189, 144)
+        Me.txtshare.Name = "txtshare"
+        Me.txtshare.Size = New System.Drawing.Size(89, 22)
+        Me.txtshare.TabIndex = 19
+        Me.txtshare.Text = "FullName :"
         '
-        'BunifuCustomLabel33
+        'txtmd
         '
-        Me.BunifuCustomLabel33.AutoSize = True
-        Me.BunifuCustomLabel33.Location = New System.Drawing.Point(189, 113)
-        Me.BunifuCustomLabel33.Name = "BunifuCustomLabel33"
-        Me.BunifuCustomLabel33.Size = New System.Drawing.Size(89, 22)
-        Me.BunifuCustomLabel33.TabIndex = 18
-        Me.BunifuCustomLabel33.Text = "FullName :"
+        Me.txtmd.AutoSize = True
+        Me.txtmd.Location = New System.Drawing.Point(189, 113)
+        Me.txtmd.Name = "txtmd"
+        Me.txtmd.Size = New System.Drawing.Size(74, 22)
+        Me.txtmd.TabIndex = 18
+        Me.txtmd.Text = "fullname"
         '
         'BunifuCustomLabel35
         '
@@ -2662,23 +2638,23 @@ Partial Class Form2
         Me.BunifuCustomLabel37.TabIndex = 14
         Me.BunifuCustomLabel37.Text = "Membership Duration :"
         '
-        'BunifuCustomLabel25
+        'txtipps
         '
-        Me.BunifuCustomLabel25.AutoSize = True
-        Me.BunifuCustomLabel25.Location = New System.Drawing.Point(189, 83)
-        Me.BunifuCustomLabel25.Name = "BunifuCustomLabel25"
-        Me.BunifuCustomLabel25.Size = New System.Drawing.Size(89, 22)
-        Me.BunifuCustomLabel25.TabIndex = 11
-        Me.BunifuCustomLabel25.Text = "FullName :"
+        Me.txtipps.AutoSize = True
+        Me.txtipps.Location = New System.Drawing.Point(189, 83)
+        Me.txtipps.Name = "txtipps"
+        Me.txtipps.Size = New System.Drawing.Size(89, 22)
+        Me.txtipps.TabIndex = 11
+        Me.txtipps.Text = "FullName :"
         '
-        'BunifuCustomLabel26
+        'txtfname
         '
-        Me.BunifuCustomLabel26.AutoSize = True
-        Me.BunifuCustomLabel26.Location = New System.Drawing.Point(189, 51)
-        Me.BunifuCustomLabel26.Name = "BunifuCustomLabel26"
-        Me.BunifuCustomLabel26.Size = New System.Drawing.Size(89, 22)
-        Me.BunifuCustomLabel26.TabIndex = 10
-        Me.BunifuCustomLabel26.Text = "FullName :"
+        Me.txtfname.AutoSize = True
+        Me.txtfname.Location = New System.Drawing.Point(189, 51)
+        Me.txtfname.Name = "txtfname"
+        Me.txtfname.Size = New System.Drawing.Size(89, 22)
+        Me.txtfname.TabIndex = 10
+        Me.txtfname.Text = "FullName :"
         '
         'BunifuCustomLabel16
         '
@@ -2716,9 +2692,9 @@ Partial Class Form2
         Me.BunifuCustomLabel6.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel6.Location = New System.Drawing.Point(753, 22)
         Me.BunifuCustomLabel6.Name = "BunifuCustomLabel6"
-        Me.BunifuCustomLabel6.Size = New System.Drawing.Size(104, 17)
+        Me.BunifuCustomLabel6.Size = New System.Drawing.Size(92, 17)
         Me.BunifuCustomLabel6.TabIndex = 10
-        Me.BunifuCustomLabel6.Text = "Matric Number"
+        Me.BunifuCustomLabel6.Text = "Enter IPPS No"
         '
         'txtl
         '
@@ -2737,19 +2713,19 @@ Partial Class Form2
         Me.txtl.TabIndex = 9
         Me.txtl.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'ITalk_Button_21
+        'btnloansearch
         '
-        Me.ITalk_Button_21.BackColor = System.Drawing.Color.Transparent
-        Me.ITalk_Button_21.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.ITalk_Button_21.ForeColor = System.Drawing.Color.White
-        Me.ITalk_Button_21.Image = Nothing
-        Me.ITalk_Button_21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ITalk_Button_21.Location = New System.Drawing.Point(1148, 14)
-        Me.ITalk_Button_21.Name = "ITalk_Button_21"
-        Me.ITalk_Button_21.Size = New System.Drawing.Size(66, 33)
-        Me.ITalk_Button_21.TabIndex = 0
-        Me.ITalk_Button_21.Text = "go"
-        Me.ITalk_Button_21.TextAlignment = System.Drawing.StringAlignment.Center
+        Me.btnloansearch.BackColor = System.Drawing.Color.Transparent
+        Me.btnloansearch.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.btnloansearch.ForeColor = System.Drawing.Color.White
+        Me.btnloansearch.Image = Nothing
+        Me.btnloansearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnloansearch.Location = New System.Drawing.Point(1148, 11)
+        Me.btnloansearch.Name = "btnloansearch"
+        Me.btnloansearch.Size = New System.Drawing.Size(66, 33)
+        Me.btnloansearch.TabIndex = 0
+        Me.btnloansearch.Text = "go"
+        Me.btnloansearch.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'GroupBox6
         '
@@ -3299,7 +3275,7 @@ Partial Class Form2
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtl As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents ITalk_Button_21 As EIMCS.iTalk.iTalk_Button_2
+    Friend WithEvents btnloansearch As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents ToolStripProgressBar1 As System.Windows.Forms.ToolStripProgressBar
@@ -3388,11 +3364,9 @@ Partial Class Form2
     Friend WithEvents BunifuCustomLabel80 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents supload As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents imgGSignature As System.Windows.Forms.PictureBox
-    Friend WithEvents txtGdate As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel79 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents puppload As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents imgPsignature As System.Windows.Forms.PictureBox
-    Friend WithEvents txtPdate As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents txtEimcs As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel77 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel78 As Bunifu.Framework.UI.BunifuCustomLabel
@@ -3404,7 +3378,6 @@ Partial Class Form2
     Friend WithEvents BunifuCustomLabel29 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents aupload As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents imgMsignature As System.Windows.Forms.PictureBox
-    Friend WithEvents txtMDate As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents BunifuCustomLabel27 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents Label27 As System.Windows.Forms.Label
     Friend WithEvents BunifuCustomLabel28 As Bunifu.Framework.UI.BunifuCustomLabel
@@ -3416,22 +3389,22 @@ Partial Class Form2
     Friend WithEvents btnsubmit As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents BunifuCustomLabel90 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents ITalk_GroupBox1 As EIMCS.iTalk.iTalk_GroupBox
-    Friend WithEvents BunifuCustomLabel25 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel26 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtipps As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtfname As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel16 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel15 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents BunifuCustomLabel34 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel41 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtltms As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtstms As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel42 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel43 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel30 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel38 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtltcl As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtstcl As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel39 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel40 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel31 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel32 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel33 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtsavgs As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtshare As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtmd As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel35 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel36 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel37 As Bunifu.Framework.UI.BunifuCustomLabel
@@ -3477,10 +3450,15 @@ Partial Class Form2
     Friend WithEvents BunifuCustomLabel24 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel45 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents ITalk_Button_24 As EIMCS.iTalk.iTalk_Button_2
-    Friend WithEvents BunifuMetroTextbox6 As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel47 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuMetroTextbox5 As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents BunifuCustomLabel46 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents BunifuCustomLabel48 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents DateTimePicker4 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DateTimePicker3 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents BunifuCustomLabel25 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel26 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents txtGdate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents txtpdate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents txtMDate As System.Windows.Forms.DateTimePicker
 End Class
