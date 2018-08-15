@@ -160,6 +160,8 @@ Partial Class Form2
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.txtd2 = New System.Windows.Forms.TextBox()
+        Me.txtd1 = New System.Windows.Forms.TextBox()
         Me.ITalk_GroupBox2 = New EIMCS.iTalk.iTalk_GroupBox()
         Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
@@ -183,7 +185,7 @@ Partial Class Form2
         Me.ITalk_GroupBox1 = New EIMCS.iTalk.iTalk_GroupBox()
         Me.BunifuCustomLabel25 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel26 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.loansign = New System.Windows.Forms.PictureBox()
         Me.txtltms = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtstms = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel42 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -202,9 +204,9 @@ Partial Class Form2
         Me.txtfname = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel16 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel15 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.loanpassport = New System.Windows.Forms.PictureBox()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.txtl = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.txtlean = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.btnloansearch = New EIMCS.iTalk.iTalk_Button_2()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.Label22 = New System.Windows.Forms.Label()
@@ -267,8 +269,8 @@ Partial Class Form2
         Me.GroupBox4.SuspendLayout()
         Me.ITalk_GroupBox2.SuspendLayout()
         Me.ITalk_GroupBox1.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.loansign, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.loanpassport, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2168,7 +2170,7 @@ Partial Class Form2
         Me.GroupBox3.Controls.Add(Me.StatusStrip1)
         Me.GroupBox3.Controls.Add(Me.GroupBox4)
         Me.GroupBox3.Controls.Add(Me.BunifuCustomLabel6)
-        Me.GroupBox3.Controls.Add(Me.txtl)
+        Me.GroupBox3.Controls.Add(Me.txtlean)
         Me.GroupBox3.Controls.Add(Me.btnloansearch)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox3.Location = New System.Drawing.Point(0, 148)
@@ -2189,8 +2191,7 @@ Partial Class Form2
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(120, 17)
-        Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(0, 17)
         '
         'ToolStripProgressBar1
         '
@@ -2199,6 +2200,8 @@ Partial Class Form2
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.txtd2)
+        Me.GroupBox4.Controls.Add(Me.txtd1)
         Me.GroupBox4.Controls.Add(Me.ITalk_GroupBox2)
         Me.GroupBox4.Controls.Add(Me.ITalk_GroupBox1)
         Me.GroupBox4.Location = New System.Drawing.Point(6, 45)
@@ -2206,6 +2209,20 @@ Partial Class Form2
         Me.GroupBox4.Size = New System.Drawing.Size(1208, 533)
         Me.GroupBox4.TabIndex = 11
         Me.GroupBox4.TabStop = False
+        '
+        'txtd2
+        '
+        Me.txtd2.Location = New System.Drawing.Point(875, 485)
+        Me.txtd2.Name = "txtd2"
+        Me.txtd2.Size = New System.Drawing.Size(100, 26)
+        Me.txtd2.TabIndex = 3
+        '
+        'txtd1
+        '
+        Me.txtd1.Location = New System.Drawing.Point(750, 485)
+        Me.txtd1.Name = "txtd1"
+        Me.txtd1.Size = New System.Drawing.Size(100, 26)
+        Me.txtd1.TabIndex = 2
         '
         'ITalk_GroupBox2
         '
@@ -2455,7 +2472,7 @@ Partial Class Form2
         Me.ITalk_GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel25)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel26)
-        Me.ITalk_GroupBox1.Controls.Add(Me.PictureBox7)
+        Me.ITalk_GroupBox1.Controls.Add(Me.loansign)
         Me.ITalk_GroupBox1.Controls.Add(Me.txtltms)
         Me.ITalk_GroupBox1.Controls.Add(Me.txtstms)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel42)
@@ -2474,7 +2491,7 @@ Partial Class Form2
         Me.ITalk_GroupBox1.Controls.Add(Me.txtfname)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel16)
         Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel15)
-        Me.ITalk_GroupBox1.Controls.Add(Me.PictureBox2)
+        Me.ITalk_GroupBox1.Controls.Add(Me.loanpassport)
         Me.ITalk_GroupBox1.Location = New System.Drawing.Point(26, 12)
         Me.ITalk_GroupBox1.MinimumSize = New System.Drawing.Size(136, 50)
         Me.ITalk_GroupBox1.Name = "ITalk_GroupBox1"
@@ -2488,9 +2505,9 @@ Partial Class Form2
         Me.BunifuCustomLabel25.AutoSize = True
         Me.BunifuCustomLabel25.Location = New System.Drawing.Point(189, 329)
         Me.BunifuCustomLabel25.Name = "BunifuCustomLabel25"
-        Me.BunifuCustomLabel25.Size = New System.Drawing.Size(89, 22)
+        Me.BunifuCustomLabel25.Size = New System.Drawing.Size(19, 22)
         Me.BunifuCustomLabel25.TabIndex = 31
-        Me.BunifuCustomLabel25.Text = "FullName :"
+        Me.BunifuCustomLabel25.Text = "_"
         '
         'BunifuCustomLabel26
         '
@@ -2501,34 +2518,34 @@ Partial Class Form2
         Me.BunifuCustomLabel26.TabIndex = 30
         Me.BunifuCustomLabel26.Text = "LTMS"
         '
-        'PictureBox7
+        'loansign
         '
-        Me.PictureBox7.BackgroundImage = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
-        Me.PictureBox7.Image = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
-        Me.PictureBox7.Location = New System.Drawing.Point(407, 262)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(130, 53)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 29
-        Me.PictureBox7.TabStop = False
+        Me.loansign.BackgroundImage = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
+        Me.loansign.Image = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
+        Me.loansign.Location = New System.Drawing.Point(407, 262)
+        Me.loansign.Name = "loansign"
+        Me.loansign.Size = New System.Drawing.Size(130, 53)
+        Me.loansign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.loansign.TabIndex = 29
+        Me.loansign.TabStop = False
         '
         'txtltms
         '
         Me.txtltms.AutoSize = True
         Me.txtltms.Location = New System.Drawing.Point(189, 296)
         Me.txtltms.Name = "txtltms"
-        Me.txtltms.Size = New System.Drawing.Size(89, 22)
+        Me.txtltms.Size = New System.Drawing.Size(19, 22)
         Me.txtltms.TabIndex = 28
-        Me.txtltms.Text = "FullName :"
+        Me.txtltms.Text = "_"
         '
         'txtstms
         '
         Me.txtstms.AutoSize = True
         Me.txtstms.Location = New System.Drawing.Point(189, 264)
         Me.txtstms.Name = "txtstms"
-        Me.txtstms.Size = New System.Drawing.Size(89, 22)
+        Me.txtstms.Size = New System.Drawing.Size(19, 22)
         Me.txtstms.TabIndex = 27
-        Me.txtstms.Text = "FullName :"
+        Me.txtstms.Text = "_"
         '
         'BunifuCustomLabel42
         '
@@ -2553,18 +2570,18 @@ Partial Class Form2
         Me.txtltcl.AutoSize = True
         Me.txtltcl.Location = New System.Drawing.Point(189, 237)
         Me.txtltcl.Name = "txtltcl"
-        Me.txtltcl.Size = New System.Drawing.Size(89, 22)
+        Me.txtltcl.Size = New System.Drawing.Size(19, 22)
         Me.txtltcl.TabIndex = 24
-        Me.txtltcl.Text = "FullName :"
+        Me.txtltcl.Text = "_"
         '
         'txtstcl
         '
         Me.txtstcl.AutoSize = True
         Me.txtstcl.Location = New System.Drawing.Point(189, 206)
         Me.txtstcl.Name = "txtstcl"
-        Me.txtstcl.Size = New System.Drawing.Size(89, 22)
+        Me.txtstcl.Size = New System.Drawing.Size(19, 22)
         Me.txtstcl.TabIndex = 23
-        Me.txtstcl.Text = "FullName :"
+        Me.txtstcl.Text = "_"
         '
         'BunifuCustomLabel39
         '
@@ -2589,27 +2606,27 @@ Partial Class Form2
         Me.txtsavgs.AutoSize = True
         Me.txtsavgs.Location = New System.Drawing.Point(189, 175)
         Me.txtsavgs.Name = "txtsavgs"
-        Me.txtsavgs.Size = New System.Drawing.Size(89, 22)
+        Me.txtsavgs.Size = New System.Drawing.Size(19, 22)
         Me.txtsavgs.TabIndex = 20
-        Me.txtsavgs.Text = "FullName :"
+        Me.txtsavgs.Text = "_"
         '
         'txtshare
         '
         Me.txtshare.AutoSize = True
         Me.txtshare.Location = New System.Drawing.Point(189, 144)
         Me.txtshare.Name = "txtshare"
-        Me.txtshare.Size = New System.Drawing.Size(89, 22)
+        Me.txtshare.Size = New System.Drawing.Size(19, 22)
         Me.txtshare.TabIndex = 19
-        Me.txtshare.Text = "FullName :"
+        Me.txtshare.Text = "_"
         '
         'txtmd
         '
         Me.txtmd.AutoSize = True
         Me.txtmd.Location = New System.Drawing.Point(189, 113)
         Me.txtmd.Name = "txtmd"
-        Me.txtmd.Size = New System.Drawing.Size(74, 22)
+        Me.txtmd.Size = New System.Drawing.Size(19, 22)
         Me.txtmd.TabIndex = 18
-        Me.txtmd.Text = "fullname"
+        Me.txtmd.Text = "_"
         '
         'BunifuCustomLabel35
         '
@@ -2643,18 +2660,18 @@ Partial Class Form2
         Me.txtipps.AutoSize = True
         Me.txtipps.Location = New System.Drawing.Point(189, 83)
         Me.txtipps.Name = "txtipps"
-        Me.txtipps.Size = New System.Drawing.Size(89, 22)
+        Me.txtipps.Size = New System.Drawing.Size(19, 22)
         Me.txtipps.TabIndex = 11
-        Me.txtipps.Text = "FullName :"
+        Me.txtipps.Text = "_"
         '
         'txtfname
         '
         Me.txtfname.AutoSize = True
         Me.txtfname.Location = New System.Drawing.Point(189, 51)
         Me.txtfname.Name = "txtfname"
-        Me.txtfname.Size = New System.Drawing.Size(89, 22)
+        Me.txtfname.Size = New System.Drawing.Size(19, 22)
         Me.txtfname.TabIndex = 10
-        Me.txtfname.Text = "FullName :"
+        Me.txtfname.Text = "_"
         '
         'BunifuCustomLabel16
         '
@@ -2674,15 +2691,15 @@ Partial Class Form2
         Me.BunifuCustomLabel15.TabIndex = 6
         Me.BunifuCustomLabel15.Text = "FullName :"
         '
-        'PictureBox2
+        'loanpassport
         '
-        Me.PictureBox2.Image = Global.EIMCS.My.Resources.Resources.login1
-        Me.PictureBox2.Location = New System.Drawing.Point(407, 51)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(130, 137)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 5
-        Me.PictureBox2.TabStop = False
+        Me.loanpassport.Image = Global.EIMCS.My.Resources.Resources.login1
+        Me.loanpassport.Location = New System.Drawing.Point(407, 51)
+        Me.loanpassport.Name = "loanpassport"
+        Me.loanpassport.Size = New System.Drawing.Size(130, 137)
+        Me.loanpassport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.loanpassport.TabIndex = 5
+        Me.loanpassport.TabStop = False
         '
         'BunifuCustomLabel6
         '
@@ -2696,22 +2713,22 @@ Partial Class Form2
         Me.BunifuCustomLabel6.TabIndex = 10
         Me.BunifuCustomLabel6.Text = "Enter IPPS No"
         '
-        'txtl
+        'txtlean
         '
-        Me.txtl.BorderColorFocused = System.Drawing.Color.Blue
-        Me.txtl.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtl.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.txtl.BorderThickness = 3
-        Me.txtl.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtl.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtl.isPassword = False
-        Me.txtl.Location = New System.Drawing.Point(879, 14)
-        Me.txtl.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtl.Name = "txtl"
-        Me.txtl.Size = New System.Drawing.Size(262, 31)
-        Me.txtl.TabIndex = 9
-        Me.txtl.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtlean.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtlean.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtlean.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtlean.BorderThickness = 3
+        Me.txtlean.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtlean.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtlean.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtlean.isPassword = False
+        Me.txtlean.Location = New System.Drawing.Point(879, 14)
+        Me.txtlean.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtlean.Name = "txtlean"
+        Me.txtlean.Size = New System.Drawing.Size(262, 31)
+        Me.txtlean.TabIndex = 9
+        Me.txtlean.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'btnloansearch
         '
@@ -3212,12 +3229,13 @@ Partial Class Form2
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ITalk_GroupBox2.ResumeLayout(False)
         Me.ITalk_GroupBox2.PerformLayout()
         Me.ITalk_GroupBox1.ResumeLayout(False)
         Me.ITalk_GroupBox1.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.loansign, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.loanpassport, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3274,7 +3292,7 @@ Partial Class Form2
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents BunifuCustomLabel6 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents txtl As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents txtlean As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents btnloansearch As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
@@ -3393,7 +3411,7 @@ Partial Class Form2
     Friend WithEvents txtfname As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel16 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel15 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents loanpassport As System.Windows.Forms.PictureBox
     Friend WithEvents txtltms As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtstms As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel42 As Bunifu.Framework.UI.BunifuCustomLabel
@@ -3452,7 +3470,7 @@ Partial Class Form2
     Friend WithEvents ITalk_Button_24 As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents BunifuCustomLabel47 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel46 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents loansign As System.Windows.Forms.PictureBox
     Friend WithEvents BunifuCustomLabel48 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents DateTimePicker4 As System.Windows.Forms.DateTimePicker
     Friend WithEvents DateTimePicker3 As System.Windows.Forms.DateTimePicker
@@ -3461,4 +3479,6 @@ Partial Class Form2
     Friend WithEvents txtGdate As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtpdate As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtMDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents txtd2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtd1 As System.Windows.Forms.TextBox
 End Class

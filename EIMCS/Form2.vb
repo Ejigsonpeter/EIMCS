@@ -1022,7 +1022,7 @@ Public Class Form2
             command.Connection = Myconnection
 
             '----retrieve student's particulars
-            command.CommandText = "SELECT * FROM members WHERE ippsno = '" & txtSearch.Text & "'"
+            command.CommandText = "SELECT * FROM members WHERE ippsno = '" & txtlean.Text & "'"
 
             reader = command.ExecuteReader(CommandBehavior.CloseConnection)
             Dim count As Integer
@@ -1035,18 +1035,31 @@ Public Class Form2
                 MsgBox(count & " Matching Record found in Database  ", vbInformation)
                 txtfname.Text = reader.Item("fullname").ToString
                 txtipps.Text = reader.Item("ippsno").ToString
-                a = reader.Item("applicantdate").ToString
-                Dim date1 As Date
-                Dim date2 As Date
-                ' date1 = a
-                'date2 = 
-                ' txtmd.Text = DateDiff((date1, date2))
+                txtd1.Text = reader.Item("applicantdate").ToString
 
 
+                Dim imagepic As Byte() = CType(reader("passport"), Byte())
+                Dim ms As New System.IO.MemoryStream(imagepic)
+                Dim img As Image = Image.FromStream(ms)
+                Me.loanpassport.Image = img
+                'studPic.Image = image.FromFile("image.jpg")
+                loanpassport.SizeMode = PictureBoxSizeMode.StretchImage
+                loanpassport.Refresh()
 
+                Dim imagepic1 As Byte() = CType(reader("signature"), Byte())
+                Dim ms1 As New System.IO.MemoryStream(imagepic1)
+                Dim img1 As Image = Image.FromStream(ms1)
+                Me.loansign.Image = img1
+                'studPic.Image = image.FromFile("image.jpg")
+                loansign.SizeMode = PictureBoxSizeMode.StretchImage
+                loansign.Refresh()
 
-                'txtlevel.Text = .Item("level").ToString
-                'txtdept.Text = reader.Item("department").ToString
+                Dim x As Date = Date.Today()
+                txtd2.Text = x
+                Dim firstdate = CDate(txtd1.Text)
+                Dim seconddate = CDate(txtd2.Text)
+                Dim msg2 As String = DateDiff(DateInterval.Month, firstdate, seconddate)
+                txtmd.Text = msg2 & "  " & " month (s)"
 
                 Myconnection.Close()
 
@@ -1065,12 +1078,12 @@ Public Class Form2
     End Sub
 
     Private Sub btnloansearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnloansearch.Click
-
+        searchloan()
     End Sub
 
 
-   
-   
+
+
 
     Private Sub txtphoneno1_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtphoneno1.Validated
         If Len(txtphoneno1.Text) > 11 Then
@@ -1118,5 +1131,9 @@ Public Class Form2
             nokPhoneno2.Text = ""
             nokPhoneno2.Focus()
         End If
+    End Sub
+
+    Private Sub DateTimePicker3_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker3.ValueChanged
+
     End Sub
 End Class
