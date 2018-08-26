@@ -926,10 +926,10 @@ Public Class Form2
     End Sub
 
     Private Sub txtm_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtm.SelectedIndexChanged
-
-        If txtm.SelectedIndex = 0 Then  'LTCL
+        If txtm.SelectedIndex = 0 Then 'LTCL
             txtmonth.Text = "24"
             txtinterestRate.Text = "0"
+
         ElseIf txtm.SelectedIndex = 1 Then 'STCL
             txtmonth.Text = "6"
             txtinterestRate.Text = "0"
@@ -1012,6 +1012,42 @@ Public Class Form2
 
     End Sub
 
+    Sub totalshare()
+       myconnection.Open()
+        Dim selectQuery As String = "select * from shares where ippsno = '" & txtlean.Text & "'"
+        cmd = New MySql.Data.MySqlClient.MySqlCommand(selectQuery, Myconnection)
+        da = New MySql.Data.MySqlClient.MySqlDataAdapter(cmd)
+        ds = New DataSet
+        da.Fill(ds)
+        DataGridView1.DataSource = ds.Tables(0)
+        Dim a As Double
+        For Line As Integer = 0 To DataGridView1.RowCount - 1
+            a = (a + DataGridView1.Rows(Line).Cells(3).Value)
+          
+
+        Next
+        txtshare.Text = a
+        Myconnection.Close()
+    End Sub
+    Sub totalsavings()
+        Myconnection.Open()
+        Dim selectQuery As String = "select * from savings where ippsno = '" & txtlean.Text & "'"
+        cmd = New MySql.Data.MySqlClient.MySqlCommand(selectQuery, Myconnection)
+        da = New MySql.Data.MySqlClient.MySqlDataAdapter(cmd)
+        ds = New DataSet
+        da.Fill(ds)
+        DataGridView1.DataSource = ds.Tables(0)
+        Dim a As Double
+        For Line As Integer = 0 To DataGridView1.RowCount - 1
+            a = (a + DataGridView1.Rows(Line).Cells(3).Value)
+
+
+        Next
+        txtsavgs.Text = a
+        Myconnection.Close()
+    End Sub
+
+
 
     Sub searchloan()
         Try
@@ -1062,6 +1098,10 @@ Public Class Form2
                 txtmd.Text = msg2 & "  " & " month (s)"
 
                 Myconnection.Close()
+                totalshare()
+                totalsavings()
+
+
 
 
             Else
@@ -1133,7 +1173,220 @@ Public Class Form2
         End If
     End Sub
 
-    Private Sub DateTimePicker3_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker3.ValueChanged
+    Sub clearloan()
+        txtm.Text = ""
+        txtamountneeded.Text = ""
+        txtamountpayable.Text = ""
+        txtmonth.Text = ""
+        txtinterestRate.Text = ""
+        DateTimePicker3.Text = ""
+        DateTimePicker4.Text = ""
 
+        txtfname.Text = ""
+        txtipps.Text = ""
+        txtmd.Text = ""
+        txtshare.Text = ""
+        txtsavgs.Text = ""
+        txtltcl.Text = ""
+        txtltms.Text = ""
+        txtstcl.Text = ""
+        txtstms.Text = ""
+
+        loanpassport.Image = BackgroundImage
+        loansign.Image = BackgroundImage
+
+    End Sub
+    Private Sub btnclearloan_Click(sender As System.Object, e As System.EventArgs) Handles btnclearloan.Click
+        clearloan()
+    End Sub
+
+    Sub validateloan()
+        If txtfname.Text = "" Then
+            MsgBox("Please perform a search query first to retrive Fullname", vbInformation)
+        ElseIf txtipps.Text = "" Then
+            MsgBox("Please perform a search query first to retrive IPPS NO", vbInformation)
+        ElseIf txtm.Text = "" Then
+            MsgBox("Please select a loan type", vbInformation)
+            txtm.Focus()
+        ElseIf txtamountneeded.Text = "" Then
+            MsgBox("Please Enter amount needed", vbInformation)
+            txtamountneeded.Focus()
+        Else
+            validateloan2()
+
+
+        End If
+    End Sub
+
+    Sub validateloan2()
+        Try
+
+            If txtm.SelectedIndex = 0 Then 'LTCL
+                Myconnection.Close()
+                Myconnection.Open()
+                Dim reader As MySqlDataReader
+                Dim command As MySqlCommand = New MySqlCommand
+                command.Connection = Myconnection
+                Dim s, type1, type2, type3 As String
+                s = "unpaid"
+
+                type1 = "Long Term Cash Loan LTCL"
+                type2 = "Short Term Cash Loan STCL"
+                type3 = "Long Term Material Sales LMTS"
+                '----retrieve student's particulars
+                command.CommandText = "SELECT * FROM loan WHERE ippsno  = '" & txtipps.Text & "' and loantype = '" & txtm.Text & "' or  loantype = '" & type2 & "' or loantype = '" & type3 & "'"
+                reader = command.ExecuteReader(CommandBehavior.CloseConnection)
+                Dim count As Integer
+                count = 0
+                While reader.Read
+                    count = count + 1
+                End While
+                If count > 0 Then
+
+                    MsgBox(count & " Matching Record found in Database , Hence you are not eligible for this loan . Please you cannot service LTCL,STCL or LTMS at thesame time", vbInformation)
+
+
+                Else
+                    If ((txtamountneeded.Text) <= (txtsavgs.Text * 2)) Then
+                        MsgBox("You are eligible for this loan", vbInformation)
+                        insertloan()
+                    Else
+                        MsgBox("You are not eligible for this loan. your twice your savings is less than the amount needed", vbInformation)
+                    End If
+
+
+                End If
+                '---reset the timer to another five seconds---
+                'Timer1.Enabled = False
+                'Timer1.Enabled = True
+                Myconnection.Close()
+
+
+            ElseIf txtm.SelectedIndex = 1 Then 'STCL
+                Myconnection.Close()
+                Myconnection.Open()
+                Dim reader As MySqlDataReader
+                Dim command As MySqlCommand = New MySqlCommand
+                command.Connection = Myconnection
+                Dim s, type1, type2, type3 As String
+                s = "unpaid"
+
+                type1 = "Long Term Cash Loan LTCL"
+                type2 = "Short Term Cash Loan STCL"
+                type3 = "Long Term Material Sales LMTS"
+                '----retrieve student's particulars
+                command.CommandText = "SELECT * FROM loan WHERE ippsno  = '" & txtipps.Text & "' and loantype = '" & txtm.Text & "' or  loantype = '" & type1 & "' or loantype = '" & type3 & "'"
+                reader = command.ExecuteReader(CommandBehavior.CloseConnection)
+                Dim count As Integer
+                count = 0
+                While reader.Read
+                    count = count + 1
+                End While
+                If count > 0 Then
+
+                    MsgBox(count & " Matching Record found in Database , Hence you are not eligible for this loan . Please you cannot service LTCL,STCL or LTMS at thesame time", vbInformation)
+
+
+                Else
+                    insertloan()
+
+                End If
+                '---reset the timer to another five seconds---
+                'Timer1.Enabled = False
+                'Timer1.Enabled = True
+                Myconnection.Close()
+
+
+            ElseIf txtm.SelectedIndex = 2 Then 'LMTS
+                Myconnection.Close()
+                Myconnection.Open()
+                Dim reader As MySqlDataReader
+                Dim command As MySqlCommand = New MySqlCommand
+                command.Connection = Myconnection
+                Dim s, type1, type2, type3 As String
+                s = "unpaid"
+
+                type1 = "Long Term Cash Loan LTCL"
+                type2 = "Short Term Cash Loan STCL"
+                type3 = "Long Term Material Sales LMTS"
+                '----retrieve student's particulars
+                command.CommandText = "SELECT * FROM loan WHERE ippsno  = '" & txtipps.Text & "' and loantype = '" & txtm.Text & "' or  loantype = '" & type1 & "' or loantype = '" & type2 & "'"
+                reader = command.ExecuteReader(CommandBehavior.CloseConnection)
+                Dim count As Integer
+                count = 0
+                While reader.Read
+                    count = count + 1
+                End While
+                If count > 0 Then
+
+                    MsgBox(count & " Matching Record found in Database , Hence you are not eligible for this loan . Please you cannot service LTCL,STCL or LTMS at thesame time", vbInformation)
+
+
+                Else
+                    If (((txtamountneeded.Text) <= (txtsavgs.Text * 3)) And ((txtamountneeded.Text) <= (txtshare.Text * 3))) Then
+                        MsgBox("You are eligible for this loan", vbInformation)
+                        insertloan()
+                    Else
+                        MsgBox("You are not eligible for this loan. your twice your savings is less than the amount needed", vbInformation)
+                    End If
+
+
+                End If
+                '---reset the timer to another five seconds---
+                'Timer1.Enabled = False
+                'Timer1.Enabled = True
+                Myconnection.Close()
+
+            End If
+
+
+
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+    Sub insertloan()
+        Try
+            Myconnection.Close()
+            Myconnection.Open()
+
+
+            Dim sql As String
+            sql = "insert into loan (fullname,ippsno,loantype,paymentduration,amountpayble,amountneeded,interestrate,startdate,enddate,status,treasurername)" _
+                & "VALUES(@fullname,@ippsno,@loantype,@paymentduration,@amountpayable,@amountneeded,@interestrate,@startdate,@enddate,@status,@tresname)"
+
+            Dim cmdx As New MySqlCommand(sql, Myconnection)
+            cmdx.Parameters.AddWithValue("@fullname", txtfname.Text)
+            cmdx.Parameters.AddWithValue("@ippsno", txtipps.Text)
+            cmdx.Parameters.AddWithValue("@loantype", txtm.Text)
+            cmdx.Parameters.AddWithValue("@paymentduration", txtmonth.Text)
+            cmdx.Parameters.AddWithValue("@amountpayable", txtamountpayable.Text)
+            cmdx.Parameters.AddWithValue("@amountneeded", txtamountneeded.Text)
+            cmdx.Parameters.AddWithValue("@interestrate", txtinterestRate.Text)
+            cmdx.Parameters.AddWithValue("@startdate", DateTimePicker3.Text)
+            cmdx.Parameters.AddWithValue("@enddate", DateTimePicker4.Text)
+            cmdx.Parameters.AddWithValue("@status", "upaid")
+            cmdx.Parameters.AddWithValue("@tresname", TextBox1.Text)
+
+
+
+            cmdx.ExecuteNonQuery()
+            MsgBox("Information Saved Successfully ", vbInformation)
+            Myconnection.Close()
+            clearloan()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+        End Try
+    End Sub
+
+    Private Sub btnloansub_Click(sender As System.Object, e As System.EventArgs) Handles btnloansub.Click
+        validateloan()
+    End Sub
+
+    Private Sub txtm_Validated(sender As Object, e As System.EventArgs) Handles txtm.Validated
+        
     End Sub
 End Class

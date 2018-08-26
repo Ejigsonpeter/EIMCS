@@ -156,6 +156,7 @@ Partial Class Form2
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.BunifuCards1 = New Bunifu.Framework.UI.BunifuCards()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
@@ -168,8 +169,8 @@ Partial Class Form2
         Me.BunifuCustomLabel48 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel47 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel46 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.ITalk_Button_23 = New EIMCS.iTalk.iTalk_Button_2()
-        Me.ITalk_Button_22 = New EIMCS.iTalk.iTalk_Button_2()
+        Me.btnclearloan = New EIMCS.iTalk.iTalk_Button_2()
+        Me.btnloansub = New EIMCS.iTalk.iTalk_Button_2()
         Me.BunifuCustomLabel44 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel18 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtamountpayable = New Bunifu.Framework.UI.BunifuMetroTextbox()
@@ -183,8 +184,7 @@ Partial Class Form2
         Me.BunifuCustomLabel56 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel57 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.ITalk_GroupBox1 = New EIMCS.iTalk.iTalk_GroupBox()
-        Me.BunifuCustomLabel25 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel26 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.loansign = New System.Windows.Forms.PictureBox()
         Me.txtltms = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.txtstms = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -269,6 +269,7 @@ Partial Class Form2
         Me.GroupBox4.SuspendLayout()
         Me.ITalk_GroupBox2.SuspendLayout()
         Me.ITalk_GroupBox1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.loansign, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.loanpassport, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
@@ -396,7 +397,7 @@ Partial Class Form2
         Me.Label10.Size = New System.Drawing.Size(486, 16)
         Me.Label10.TabIndex = 6
         Me.Label10.Text = "National Exammination council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
-            ""
+    ""
         '
         'Label9
         '
@@ -455,8 +456,8 @@ Partial Class Form2
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.group1)
         Me.GroupBox1.Controls.Add(Me.group2)
         Me.GroupBox1.Controls.Add(Me.group3)
@@ -514,7 +515,7 @@ Partial Class Form2
         Me.group1.Controls.Add(Me.BunifuCustomLabel1)
         Me.group1.Location = New System.Drawing.Point(3, 90)
         Me.group1.Name = "group1"
-        Me.group1.Size = New System.Drawing.Size(1195, 463)
+        Me.group1.Size = New System.Drawing.Size(1204, 464)
         Me.group1.TabIndex = 141
         Me.group1.TabStop = False
         '
@@ -541,7 +542,7 @@ Partial Class Form2
         Me.Label2.Size = New System.Drawing.Size(752, 22)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "I hereby apply to join the society and the necessary information about me are as " & _
-            "follows :"
+    "follows :"
         '
         'btnUploadPicture
         '
@@ -1598,7 +1599,7 @@ Partial Class Form2
         Me.BunifuCustomLabel107.Size = New System.Drawing.Size(609, 21)
         Me.BunifuCustomLabel107.TabIndex = 98
         Me.BunifuCustomLabel107.Text = "Next of Kin : (Note that the first next of kin will be given priority (Surname fi" & _
-            "rst))"
+    "rst))"
         '
         'btnnext2
         '
@@ -2023,7 +2024,7 @@ Partial Class Form2
         Me.BunifuCustomLabel84.Size = New System.Drawing.Size(594, 42)
         Me.BunifuCustomLabel84.TabIndex = 105
         Me.BunifuCustomLabel84.Text = "declare that the information proved above is to the best of my knowledge " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "correc" & _
-            "t and i Promise to abide by the provisions of the society Bye-law."
+    "t and i Promise to abide by the provisions of the society Bye-law."
         '
         'BunifuCustomLabel87
         '
@@ -2167,6 +2168,7 @@ Partial Class Form2
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.TextBox1)
         Me.GroupBox3.Controls.Add(Me.StatusStrip1)
         Me.GroupBox3.Controls.Add(Me.GroupBox4)
         Me.GroupBox3.Controls.Add(Me.BunifuCustomLabel6)
@@ -2178,6 +2180,13 @@ Partial Class Form2
         Me.GroupBox3.Size = New System.Drawing.Size(1235, 603)
         Me.GroupBox3.TabIndex = 4
         Me.GroupBox3.TabStop = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(250, 15)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(106, 26)
+        Me.TextBox1.TabIndex = 13
         '
         'StatusStrip1
         '
@@ -2216,6 +2225,7 @@ Partial Class Form2
         Me.txtd2.Name = "txtd2"
         Me.txtd2.Size = New System.Drawing.Size(100, 26)
         Me.txtd2.TabIndex = 3
+        Me.txtd2.Visible = False
         '
         'txtd1
         '
@@ -2223,6 +2233,7 @@ Partial Class Form2
         Me.txtd1.Name = "txtd1"
         Me.txtd1.Size = New System.Drawing.Size(100, 26)
         Me.txtd1.TabIndex = 2
+        Me.txtd1.Visible = False
         '
         'ITalk_GroupBox2
         '
@@ -2232,8 +2243,8 @@ Partial Class Form2
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel48)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel47)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel46)
-        Me.ITalk_GroupBox2.Controls.Add(Me.ITalk_Button_23)
-        Me.ITalk_GroupBox2.Controls.Add(Me.ITalk_Button_22)
+        Me.ITalk_GroupBox2.Controls.Add(Me.btnclearloan)
+        Me.ITalk_GroupBox2.Controls.Add(Me.btnloansub)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel44)
         Me.ITalk_GroupBox2.Controls.Add(Me.BunifuCustomLabel18)
         Me.ITalk_GroupBox2.Controls.Add(Me.txtamountpayable)
@@ -2299,33 +2310,33 @@ Partial Class Form2
         Me.BunifuCustomLabel46.TabIndex = 38
         Me.BunifuCustomLabel46.Text = "Start Date"
         '
-        'ITalk_Button_23
+        'btnclearloan
         '
-        Me.ITalk_Button_23.BackColor = System.Drawing.Color.Transparent
-        Me.ITalk_Button_23.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.ITalk_Button_23.ForeColor = System.Drawing.Color.White
-        Me.ITalk_Button_23.Image = Nothing
-        Me.ITalk_Button_23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ITalk_Button_23.Location = New System.Drawing.Point(219, 353)
-        Me.ITalk_Button_23.Name = "ITalk_Button_23"
-        Me.ITalk_Button_23.Size = New System.Drawing.Size(88, 33)
-        Me.ITalk_Button_23.TabIndex = 37
-        Me.ITalk_Button_23.Text = "Clear"
-        Me.ITalk_Button_23.TextAlignment = System.Drawing.StringAlignment.Center
+        Me.btnclearloan.BackColor = System.Drawing.Color.Transparent
+        Me.btnclearloan.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.btnclearloan.ForeColor = System.Drawing.Color.White
+        Me.btnclearloan.Image = Nothing
+        Me.btnclearloan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnclearloan.Location = New System.Drawing.Point(219, 353)
+        Me.btnclearloan.Name = "btnclearloan"
+        Me.btnclearloan.Size = New System.Drawing.Size(88, 33)
+        Me.btnclearloan.TabIndex = 37
+        Me.btnclearloan.Text = "Clear"
+        Me.btnclearloan.TextAlignment = System.Drawing.StringAlignment.Center
         '
-        'ITalk_Button_22
+        'btnloansub
         '
-        Me.ITalk_Button_22.BackColor = System.Drawing.Color.Transparent
-        Me.ITalk_Button_22.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.ITalk_Button_22.ForeColor = System.Drawing.Color.White
-        Me.ITalk_Button_22.Image = Nothing
-        Me.ITalk_Button_22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ITalk_Button_22.Location = New System.Drawing.Point(334, 353)
-        Me.ITalk_Button_22.Name = "ITalk_Button_22"
-        Me.ITalk_Button_22.Size = New System.Drawing.Size(80, 33)
-        Me.ITalk_Button_22.TabIndex = 36
-        Me.ITalk_Button_22.Text = "Submit"
-        Me.ITalk_Button_22.TextAlignment = System.Drawing.StringAlignment.Center
+        Me.btnloansub.BackColor = System.Drawing.Color.Transparent
+        Me.btnloansub.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.btnloansub.ForeColor = System.Drawing.Color.White
+        Me.btnloansub.Image = Nothing
+        Me.btnloansub.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnloansub.Location = New System.Drawing.Point(334, 353)
+        Me.btnloansub.Name = "btnloansub"
+        Me.btnloansub.Size = New System.Drawing.Size(80, 33)
+        Me.btnloansub.TabIndex = 36
+        Me.btnloansub.Text = "Submit"
+        Me.btnloansub.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'BunifuCustomLabel44
         '
@@ -2416,7 +2427,7 @@ Partial Class Form2
         'txtm
         '
         Me.txtm.FormattingEnabled = True
-        Me.txtm.Items.AddRange(New Object() {"Long Term Cash Loan (LTCL)", "Short Term Cash Loan (STCL)", "Long Term Material Sales (LMTS)", "Short Term Material Sales (STMS) I", "Short Term Material Sales (STMS) II", "Emergency Loan", "Savings Withdrawal", "Special Savings"})
+        Me.txtm.Items.AddRange(New Object() {"Long Term Cash Loan LTCL", "Short Term Cash Loan STCL", "Long Term Material Sales LMTS", "Short Term Material Sales STMS I", "Short Term Material Sales STMS II", "Emergency Loan", "Savings Withdrawal", "Special Savings"})
         Me.txtm.Location = New System.Drawing.Point(219, 83)
         Me.txtm.Name = "txtm"
         Me.txtm.Size = New System.Drawing.Size(331, 30)
@@ -2470,8 +2481,7 @@ Partial Class Form2
         'ITalk_GroupBox1
         '
         Me.ITalk_GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel25)
-        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel26)
+        Me.ITalk_GroupBox1.Controls.Add(Me.DataGridView1)
         Me.ITalk_GroupBox1.Controls.Add(Me.loansign)
         Me.ITalk_GroupBox1.Controls.Add(Me.txtltms)
         Me.ITalk_GroupBox1.Controls.Add(Me.txtstms)
@@ -2500,27 +2510,19 @@ Partial Class Form2
         Me.ITalk_GroupBox1.TabIndex = 0
         Me.ITalk_GroupBox1.Text = "BioData"
         '
-        'BunifuCustomLabel25
+        'DataGridView1
         '
-        Me.BunifuCustomLabel25.AutoSize = True
-        Me.BunifuCustomLabel25.Location = New System.Drawing.Point(189, 329)
-        Me.BunifuCustomLabel25.Name = "BunifuCustomLabel25"
-        Me.BunifuCustomLabel25.Size = New System.Drawing.Size(19, 22)
-        Me.BunifuCustomLabel25.TabIndex = 31
-        Me.BunifuCustomLabel25.Text = "_"
-        '
-        'BunifuCustomLabel26
-        '
-        Me.BunifuCustomLabel26.AutoSize = True
-        Me.BunifuCustomLabel26.Location = New System.Drawing.Point(8, 327)
-        Me.BunifuCustomLabel26.Name = "BunifuCustomLabel26"
-        Me.BunifuCustomLabel26.Size = New System.Drawing.Size(48, 22)
-        Me.BunifuCustomLabel26.TabIndex = 30
-        Me.BunifuCustomLabel26.Text = "LTMS"
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(327, 212)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(82, 45)
+        Me.DataGridView1.TabIndex = 13
+        Me.DataGridView1.Visible = False
         '
         'loansign
         '
         Me.loansign.BackgroundImage = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
+        Me.loansign.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.loansign.Image = Global.EIMCS.My.Resources.Resources.signature_handwriting_pen_sign_deal_355dfdf8b5195d22_512x512
         Me.loansign.Location = New System.Drawing.Point(407, 262)
         Me.loansign.Name = "loansign"
@@ -2693,6 +2695,8 @@ Partial Class Form2
         '
         'loanpassport
         '
+        Me.loanpassport.BackgroundImage = Global.EIMCS.My.Resources.Resources.login1
+        Me.loanpassport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.loanpassport.Image = Global.EIMCS.My.Resources.Resources.login1
         Me.loanpassport.Location = New System.Drawing.Point(407, 51)
         Me.loanpassport.Name = "loanpassport"
@@ -2780,7 +2784,7 @@ Partial Class Form2
         Me.Label23.Size = New System.Drawing.Size(486, 16)
         Me.Label23.TabIndex = 6
         Me.Label23.Text = "National Exammination council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
-            ""
+    ""
         '
         'Label24
         '
@@ -3117,7 +3121,7 @@ Partial Class Form2
         Me.Label30.Size = New System.Drawing.Size(486, 16)
         Me.Label30.TabIndex = 6
         Me.Label30.Text = "National Exammination council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
-            ""
+    ""
         '
         'Label31
         '
@@ -3234,6 +3238,7 @@ Partial Class Form2
         Me.ITalk_GroupBox2.PerformLayout()
         Me.ITalk_GroupBox1.ResumeLayout(False)
         Me.ITalk_GroupBox1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.loansign, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.loanpassport, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
@@ -3437,8 +3442,8 @@ Partial Class Form2
     Friend WithEvents BunifuCustomLabel53 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel56 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel57 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents ITalk_Button_23 As EIMCS.iTalk.iTalk_Button_2
-    Friend WithEvents ITalk_Button_22 As EIMCS.iTalk.iTalk_Button_2
+    Friend WithEvents btnclearloan As EIMCS.iTalk.iTalk_Button_2
+    Friend WithEvents btnloansub As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents BunifuCustomLabel44 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel18 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCards3 As Bunifu.Framework.UI.BunifuCards
@@ -3474,11 +3479,11 @@ Partial Class Form2
     Friend WithEvents BunifuCustomLabel48 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents DateTimePicker4 As System.Windows.Forms.DateTimePicker
     Friend WithEvents DateTimePicker3 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents BunifuCustomLabel25 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel26 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents txtGdate As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtpdate As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtMDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtd2 As System.Windows.Forms.TextBox
     Friend WithEvents txtd1 As System.Windows.Forms.TextBox
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

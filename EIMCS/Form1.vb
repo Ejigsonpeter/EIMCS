@@ -35,6 +35,8 @@ Public Class Form1
                 End While
                 If count > 0 Then
                     MsgBox("Access Granted ", vbInformation)
+                    Form2.TextBox1.Text = reader.Item("fullname").ToString
+                   
                     Me.Hide()
                     Form2.Show()
                 Else
