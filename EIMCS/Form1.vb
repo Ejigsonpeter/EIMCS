@@ -39,6 +39,7 @@ Public Class Form1
                    
                     Me.Hide()
                     Form2.Show()
+                    Myconnection.Close()
                 Else
                     MsgBox("Access Denied! Incorret Login Details",vbCritical)
                     clear()

@@ -1047,6 +1047,255 @@ Public Class Form2
         Myconnection.Close()
     End Sub
 
+    Sub loanstcl()
+        Try
+            Myconnection.Close()
+            Myconnection.Open()
+            Dim reader As MySqlDataReader
+            Dim command As MySqlCommand = New MySqlCommand
+            command.Connection = Myconnection
+            Dim s, type1, type2, type3 As String
+
+
+            type1 = "Long Term Cash Loan LTCL"
+            type2 = "Short Term Cash Loan STCL"
+            type3 = "Long Term Material Sales LMTS"
+
+            '----retrieve student's particulars
+            command.CommandText = "SELECT * FROM loan WHERE ippsno = '" & txtlean.Text & "' and loantype = '" & type2 & "'"
+
+            reader = command.ExecuteReader(CommandBehavior.CloseConnection)
+            Dim count As Integer
+            count = 0
+            While reader.Read
+                count = count + 1
+            End While
+            If count > 0 Then
+                Dim a As String
+                Dim pay As String
+                Dim x As String
+
+                pay = reader.Item("paymentduration").ToString
+
+                x = "month(s) remaining"
+                txtstcl.Text = "Yes  :" & pay & "  x"
+
+                Myconnection.Close()
+
+            Else
+                txtstcl.Text = "No"
+            End If
+            '---reset the timer to another five seconds---
+           
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+
+    Sub loanltcl()
+        Try
+            Myconnection.Close()
+            Myconnection.Open()
+            Dim reader As MySqlDataReader
+            Dim command As MySqlCommand = New MySqlCommand
+            command.Connection = Myconnection
+            Dim s, type1, type2, type3 As String
+
+
+            type1 = "Long Term Cash Loan LTCL"
+            type2 = "Short Term Cash Loan STCL"
+            type3 = "Long Term Material Sales LMTS"
+
+            '----retrieve student's particulars
+            command.CommandText = "SELECT * FROM loan WHERE ippsno = '" & txtlean.Text & "' and loantype = '" & type1 & "'"
+
+            reader = command.ExecuteReader(CommandBehavior.CloseConnection)
+            Dim count As Integer
+            count = 0
+            While reader.Read
+                count = count + 1
+            End While
+            If count > 0 Then
+                Dim a As String
+
+                Dim pay As String
+                Dim x As String
+
+                pay = reader.Item("paymentduration").ToString
+
+                x = "month(s) remaining"
+                txtltcl.Text = "Yes  :" & pay & " " & x
+
+                Myconnection.Close()
+
+            Else
+                txtltcl.Text = "No"
+            End If
+            '---reset the timer to another five seconds---
+
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    Sub loanltms()
+        Try
+            Myconnection.Close()
+            Myconnection.Open()
+            Dim reader As MySqlDataReader
+            Dim command As MySqlCommand = New MySqlCommand
+            command.Connection = Myconnection
+            Dim s, type1, type2, type3, type4, type5 As String
+
+
+            type1 = "Long Term Cash Loan LTCL"
+            type2 = "Short Term Cash Loan STCL"
+            type3 = "Long Term Material Sales LMTS"
+            type4 = " Short Term Material Sales STMS I"
+            type5 = "Short Term Material Sales STMS II"
+
+
+
+            '----retrieve student's particulars
+            command.CommandText = "SELECT * FROM loan WHERE ippsno = '" & txtlean.Text & "' and loantype = '" & type3 & "'"
+
+            reader = command.ExecuteReader(CommandBehavior.CloseConnection)
+            Dim count As Integer
+            count = 0
+            While reader.Read
+                count = count + 1
+            End While
+            If count > 0 Then
+                Dim a As String
+
+                Dim pay As String
+                Dim x As String
+
+                pay = reader.Item("paymentduration").ToString
+
+                x = "month(s) remaining"
+                txtltms.Text = "Yes  :" & pay & " " & x
+
+                Myconnection.Close()
+
+            Else
+                txtltms.Text = "No"
+            End If
+            '---reset the timer to another five seconds---
+
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    Sub loanstms1()
+        Try
+            Myconnection.Close()
+            Myconnection.Open()
+            Dim reader As MySqlDataReader
+            Dim command As MySqlCommand = New MySqlCommand
+            command.Connection = Myconnection
+            Dim s, type1, type2, type3, type4, type5 As String
+
+
+            type1 = "Long Term Cash Loan LTCL"
+            type2 = "Short Term Cash Loan STCL"
+            type3 = "Long Term Material Sales LMTS"
+            type4 = " Short Term Material Sales STMS I"
+            type5 = "Short Term Material Sales STMS II"
+
+
+
+            '----retrieve student's particulars
+            command.CommandText = "SELECT * FROM loan WHERE ippsno = '" & txtlean.Text & "' and loantype = '" & type4 & "'"
+
+            reader = command.ExecuteReader(CommandBehavior.CloseConnection)
+            Dim count As Integer
+            count = 0
+            While reader.Read
+                count = count + 1
+            End While
+            If count > 0 Then
+                Dim a As String
+
+                Dim pay As String
+                Dim x As String
+
+                pay = reader.Item("paymentduration").ToString
+
+                x = "month(s) remaining"
+                txtstms.Text = "Yes  :" & pay & " " & x
+
+                Myconnection.Close()
+
+            Else
+                txtstms.Text = "No"
+            End If
+            '---reset the timer to another five seconds---
+
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Sub loanstms11()
+        Try
+            Myconnection.Close()
+            Myconnection.Open()
+            Dim reader As MySqlDataReader
+            Dim command As MySqlCommand = New MySqlCommand
+            command.Connection = Myconnection
+            Dim s, type1, type2, type3, type4, type5 As String
+
+
+            type1 = "Long Term Cash Loan LTCL"
+            type2 = "Short Term Cash Loan STCL"
+            type3 = "Long Term Material Sales LMTS"
+            type4 = " Short Term Material Sales STMS I"
+            type5 = "Short Term Material Sales STMS II"
+
+
+
+            '----retrieve student's particulars
+            command.CommandText = "SELECT * FROM loan WHERE ippsno = '" & txtlean.Text & "' and loantype = '" & type5 & "'"
+
+            reader = command.ExecuteReader(CommandBehavior.CloseConnection)
+            Dim count As Integer
+            count = 0
+            While reader.Read
+                count = count + 1
+            End While
+            If count > 0 Then
+                Dim a As String
+
+                Dim pay As String
+                Dim x As String
+
+                pay = reader.Item("paymentduration").ToString
+
+                x = "month(s) remaining"
+                stms1.Text = "Yes  :" & pay & " " & x
+
+                Myconnection.Close()
+
+            Else
+                stms1.Text = "No"
+            End If
+            '---reset the timer to another five seconds---
+
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+
+
+
+
 
 
     Sub searchloan()
@@ -1098,15 +1347,20 @@ Public Class Form2
                 txtmd.Text = msg2 & "  " & " month (s)"
 
                 Myconnection.Close()
+
                 totalshare()
                 totalsavings()
+                loanstcl()
+                loanltms()
+                loanltcl()
+                loanstms1()
+                loanstms11()
 
 
 
 
             Else
                 MsgBox("No Matching record found in Database", vbCritical)
-                clear()
             End If
             '---reset the timer to another five seconds---
             'Timer1.Enabled = False
@@ -1191,6 +1445,7 @@ Public Class Form2
         txtltms.Text = ""
         txtstcl.Text = ""
         txtstms.Text = ""
+        stms1.Text = ""
 
         loanpassport.Image = BackgroundImage
         loansign.Image = BackgroundImage
@@ -1388,5 +1643,11 @@ Public Class Form2
 
     Private Sub txtm_Validated(sender As Object, e As System.EventArgs) Handles txtm.Validated
         
+    End Sub
+
+    Private Sub DateTimePicker3_ValueChanged(sender As System.Object, e As System.EventArgs) Handles DateTimePicker3.ValueChanged
+        Dim a As Integer
+        a = Val(txtmonth.Text)
+        DateTimePicker4.Value = DateTimePicker3.Value.AddMonths(a)
     End Sub
 End Class

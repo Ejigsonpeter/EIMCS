@@ -184,6 +184,8 @@ Partial Class Form2
         Me.BunifuCustomLabel56 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel57 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.ITalk_GroupBox1 = New EIMCS.iTalk.iTalk_GroupBox()
+        Me.stms1 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel26 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.loansign = New System.Windows.Forms.PictureBox()
         Me.txtltms = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -245,7 +247,31 @@ Partial Class Form2
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker5 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker6 = New System.Windows.Forms.DateTimePicker()
+        Me.BunifuCustomLabel25 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel30 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.StatusStrip3 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripProgressBar3 = New System.Windows.Forms.ToolStripProgressBar()
+        Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.ITalk_Button_21 = New EIMCS.iTalk.iTalk_Button_2()
+        Me.BunifuCustomLabel31 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuCustomLabel32 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.AvgGroupBox2 = New EIMCS.AVGGroupBox()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.BunifuCustomLabel33 = New Bunifu.Framework.UI.BunifuCustomLabel()
+        Me.BunifuMetroTextbox1 = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.ITalk_Button_22 = New EIMCS.iTalk.iTalk_Button_2()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.ITalk_TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -286,6 +312,15 @@ Partial Class Form2
         Me.GroupBox9.SuspendLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage5.SuspendLayout()
+        Me.GroupBox10.SuspendLayout()
+        Me.StatusStrip3.SuspendLayout()
+        Me.GroupBox11.SuspendLayout()
+        Me.AvgGroupBox2.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox5.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ITalk_TabControl1
@@ -296,7 +331,6 @@ Partial Class Form2
         Me.ITalk_TabControl1.Controls.Add(Me.TabPage3)
         Me.ITalk_TabControl1.Controls.Add(Me.TabPage4)
         Me.ITalk_TabControl1.Controls.Add(Me.TabPage5)
-        Me.ITalk_TabControl1.Controls.Add(Me.TabPage6)
         Me.ITalk_TabControl1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ITalk_TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ITalk_TabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed
@@ -363,6 +397,7 @@ Partial Class Form2
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label9)
@@ -458,6 +493,7 @@ Partial Class Form2
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.group1)
         Me.GroupBox1.Controls.Add(Me.group2)
         Me.GroupBox1.Controls.Add(Me.group3)
@@ -515,7 +551,7 @@ Partial Class Form2
         Me.group1.Controls.Add(Me.BunifuCustomLabel1)
         Me.group1.Location = New System.Drawing.Point(3, 90)
         Me.group1.Name = "group1"
-        Me.group1.Size = New System.Drawing.Size(1204, 464)
+        Me.group1.Size = New System.Drawing.Size(1212, 476)
         Me.group1.TabIndex = 141
         Me.group1.TabStop = False
         '
@@ -573,7 +609,7 @@ Partial Class Form2
         'BunifuCustomLabel22
         '
         Me.BunifuCustomLabel22.AutoSize = True
-        Me.BunifuCustomLabel22.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel22.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel22.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel22.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel22.Location = New System.Drawing.Point(663, 405)
@@ -585,7 +621,7 @@ Partial Class Form2
         'BunifuCustomLabel21
         '
         Me.BunifuCustomLabel21.AutoSize = True
-        Me.BunifuCustomLabel21.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel21.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel21.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel21.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel21.Location = New System.Drawing.Point(420, 402)
@@ -627,7 +663,7 @@ Partial Class Form2
         'BunifuCustomLabel7
         '
         Me.BunifuCustomLabel7.AutoSize = True
-        Me.BunifuCustomLabel7.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel7.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel7.Location = New System.Drawing.Point(291, 429)
@@ -639,7 +675,7 @@ Partial Class Form2
         'BunifuCustomLabel14
         '
         Me.BunifuCustomLabel14.AutoSize = True
-        Me.BunifuCustomLabel14.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel14.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel14.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel14.Location = New System.Drawing.Point(290, 401)
@@ -711,7 +747,7 @@ Partial Class Form2
         'BunifuCustomLabel19
         '
         Me.BunifuCustomLabel19.AutoSize = True
-        Me.BunifuCustomLabel19.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel19.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel19.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel19.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel19.Location = New System.Drawing.Point(317, 429)
@@ -723,7 +759,7 @@ Partial Class Form2
         'BunifuCustomLabel20
         '
         Me.BunifuCustomLabel20.AutoSize = True
-        Me.BunifuCustomLabel20.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel20.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel20.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel20.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel20.Location = New System.Drawing.Point(318, 400)
@@ -735,7 +771,7 @@ Partial Class Form2
         'BunifuCustomLabel13
         '
         Me.BunifuCustomLabel13.AutoSize = True
-        Me.BunifuCustomLabel13.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel13.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel13.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel13.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel13.Location = New System.Drawing.Point(290, 370)
@@ -747,7 +783,7 @@ Partial Class Form2
         'BunifuCustomLabel12
         '
         Me.BunifuCustomLabel12.AutoSize = True
-        Me.BunifuCustomLabel12.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel12.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel12.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel12.Location = New System.Drawing.Point(291, 340)
@@ -759,7 +795,7 @@ Partial Class Form2
         'BunifuCustomLabel11
         '
         Me.BunifuCustomLabel11.AutoSize = True
-        Me.BunifuCustomLabel11.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel11.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel11.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel11.Location = New System.Drawing.Point(291, 309)
@@ -771,7 +807,7 @@ Partial Class Form2
         'BunifuCustomLabel10
         '
         Me.BunifuCustomLabel10.AutoSize = True
-        Me.BunifuCustomLabel10.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel10.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel10.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel10.Location = New System.Drawing.Point(290, 281)
@@ -794,7 +830,7 @@ Partial Class Form2
         'BunifuCustomLabel9
         '
         Me.BunifuCustomLabel9.AutoSize = True
-        Me.BunifuCustomLabel9.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel9.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel9.Location = New System.Drawing.Point(318, 370)
@@ -855,7 +891,7 @@ Partial Class Form2
         'BunifuCustomLabel8
         '
         Me.BunifuCustomLabel8.AutoSize = True
-        Me.BunifuCustomLabel8.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel8.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel8.Location = New System.Drawing.Point(671, 340)
@@ -1025,7 +1061,7 @@ Partial Class Form2
         'BunifuCustomLabel4
         '
         Me.BunifuCustomLabel4.AutoSize = True
-        Me.BunifuCustomLabel4.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel4.Location = New System.Drawing.Point(316, 341)
@@ -1037,7 +1073,7 @@ Partial Class Form2
         'BunifuCustomLabel3
         '
         Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel3.Location = New System.Drawing.Point(679, 309)
@@ -1049,7 +1085,7 @@ Partial Class Form2
         'BunifuCustomLabel2
         '
         Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel2.Location = New System.Drawing.Point(317, 309)
@@ -1061,7 +1097,7 @@ Partial Class Form2
         'BunifuCustomLabel1
         '
         Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(318, 280)
@@ -1110,7 +1146,7 @@ Partial Class Form2
         Me.group2.Controls.Add(Me.BunifuCustomLabel108)
         Me.group2.Location = New System.Drawing.Point(6, 81)
         Me.group2.Name = "group2"
-        Me.group2.Size = New System.Drawing.Size(1192, 462)
+        Me.group2.Size = New System.Drawing.Size(1201, 473)
         Me.group2.TabIndex = 104
         Me.group2.TabStop = False
         Me.group2.Visible = False
@@ -1132,7 +1168,7 @@ Partial Class Form2
         'BunifuCustomLabel83
         '
         Me.BunifuCustomLabel83.AutoSize = True
-        Me.BunifuCustomLabel83.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel83.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel83.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel83.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel83.Location = New System.Drawing.Point(341, 336)
@@ -1144,7 +1180,7 @@ Partial Class Form2
         'BunifuCustomLabel85
         '
         Me.BunifuCustomLabel85.AutoSize = True
-        Me.BunifuCustomLabel85.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel85.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel85.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel85.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel85.Location = New System.Drawing.Point(323, 336)
@@ -1175,7 +1211,7 @@ Partial Class Form2
         'BunifuCustomLabel86
         '
         Me.BunifuCustomLabel86.AutoSize = True
-        Me.BunifuCustomLabel86.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel86.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel86.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel86.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel86.Location = New System.Drawing.Point(342, 306)
@@ -1187,7 +1223,7 @@ Partial Class Form2
         'BunifuCustomLabel88
         '
         Me.BunifuCustomLabel88.AutoSize = True
-        Me.BunifuCustomLabel88.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel88.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel88.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel88.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel88.Location = New System.Drawing.Point(324, 306)
@@ -1218,7 +1254,7 @@ Partial Class Form2
         'BunifuCustomLabel91
         '
         Me.BunifuCustomLabel91.AutoSize = True
-        Me.BunifuCustomLabel91.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel91.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel91.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel91.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel91.Location = New System.Drawing.Point(342, 276)
@@ -1230,7 +1266,7 @@ Partial Class Form2
         'BunifuCustomLabel92
         '
         Me.BunifuCustomLabel92.AutoSize = True
-        Me.BunifuCustomLabel92.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel92.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel92.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel92.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel92.Location = New System.Drawing.Point(324, 276)
@@ -1261,7 +1297,7 @@ Partial Class Form2
         'BunifuCustomLabel93
         '
         Me.BunifuCustomLabel93.AutoSize = True
-        Me.BunifuCustomLabel93.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel93.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel93.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel93.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel93.Location = New System.Drawing.Point(294, 241)
@@ -1273,7 +1309,7 @@ Partial Class Form2
         'BunifuCustomLabel94
         '
         Me.BunifuCustomLabel94.AutoSize = True
-        Me.BunifuCustomLabel94.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel94.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel94.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel94.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel94.Location = New System.Drawing.Point(319, 242)
@@ -1285,7 +1321,7 @@ Partial Class Form2
         'BunifuCustomLabel95
         '
         Me.BunifuCustomLabel95.AutoSize = True
-        Me.BunifuCustomLabel95.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel95.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel95.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel95.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel95.Location = New System.Drawing.Point(338, 197)
@@ -1335,7 +1371,7 @@ Partial Class Form2
         'BunifuCustomLabel96
         '
         Me.BunifuCustomLabel96.AutoSize = True
-        Me.BunifuCustomLabel96.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel96.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel96.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel96.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel96.Location = New System.Drawing.Point(669, 137)
@@ -1366,7 +1402,7 @@ Partial Class Form2
         'BunifuCustomLabel97
         '
         Me.BunifuCustomLabel97.AutoSize = True
-        Me.BunifuCustomLabel97.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel97.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel97.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel97.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel97.Location = New System.Drawing.Point(342, 137)
@@ -1378,7 +1414,7 @@ Partial Class Form2
         'BunifuCustomLabel98
         '
         Me.BunifuCustomLabel98.AutoSize = True
-        Me.BunifuCustomLabel98.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel98.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel98.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel98.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel98.Location = New System.Drawing.Point(322, 137)
@@ -1390,7 +1426,7 @@ Partial Class Form2
         'BunifuCustomLabel99
         '
         Me.BunifuCustomLabel99.AutoSize = True
-        Me.BunifuCustomLabel99.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel99.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel99.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel99.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel99.Location = New System.Drawing.Point(338, 166)
@@ -1421,7 +1457,7 @@ Partial Class Form2
         'BunifuCustomLabel100
         '
         Me.BunifuCustomLabel100.AutoSize = True
-        Me.BunifuCustomLabel100.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel100.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel100.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel100.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel100.Location = New System.Drawing.Point(338, 110)
@@ -1471,7 +1507,7 @@ Partial Class Form2
         'BunifuCustomLabel101
         '
         Me.BunifuCustomLabel101.AutoSize = True
-        Me.BunifuCustomLabel101.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel101.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel101.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel101.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel101.Location = New System.Drawing.Point(669, 50)
@@ -1502,7 +1538,7 @@ Partial Class Form2
         'BunifuCustomLabel102
         '
         Me.BunifuCustomLabel102.AutoSize = True
-        Me.BunifuCustomLabel102.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel102.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel102.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel102.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel102.Location = New System.Drawing.Point(342, 50)
@@ -1514,7 +1550,7 @@ Partial Class Form2
         'BunifuCustomLabel103
         '
         Me.BunifuCustomLabel103.AutoSize = True
-        Me.BunifuCustomLabel103.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel103.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel103.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel103.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel103.Location = New System.Drawing.Point(324, 50)
@@ -1537,7 +1573,7 @@ Partial Class Form2
         'BunifuCustomLabel105
         '
         Me.BunifuCustomLabel105.AutoSize = True
-        Me.BunifuCustomLabel105.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel105.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel105.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel105.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel105.Location = New System.Drawing.Point(294, 21)
@@ -1549,7 +1585,7 @@ Partial Class Form2
         'BunifuCustomLabel106
         '
         Me.BunifuCustomLabel106.AutoSize = True
-        Me.BunifuCustomLabel106.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel106.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel106.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel106.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel106.Location = New System.Drawing.Point(338, 79)
@@ -1591,7 +1627,7 @@ Partial Class Form2
         'BunifuCustomLabel107
         '
         Me.BunifuCustomLabel107.AutoSize = True
-        Me.BunifuCustomLabel107.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel107.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel107.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel107.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel107.Location = New System.Drawing.Point(319, 22)
@@ -1712,7 +1748,7 @@ Partial Class Form2
         'BunifuCustomLabel82
         '
         Me.BunifuCustomLabel82.AutoSize = True
-        Me.BunifuCustomLabel82.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel82.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel82.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel82.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel82.Location = New System.Drawing.Point(664, 351)
@@ -1724,7 +1760,7 @@ Partial Class Form2
         'BunifuCustomLabel81
         '
         Me.BunifuCustomLabel81.AutoSize = True
-        Me.BunifuCustomLabel81.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel81.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel81.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel81.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel81.Location = New System.Drawing.Point(301, 351)
@@ -1736,7 +1772,7 @@ Partial Class Form2
         'BunifuCustomLabel80
         '
         Me.BunifuCustomLabel80.AutoSize = True
-        Me.BunifuCustomLabel80.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel80.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel80.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel80.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel80.Location = New System.Drawing.Point(797, 429)
@@ -1774,7 +1810,7 @@ Partial Class Form2
         'BunifuCustomLabel79
         '
         Me.BunifuCustomLabel79.AutoSize = True
-        Me.BunifuCustomLabel79.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel79.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel79.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel79.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel79.Location = New System.Drawing.Point(434, 429)
@@ -1831,7 +1867,7 @@ Partial Class Form2
         'BunifuCustomLabel77
         '
         Me.BunifuCustomLabel77.AutoSize = True
-        Me.BunifuCustomLabel77.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel77.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel77.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.BunifuCustomLabel77.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel77.Location = New System.Drawing.Point(302, 300)
@@ -1843,7 +1879,7 @@ Partial Class Form2
         'BunifuCustomLabel78
         '
         Me.BunifuCustomLabel78.AutoSize = True
-        Me.BunifuCustomLabel78.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel78.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel78.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel78.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel78.Location = New System.Drawing.Point(327, 297)
@@ -1874,7 +1910,7 @@ Partial Class Form2
         'BunifuCustomLabel61
         '
         Me.BunifuCustomLabel61.AutoSize = True
-        Me.BunifuCustomLabel61.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel61.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel61.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.BunifuCustomLabel61.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel61.Location = New System.Drawing.Point(302, 254)
@@ -1886,7 +1922,7 @@ Partial Class Form2
         'BunifuCustomLabel62
         '
         Me.BunifuCustomLabel62.AutoSize = True
-        Me.BunifuCustomLabel62.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel62.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel62.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel62.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel62.Location = New System.Drawing.Point(327, 251)
@@ -1898,7 +1934,7 @@ Partial Class Form2
         'BunifuCustomLabel60
         '
         Me.BunifuCustomLabel60.AutoSize = True
-        Me.BunifuCustomLabel60.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel60.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel60.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel60.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel60.Location = New System.Drawing.Point(301, 227)
@@ -1924,7 +1960,7 @@ Partial Class Form2
         'BunifuCustomLabel29
         '
         Me.BunifuCustomLabel29.AutoSize = True
-        Me.BunifuCustomLabel29.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel29.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel29.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel29.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel29.Location = New System.Drawing.Point(702, 191)
@@ -1962,7 +1998,7 @@ Partial Class Form2
         'BunifuCustomLabel27
         '
         Me.BunifuCustomLabel27.AutoSize = True
-        Me.BunifuCustomLabel27.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel27.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel27.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel27.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel27.Location = New System.Drawing.Point(302, 110)
@@ -1985,7 +2021,7 @@ Partial Class Form2
         'BunifuCustomLabel28
         '
         Me.BunifuCustomLabel28.AutoSize = True
-        Me.BunifuCustomLabel28.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel28.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel28.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel28.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel28.Location = New System.Drawing.Point(327, 111)
@@ -2016,7 +2052,7 @@ Partial Class Form2
         'BunifuCustomLabel84
         '
         Me.BunifuCustomLabel84.AutoSize = True
-        Me.BunifuCustomLabel84.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel84.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel84.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel84.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel84.Location = New System.Drawing.Point(337, 54)
@@ -2029,7 +2065,7 @@ Partial Class Form2
         'BunifuCustomLabel87
         '
         Me.BunifuCustomLabel87.AutoSize = True
-        Me.BunifuCustomLabel87.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel87.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel87.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel87.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel87.Location = New System.Drawing.Point(302, 28)
@@ -2052,7 +2088,7 @@ Partial Class Form2
         'BunifuCustomLabel89
         '
         Me.BunifuCustomLabel89.AutoSize = True
-        Me.BunifuCustomLabel89.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel89.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel89.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel89.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel89.Location = New System.Drawing.Point(327, 29)
@@ -2106,7 +2142,7 @@ Partial Class Form2
         'BunifuCustomLabel59
         '
         Me.BunifuCustomLabel59.AutoSize = True
-        Me.BunifuCustomLabel59.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel59.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel59.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel59.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel59.Location = New System.Drawing.Point(908, 27)
@@ -2168,6 +2204,7 @@ Partial Class Form2
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.TextBox1)
         Me.GroupBox3.Controls.Add(Me.StatusStrip1)
         Me.GroupBox3.Controls.Add(Me.GroupBox4)
@@ -2187,6 +2224,7 @@ Partial Class Form2
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(106, 26)
         Me.TextBox1.TabIndex = 13
+        Me.TextBox1.Visible = False
         '
         'StatusStrip1
         '
@@ -2269,7 +2307,7 @@ Partial Class Form2
         '
         Me.DateTimePicker4.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker4.Location = New System.Drawing.Point(220, 302)
+        Me.DateTimePicker4.Location = New System.Drawing.Point(219, 299)
         Me.DateTimePicker4.Name = "DateTimePicker4"
         Me.DateTimePicker4.Size = New System.Drawing.Size(184, 26)
         Me.DateTimePicker4.TabIndex = 44
@@ -2481,6 +2519,8 @@ Partial Class Form2
         'ITalk_GroupBox1
         '
         Me.ITalk_GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.ITalk_GroupBox1.Controls.Add(Me.stms1)
+        Me.ITalk_GroupBox1.Controls.Add(Me.BunifuCustomLabel26)
         Me.ITalk_GroupBox1.Controls.Add(Me.DataGridView1)
         Me.ITalk_GroupBox1.Controls.Add(Me.loansign)
         Me.ITalk_GroupBox1.Controls.Add(Me.txtltms)
@@ -2510,10 +2550,28 @@ Partial Class Form2
         Me.ITalk_GroupBox1.TabIndex = 0
         Me.ITalk_GroupBox1.Text = "BioData"
         '
+        'stms1
+        '
+        Me.stms1.AutoSize = True
+        Me.stms1.Location = New System.Drawing.Point(189, 290)
+        Me.stms1.Name = "stms1"
+        Me.stms1.Size = New System.Drawing.Size(19, 22)
+        Me.stms1.TabIndex = 31
+        Me.stms1.Text = "_"
+        '
+        'BunifuCustomLabel26
+        '
+        Me.BunifuCustomLabel26.AutoSize = True
+        Me.BunifuCustomLabel26.Location = New System.Drawing.Point(8, 288)
+        Me.BunifuCustomLabel26.Name = "BunifuCustomLabel26"
+        Me.BunifuCustomLabel26.Size = New System.Drawing.Size(61, 22)
+        Me.BunifuCustomLabel26.TabIndex = 30
+        Me.BunifuCustomLabel26.Text = "STMS II"
+        '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(327, 212)
+        Me.DataGridView1.Location = New System.Drawing.Point(430, 355)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(82, 45)
         Me.DataGridView1.TabIndex = 13
@@ -2534,7 +2592,7 @@ Partial Class Form2
         'txtltms
         '
         Me.txtltms.AutoSize = True
-        Me.txtltms.Location = New System.Drawing.Point(189, 296)
+        Me.txtltms.Location = New System.Drawing.Point(189, 312)
         Me.txtltms.Name = "txtltms"
         Me.txtltms.Size = New System.Drawing.Size(19, 22)
         Me.txtltms.TabIndex = 28
@@ -2552,7 +2610,7 @@ Partial Class Form2
         'BunifuCustomLabel42
         '
         Me.BunifuCustomLabel42.AutoSize = True
-        Me.BunifuCustomLabel42.Location = New System.Drawing.Point(8, 294)
+        Me.BunifuCustomLabel42.Location = New System.Drawing.Point(8, 310)
         Me.BunifuCustomLabel42.Name = "BunifuCustomLabel42"
         Me.BunifuCustomLabel42.Size = New System.Drawing.Size(48, 22)
         Me.BunifuCustomLabel42.TabIndex = 26
@@ -2563,9 +2621,9 @@ Partial Class Form2
         Me.BunifuCustomLabel43.AutoSize = True
         Me.BunifuCustomLabel43.Location = New System.Drawing.Point(8, 262)
         Me.BunifuCustomLabel43.Name = "BunifuCustomLabel43"
-        Me.BunifuCustomLabel43.Size = New System.Drawing.Size(48, 22)
+        Me.BunifuCustomLabel43.Size = New System.Drawing.Size(57, 22)
         Me.BunifuCustomLabel43.TabIndex = 25
-        Me.BunifuCustomLabel43.Text = "STMS"
+        Me.BunifuCustomLabel43.Text = "STMS I"
         '
         'txtltcl
         '
@@ -2708,7 +2766,7 @@ Partial Class Form2
         'BunifuCustomLabel6
         '
         Me.BunifuCustomLabel6.AutoSize = True
-        Me.BunifuCustomLabel6.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel6.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel6.Location = New System.Drawing.Point(753, 22)
@@ -2750,6 +2808,7 @@ Partial Class Form2
         '
         'GroupBox6
         '
+        Me.GroupBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.GroupBox6.Controls.Add(Me.Label22)
         Me.GroupBox6.Controls.Add(Me.Label23)
         Me.GroupBox6.Controls.Add(Me.Label24)
@@ -2848,7 +2907,7 @@ Partial Class Form2
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Size = New System.Drawing.Size(1235, 751)
         Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "Records"
+        Me.TabPage4.Text = "Members"
         '
         'BunifuCards3
         '
@@ -2885,6 +2944,7 @@ Partial Class Form2
         '
         'GroupBox7
         '
+        Me.GroupBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.GroupBox7.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox7.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox7.Controls.Add(Me.BunifuCustomLabel23)
@@ -2922,7 +2982,7 @@ Partial Class Form2
         'BunifuCustomLabel23
         '
         Me.BunifuCustomLabel23.AutoSize = True
-        Me.BunifuCustomLabel23.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel23.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel23.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel23.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel23.Location = New System.Drawing.Point(433, 25)
@@ -2934,7 +2994,7 @@ Partial Class Form2
         'BunifuCustomLabel17
         '
         Me.BunifuCustomLabel17.AutoSize = True
-        Me.BunifuCustomLabel17.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel17.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel17.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel17.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel17.Location = New System.Drawing.Point(58, 22)
@@ -3045,7 +3105,7 @@ Partial Class Form2
         'BunifuCustomLabel109
         '
         Me.BunifuCustomLabel109.AutoSize = True
-        Me.BunifuCustomLabel109.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel109.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BunifuCustomLabel109.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel109.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel109.Location = New System.Drawing.Point(801, 22)
@@ -3087,6 +3147,7 @@ Partial Class Form2
         '
         'GroupBox9
         '
+        Me.GroupBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.GroupBox9.Controls.Add(Me.Label21)
         Me.GroupBox9.Controls.Add(Me.Label30)
         Me.GroupBox9.Controls.Add(Me.Label31)
@@ -3180,20 +3241,307 @@ Partial Class Form2
         'TabPage5
         '
         Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.TabPage5.Controls.Add(Me.GroupBox10)
+        Me.TabPage5.Controls.Add(Me.GroupBox5)
         Me.TabPage5.Location = New System.Drawing.Point(139, 4)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Size = New System.Drawing.Size(1235, 751)
         Me.TabPage5.TabIndex = 4
-        Me.TabPage5.Text = "TabPage5"
+        Me.TabPage5.Text = "Records"
         '
-        'TabPage6
+        'GroupBox10
         '
-        Me.TabPage6.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.TabPage6.Location = New System.Drawing.Point(139, 4)
-        Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(1235, 751)
-        Me.TabPage6.TabIndex = 5
-        Me.TabPage6.Text = "TabPage6"
+        Me.GroupBox10.Controls.Add(Me.DateTimePicker5)
+        Me.GroupBox10.Controls.Add(Me.DateTimePicker6)
+        Me.GroupBox10.Controls.Add(Me.BunifuCustomLabel25)
+        Me.GroupBox10.Controls.Add(Me.BunifuCustomLabel30)
+        Me.GroupBox10.Controls.Add(Me.StatusStrip3)
+        Me.GroupBox10.Controls.Add(Me.GroupBox11)
+        Me.GroupBox10.Controls.Add(Me.BunifuCustomLabel33)
+        Me.GroupBox10.Controls.Add(Me.BunifuMetroTextbox1)
+        Me.GroupBox10.Controls.Add(Me.ITalk_Button_22)
+        Me.GroupBox10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox10.Location = New System.Drawing.Point(0, 148)
+        Me.GroupBox10.Name = "GroupBox10"
+        Me.GroupBox10.Size = New System.Drawing.Size(1235, 603)
+        Me.GroupBox10.TabIndex = 5
+        Me.GroupBox10.TabStop = False
+        '
+        'DateTimePicker5
+        '
+        Me.DateTimePicker5.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker5.Location = New System.Drawing.Point(541, 17)
+        Me.DateTimePicker5.Name = "DateTimePicker5"
+        Me.DateTimePicker5.Size = New System.Drawing.Size(184, 26)
+        Me.DateTimePicker5.TabIndex = 16
+        '
+        'DateTimePicker6
+        '
+        Me.DateTimePicker6.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker6.Location = New System.Drawing.Point(185, 17)
+        Me.DateTimePicker6.Name = "DateTimePicker6"
+        Me.DateTimePicker6.Size = New System.Drawing.Size(184, 26)
+        Me.DateTimePicker6.TabIndex = 15
+        '
+        'BunifuCustomLabel25
+        '
+        Me.BunifuCustomLabel25.AutoSize = True
+        Me.BunifuCustomLabel25.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel25.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel25.ForeColor = System.Drawing.Color.Black
+        Me.BunifuCustomLabel25.Location = New System.Drawing.Point(433, 25)
+        Me.BunifuCustomLabel25.Name = "BunifuCustomLabel25"
+        Me.BunifuCustomLabel25.Size = New System.Drawing.Size(68, 17)
+        Me.BunifuCustomLabel25.TabIndex = 14
+        Me.BunifuCustomLabel25.Text = "End Date"
+        '
+        'BunifuCustomLabel30
+        '
+        Me.BunifuCustomLabel30.AutoSize = True
+        Me.BunifuCustomLabel30.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel30.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel30.ForeColor = System.Drawing.Color.Black
+        Me.BunifuCustomLabel30.Location = New System.Drawing.Point(58, 22)
+        Me.BunifuCustomLabel30.Name = "BunifuCustomLabel30"
+        Me.BunifuCustomLabel30.Size = New System.Drawing.Size(73, 17)
+        Me.BunifuCustomLabel30.TabIndex = 13
+        Me.BunifuCustomLabel30.Text = "Start Date"
+        '
+        'StatusStrip3
+        '
+        Me.StatusStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel3, Me.ToolStripProgressBar3})
+        Me.StatusStrip3.Location = New System.Drawing.Point(3, 578)
+        Me.StatusStrip3.Name = "StatusStrip3"
+        Me.StatusStrip3.Size = New System.Drawing.Size(1229, 22)
+        Me.StatusStrip3.TabIndex = 12
+        Me.StatusStrip3.Text = "StatusStrip3"
+        '
+        'ToolStripStatusLabel3
+        '
+        Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
+        Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(120, 17)
+        Me.ToolStripStatusLabel3.Text = "ToolStripStatusLabel1"
+        '
+        'ToolStripProgressBar3
+        '
+        Me.ToolStripProgressBar3.Name = "ToolStripProgressBar3"
+        Me.ToolStripProgressBar3.Size = New System.Drawing.Size(100, 16)
+        '
+        'GroupBox11
+        '
+        Me.GroupBox11.Controls.Add(Me.ITalk_Button_21)
+        Me.GroupBox11.Controls.Add(Me.BunifuCustomLabel31)
+        Me.GroupBox11.Controls.Add(Me.BunifuCustomLabel32)
+        Me.GroupBox11.Controls.Add(Me.AvgGroupBox2)
+        Me.GroupBox11.Location = New System.Drawing.Point(6, 45)
+        Me.GroupBox11.Name = "GroupBox11"
+        Me.GroupBox11.Size = New System.Drawing.Size(1208, 522)
+        Me.GroupBox11.TabIndex = 11
+        Me.GroupBox11.TabStop = False
+        '
+        'ITalk_Button_21
+        '
+        Me.ITalk_Button_21.BackColor = System.Drawing.Color.Transparent
+        Me.ITalk_Button_21.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.ITalk_Button_21.ForeColor = System.Drawing.Color.White
+        Me.ITalk_Button_21.Image = Nothing
+        Me.ITalk_Button_21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ITalk_Button_21.Location = New System.Drawing.Point(1077, 486)
+        Me.ITalk_Button_21.Name = "ITalk_Button_21"
+        Me.ITalk_Button_21.Size = New System.Drawing.Size(125, 29)
+        Me.ITalk_Button_21.TabIndex = 2
+        Me.ITalk_Button_21.Text = "Export"
+        Me.ITalk_Button_21.TextAlignment = System.Drawing.StringAlignment.Center
+        '
+        'BunifuCustomLabel31
+        '
+        Me.BunifuCustomLabel31.AutoSize = True
+        Me.BunifuCustomLabel31.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel31.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel31.ForeColor = System.Drawing.Color.Black
+        Me.BunifuCustomLabel31.Location = New System.Drawing.Point(115, 494)
+        Me.BunifuCustomLabel31.Name = "BunifuCustomLabel31"
+        Me.BunifuCustomLabel31.Size = New System.Drawing.Size(84, 17)
+        Me.BunifuCustomLabel31.TabIndex = 11
+        Me.BunifuCustomLabel31.Text = "Enter IPPNO"
+        '
+        'BunifuCustomLabel32
+        '
+        Me.BunifuCustomLabel32.AutoSize = True
+        Me.BunifuCustomLabel32.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel32.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel32.ForeColor = System.Drawing.Color.Black
+        Me.BunifuCustomLabel32.Location = New System.Drawing.Point(10, 494)
+        Me.BunifuCustomLabel32.Name = "BunifuCustomLabel32"
+        Me.BunifuCustomLabel32.Size = New System.Drawing.Size(84, 17)
+        Me.BunifuCustomLabel32.TabIndex = 12
+        Me.BunifuCustomLabel32.Text = "Enter IPPNO"
+        '
+        'AvgGroupBox2
+        '
+        Me.AvgGroupBox2.BorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.AvgGroupBox2.Controls.Add(Me.DataGridView2)
+        Me.AvgGroupBox2.Customization = "9fX1/3yPGP/19fX/"
+        Me.AvgGroupBox2.Font = New System.Drawing.Font("Verdana", 8.0!)
+        Me.AvgGroupBox2.Image = Nothing
+        Me.AvgGroupBox2.Location = New System.Drawing.Point(6, 16)
+        Me.AvgGroupBox2.Movable = True
+        Me.AvgGroupBox2.Name = "AvgGroupBox2"
+        Me.AvgGroupBox2.NoRounding = False
+        Me.AvgGroupBox2.Sizable = True
+        Me.AvgGroupBox2.Size = New System.Drawing.Size(1196, 469)
+        Me.AvgGroupBox2.SmartBounds = True
+        Me.AvgGroupBox2.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.AvgGroupBox2.TabIndex = 0
+        Me.AvgGroupBox2.TransparencyKey = System.Drawing.Color.Empty
+        Me.AvgGroupBox2.Transparent = False
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.GridColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.DataGridView2.Location = New System.Drawing.Point(22, 34)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(1161, 420)
+        Me.DataGridView2.TabIndex = 1
+        '
+        'BunifuCustomLabel33
+        '
+        Me.BunifuCustomLabel33.AutoSize = True
+        Me.BunifuCustomLabel33.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomLabel33.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel33.ForeColor = System.Drawing.Color.Black
+        Me.BunifuCustomLabel33.Location = New System.Drawing.Point(801, 22)
+        Me.BunifuCustomLabel33.Name = "BunifuCustomLabel33"
+        Me.BunifuCustomLabel33.Size = New System.Drawing.Size(84, 17)
+        Me.BunifuCustomLabel33.TabIndex = 10
+        Me.BunifuCustomLabel33.Text = "Enter IPPNO"
+        '
+        'BunifuMetroTextbox1
+        '
+        Me.BunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue
+        Me.BunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.BunifuMetroTextbox1.BorderThickness = 3
+        Me.BunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BunifuMetroTextbox1.isPassword = False
+        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(914, 14)
+        Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
+        Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(227, 31)
+        Me.BunifuMetroTextbox1.TabIndex = 9
+        Me.BunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'ITalk_Button_22
+        '
+        Me.ITalk_Button_22.BackColor = System.Drawing.Color.Transparent
+        Me.ITalk_Button_22.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.ITalk_Button_22.ForeColor = System.Drawing.Color.White
+        Me.ITalk_Button_22.Image = Nothing
+        Me.ITalk_Button_22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ITalk_Button_22.Location = New System.Drawing.Point(1148, 14)
+        Me.ITalk_Button_22.Name = "ITalk_Button_22"
+        Me.ITalk_Button_22.Size = New System.Drawing.Size(66, 29)
+        Me.ITalk_Button_22.TabIndex = 0
+        Me.ITalk_Button_22.Text = "go"
+        Me.ITalk_Button_22.TextAlignment = System.Drawing.StringAlignment.Center
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.Label3)
+        Me.GroupBox5.Controls.Add(Me.Label12)
+        Me.GroupBox5.Controls.Add(Me.Label17)
+        Me.GroupBox5.Controls.Add(Me.Label18)
+        Me.GroupBox5.Controls.Add(Me.Label20)
+        Me.GroupBox5.Controls.Add(Me.PictureBox2)
+        Me.GroupBox5.Controls.Add(Me.PictureBox7)
+        Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GroupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GroupBox5.Location = New System.Drawing.Point(0, 0)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(1235, 148)
+        Me.GroupBox5.TabIndex = 4
+        Me.GroupBox5.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(527, 123)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(189, 16)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Email : eimcsneco@gmail.com"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(371, 107)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(486, 16)
+        Me.Label12.TabIndex = 6
+        Me.Label12.Text = "National Exammination council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
+    ""
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(498, 89)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(246, 18)
+        Me.Label17.TabIndex = 5
+        Me.Label17.Text = "Motto : Promoting Ethical  Savings"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.Red
+        Me.Label18.Location = New System.Drawing.Point(354, 61)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(521, 29)
+        Me.Label18.TabIndex = 4
+        Me.Label18.Text = "MULTIPURPOSE COOPERATIVE SOCIETY LIMITED (EIMCS)"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Impact", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label20.Location = New System.Drawing.Point(408, 12)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(424, 60)
+        Me.Label20.TabIndex = 3
+        Me.Label20.Text = "ETHICAL INDUSTRIAL"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PictureBox2.Image = Global.EIMCS.My.Resources.Resources.LOGO
+        Me.PictureBox2.Location = New System.Drawing.Point(1096, 22)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(136, 123)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 2
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox7.Image = Global.EIMCS.My.Resources.Resources.LOGO3
+        Me.PictureBox7.Location = New System.Drawing.Point(3, 22)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(143, 123)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 1
+        Me.PictureBox7.TabStop = False
         '
         'Form2
         '
@@ -3260,6 +3608,19 @@ Partial Class Form2
         Me.GroupBox9.PerformLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage5.ResumeLayout(False)
+        Me.GroupBox10.ResumeLayout(False)
+        Me.GroupBox10.PerformLayout()
+        Me.StatusStrip3.ResumeLayout(False)
+        Me.StatusStrip3.PerformLayout()
+        Me.GroupBox11.ResumeLayout(False)
+        Me.GroupBox11.PerformLayout()
+        Me.AvgGroupBox2.ResumeLayout(False)
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3269,8 +3630,6 @@ Partial Class Form2
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
-    Friend WithEvents TabPage5 As System.Windows.Forms.TabPage
-    Friend WithEvents TabPage6 As System.Windows.Forms.TabPage
     Friend WithEvents BunifuCards2 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
@@ -3477,7 +3836,6 @@ Partial Class Form2
     Friend WithEvents BunifuCustomLabel46 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents loansign As System.Windows.Forms.PictureBox
     Friend WithEvents BunifuCustomLabel48 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents DateTimePicker4 As System.Windows.Forms.DateTimePicker
     Friend WithEvents DateTimePicker3 As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtGdate As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtpdate As System.Windows.Forms.DateTimePicker
@@ -3486,4 +3844,33 @@ Partial Class Form2
     Friend WithEvents txtd1 As System.Windows.Forms.TextBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents DateTimePicker4 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents stms1 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel26 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents TabPage5 As System.Windows.Forms.TabPage
+    Friend WithEvents GroupBox10 As System.Windows.Forms.GroupBox
+    Friend WithEvents DateTimePicker5 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DateTimePicker6 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents BunifuCustomLabel25 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel30 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents StatusStrip3 As System.Windows.Forms.StatusStrip
+    Friend WithEvents ToolStripStatusLabel3 As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents ToolStripProgressBar3 As System.Windows.Forms.ToolStripProgressBar
+    Friend WithEvents GroupBox11 As System.Windows.Forms.GroupBox
+    Friend WithEvents ITalk_Button_21 As EIMCS.iTalk.iTalk_Button_2
+    Friend WithEvents BunifuCustomLabel31 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuCustomLabel32 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents AvgGroupBox2 As EIMCS.AVGGroupBox
+    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
+    Friend WithEvents BunifuCustomLabel33 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents ITalk_Button_22 As EIMCS.iTalk.iTalk_Button_2
+    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
 End Class
