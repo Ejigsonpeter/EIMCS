@@ -222,10 +222,6 @@ Partial Class Form2
         Me.BunifuCards3 = New Bunifu.Framework.UI.BunifuCards()
         Me.BunifuCards4 = New Bunifu.Framework.UI.BunifuCards()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.BunifuCustomLabel23 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel17 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.StatusStrip2 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripProgressBar2 = New System.Windows.Forms.ToolStripProgressBar()
@@ -236,8 +232,8 @@ Partial Class Form2
         Me.AvgGroupBox1 = New EIMCS.AVGGroupBox()
         Me.dgw = New System.Windows.Forms.DataGridView()
         Me.BunifuCustomLabel109 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuMetroTextbox9 = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.ITalk_Button_26 = New EIMCS.iTalk.iTalk_Button_2()
+        Me.txtquery = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.btnquery = New EIMCS.iTalk.iTalk_Button_2()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
@@ -248,8 +244,8 @@ Partial Class Form2
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.GroupBox10 = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker5 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker6 = New System.Windows.Forms.DateTimePicker()
+        Me.dtp2 = New System.Windows.Forms.DateTimePicker()
+        Me.dtp1 = New System.Windows.Forms.DateTimePicker()
         Me.BunifuCustomLabel25 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel30 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.StatusStrip3 = New System.Windows.Forms.StatusStrip()
@@ -262,7 +258,7 @@ Partial Class Form2
         Me.AvgGroupBox2 = New EIMCS.AVGGroupBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.BunifuCustomLabel33 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuMetroTextbox1 = New Bunifu.Framework.UI.BunifuMetroTextbox()
+        Me.txtsort = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.ITalk_Button_22 = New EIMCS.iTalk.iTalk_Button_2()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -429,9 +425,9 @@ Partial Class Form2
         Me.Label10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(371, 107)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(486, 16)
+        Me.Label10.Size = New System.Drawing.Size(488, 16)
         Me.Label10.TabIndex = 6
-        Me.Label10.Text = "National Exammination council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
+        Me.Label10.Text = "National Exammination Council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
     ""
         '
         'Label9
@@ -2840,10 +2836,10 @@ Partial Class Form2
         Me.Label23.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.Location = New System.Drawing.Point(371, 107)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(486, 16)
+        Me.Label23.Size = New System.Drawing.Size(488, 16)
         Me.Label23.TabIndex = 6
-        Me.Label23.Text = "National Exammination council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
-    ""
+        Me.Label23.Text = "National Exammination Council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
+    "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label24
         '
@@ -2945,63 +2941,17 @@ Partial Class Form2
         'GroupBox7
         '
         Me.GroupBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.GroupBox7.Controls.Add(Me.DateTimePicker2)
-        Me.GroupBox7.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox7.Controls.Add(Me.BunifuCustomLabel23)
-        Me.GroupBox7.Controls.Add(Me.BunifuCustomLabel17)
         Me.GroupBox7.Controls.Add(Me.StatusStrip2)
         Me.GroupBox7.Controls.Add(Me.GroupBox8)
         Me.GroupBox7.Controls.Add(Me.BunifuCustomLabel109)
-        Me.GroupBox7.Controls.Add(Me.BunifuMetroTextbox9)
-        Me.GroupBox7.Controls.Add(Me.ITalk_Button_26)
+        Me.GroupBox7.Controls.Add(Me.txtquery)
+        Me.GroupBox7.Controls.Add(Me.btnquery)
         Me.GroupBox7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox7.Location = New System.Drawing.Point(0, 148)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(1235, 603)
         Me.GroupBox7.TabIndex = 4
         Me.GroupBox7.TabStop = False
-        '
-        'DateTimePicker2
-        '
-        Me.DateTimePicker2.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(541, 17)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(184, 26)
-        Me.DateTimePicker2.TabIndex = 16
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(185, 17)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(184, 26)
-        Me.DateTimePicker1.TabIndex = 15
-        '
-        'BunifuCustomLabel23
-        '
-        Me.BunifuCustomLabel23.AutoSize = True
-        Me.BunifuCustomLabel23.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.BunifuCustomLabel23.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel23.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomLabel23.Location = New System.Drawing.Point(433, 25)
-        Me.BunifuCustomLabel23.Name = "BunifuCustomLabel23"
-        Me.BunifuCustomLabel23.Size = New System.Drawing.Size(68, 17)
-        Me.BunifuCustomLabel23.TabIndex = 14
-        Me.BunifuCustomLabel23.Text = "End Date"
-        '
-        'BunifuCustomLabel17
-        '
-        Me.BunifuCustomLabel17.AutoSize = True
-        Me.BunifuCustomLabel17.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.BunifuCustomLabel17.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel17.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomLabel17.Location = New System.Drawing.Point(58, 22)
-        Me.BunifuCustomLabel17.Name = "BunifuCustomLabel17"
-        Me.BunifuCustomLabel17.Size = New System.Drawing.Size(73, 17)
-        Me.BunifuCustomLabel17.TabIndex = 13
-        Me.BunifuCustomLabel17.Text = "Start Date"
         '
         'StatusStrip2
         '
@@ -3114,36 +3064,36 @@ Partial Class Form2
         Me.BunifuCustomLabel109.TabIndex = 10
         Me.BunifuCustomLabel109.Text = "Enter IPPNO"
         '
-        'BunifuMetroTextbox9
+        'txtquery
         '
-        Me.BunifuMetroTextbox9.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox9.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox9.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox9.BorderThickness = 3
-        Me.BunifuMetroTextbox9.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox9.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMetroTextbox9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox9.isPassword = False
-        Me.BunifuMetroTextbox9.Location = New System.Drawing.Point(914, 14)
-        Me.BunifuMetroTextbox9.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox9.Name = "BunifuMetroTextbox9"
-        Me.BunifuMetroTextbox9.Size = New System.Drawing.Size(227, 31)
-        Me.BunifuMetroTextbox9.TabIndex = 9
-        Me.BunifuMetroTextbox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtquery.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtquery.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtquery.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtquery.BorderThickness = 3
+        Me.txtquery.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtquery.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtquery.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtquery.isPassword = False
+        Me.txtquery.Location = New System.Drawing.Point(914, 14)
+        Me.txtquery.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtquery.Name = "txtquery"
+        Me.txtquery.Size = New System.Drawing.Size(227, 31)
+        Me.txtquery.TabIndex = 9
+        Me.txtquery.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'ITalk_Button_26
+        'btnquery
         '
-        Me.ITalk_Button_26.BackColor = System.Drawing.Color.Transparent
-        Me.ITalk_Button_26.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.ITalk_Button_26.ForeColor = System.Drawing.Color.White
-        Me.ITalk_Button_26.Image = Nothing
-        Me.ITalk_Button_26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ITalk_Button_26.Location = New System.Drawing.Point(1148, 14)
-        Me.ITalk_Button_26.Name = "ITalk_Button_26"
-        Me.ITalk_Button_26.Size = New System.Drawing.Size(66, 29)
-        Me.ITalk_Button_26.TabIndex = 0
-        Me.ITalk_Button_26.Text = "go"
-        Me.ITalk_Button_26.TextAlignment = System.Drawing.StringAlignment.Center
+        Me.btnquery.BackColor = System.Drawing.Color.Transparent
+        Me.btnquery.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.btnquery.ForeColor = System.Drawing.Color.White
+        Me.btnquery.Image = Nothing
+        Me.btnquery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnquery.Location = New System.Drawing.Point(1148, 14)
+        Me.btnquery.Name = "btnquery"
+        Me.btnquery.Size = New System.Drawing.Size(66, 29)
+        Me.btnquery.TabIndex = 0
+        Me.btnquery.Text = "go"
+        Me.btnquery.TextAlignment = System.Drawing.StringAlignment.Center
         '
         'GroupBox9
         '
@@ -3179,9 +3129,9 @@ Partial Class Form2
         Me.Label30.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label30.Location = New System.Drawing.Point(371, 107)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(486, 16)
+        Me.Label30.Size = New System.Drawing.Size(488, 16)
         Me.Label30.TabIndex = 6
-        Me.Label30.Text = "National Exammination council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
+        Me.Label30.Text = "National Exammination Council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
     ""
         '
         'Label31
@@ -3251,14 +3201,14 @@ Partial Class Form2
         '
         'GroupBox10
         '
-        Me.GroupBox10.Controls.Add(Me.DateTimePicker5)
-        Me.GroupBox10.Controls.Add(Me.DateTimePicker6)
+        Me.GroupBox10.Controls.Add(Me.dtp2)
+        Me.GroupBox10.Controls.Add(Me.dtp1)
         Me.GroupBox10.Controls.Add(Me.BunifuCustomLabel25)
         Me.GroupBox10.Controls.Add(Me.BunifuCustomLabel30)
         Me.GroupBox10.Controls.Add(Me.StatusStrip3)
         Me.GroupBox10.Controls.Add(Me.GroupBox11)
         Me.GroupBox10.Controls.Add(Me.BunifuCustomLabel33)
-        Me.GroupBox10.Controls.Add(Me.BunifuMetroTextbox1)
+        Me.GroupBox10.Controls.Add(Me.txtsort)
         Me.GroupBox10.Controls.Add(Me.ITalk_Button_22)
         Me.GroupBox10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox10.Location = New System.Drawing.Point(0, 148)
@@ -3267,23 +3217,23 @@ Partial Class Form2
         Me.GroupBox10.TabIndex = 5
         Me.GroupBox10.TabStop = False
         '
-        'DateTimePicker5
+        'dtp2
         '
-        Me.DateTimePicker5.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker5.Location = New System.Drawing.Point(541, 17)
-        Me.DateTimePicker5.Name = "DateTimePicker5"
-        Me.DateTimePicker5.Size = New System.Drawing.Size(184, 26)
-        Me.DateTimePicker5.TabIndex = 16
+        Me.dtp2.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtp2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtp2.Location = New System.Drawing.Point(541, 17)
+        Me.dtp2.Name = "dtp2"
+        Me.dtp2.Size = New System.Drawing.Size(184, 26)
+        Me.dtp2.TabIndex = 16
         '
-        'DateTimePicker6
+        'dtp1
         '
-        Me.DateTimePicker6.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker6.Location = New System.Drawing.Point(185, 17)
-        Me.DateTimePicker6.Name = "DateTimePicker6"
-        Me.DateTimePicker6.Size = New System.Drawing.Size(184, 26)
-        Me.DateTimePicker6.TabIndex = 15
+        Me.dtp1.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtp1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtp1.Location = New System.Drawing.Point(185, 17)
+        Me.dtp1.Name = "dtp1"
+        Me.dtp1.Size = New System.Drawing.Size(184, 26)
+        Me.dtp1.TabIndex = 15
         '
         'BunifuCustomLabel25
         '
@@ -3420,22 +3370,22 @@ Partial Class Form2
         Me.BunifuCustomLabel33.TabIndex = 10
         Me.BunifuCustomLabel33.Text = "Enter IPPNO"
         '
-        'BunifuMetroTextbox1
+        'txtsort
         '
-        Me.BunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue
-        Me.BunifuMetroTextbox1.BorderThickness = 3
-        Me.BunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMetroTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMetroTextbox1.isPassword = False
-        Me.BunifuMetroTextbox1.Location = New System.Drawing.Point(914, 14)
-        Me.BunifuMetroTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMetroTextbox1.Name = "BunifuMetroTextbox1"
-        Me.BunifuMetroTextbox1.Size = New System.Drawing.Size(227, 31)
-        Me.BunifuMetroTextbox1.TabIndex = 9
-        Me.BunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtsort.BorderColorFocused = System.Drawing.Color.Blue
+        Me.txtsort.BorderColorIdle = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtsort.BorderColorMouseHover = System.Drawing.Color.Blue
+        Me.txtsort.BorderThickness = 3
+        Me.txtsort.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtsort.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtsort.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtsort.isPassword = False
+        Me.txtsort.Location = New System.Drawing.Point(914, 14)
+        Me.txtsort.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtsort.Name = "txtsort"
+        Me.txtsort.Size = New System.Drawing.Size(227, 31)
+        Me.txtsort.TabIndex = 9
+        Me.txtsort.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'ITalk_Button_22
         '
@@ -3484,9 +3434,9 @@ Partial Class Form2
         Me.Label12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(371, 107)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(486, 16)
+        Me.Label12.Size = New System.Drawing.Size(488, 16)
         Me.Label12.TabIndex = 6
-        Me.Label12.Text = "National Exammination council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
+        Me.Label12.Text = "National Exammination Council Km 8, Bida road , P.M.B 159, Niger State , Nigeria." & _
     ""
         '
         'Label17
@@ -3812,8 +3762,8 @@ Partial Class Form2
     Friend WithEvents ToolStripStatusLabel2 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents ToolStripProgressBar2 As System.Windows.Forms.ToolStripProgressBar
     Friend WithEvents BunifuCustomLabel109 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuMetroTextbox9 As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents ITalk_Button_26 As EIMCS.iTalk.iTalk_Button_2
+    Friend WithEvents txtquery As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents btnquery As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents GroupBox9 As System.Windows.Forms.GroupBox
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Label30 As System.Windows.Forms.Label
@@ -3825,10 +3775,6 @@ Partial Class Form2
     Friend WithEvents GroupBox8 As System.Windows.Forms.GroupBox
     Friend WithEvents AvgGroupBox1 As EIMCS.AVGGroupBox
     Friend WithEvents dgw As System.Windows.Forms.DataGridView
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents BunifuCustomLabel23 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel17 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel24 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel45 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents ITalk_Button_24 As EIMCS.iTalk.iTalk_Button_2
@@ -3849,8 +3795,8 @@ Partial Class Form2
     Friend WithEvents BunifuCustomLabel26 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents TabPage5 As System.Windows.Forms.TabPage
     Friend WithEvents GroupBox10 As System.Windows.Forms.GroupBox
-    Friend WithEvents DateTimePicker5 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DateTimePicker6 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtp2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtp1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents BunifuCustomLabel25 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel30 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents StatusStrip3 As System.Windows.Forms.StatusStrip
@@ -3863,7 +3809,7 @@ Partial Class Form2
     Friend WithEvents AvgGroupBox2 As EIMCS.AVGGroupBox
     Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
     Friend WithEvents BunifuCustomLabel33 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuMetroTextbox1 As Bunifu.Framework.UI.BunifuMetroTextbox
+    Friend WithEvents txtsort As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents ITalk_Button_22 As EIMCS.iTalk.iTalk_Button_2
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
     Friend WithEvents Label3 As System.Windows.Forms.Label

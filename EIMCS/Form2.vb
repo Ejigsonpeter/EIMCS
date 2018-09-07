@@ -11,6 +11,9 @@ Public Class Form2
     Dim da As MySqlDataAdapter
     Dim ds As New DataSet
     Dim cmd As MySqlCommand
+    Dim firstdate As Date
+    Dim seconddate As Date
+    Dim msg, msg2, msg3 As Double
     Dim Myconnection As New MySqlConnection With {.ConnectionString = "server = localhost; userid = root ; password =; database = eimcs ;"}
 
 
@@ -916,14 +919,35 @@ Public Class Form2
             ds = New DataSet
             da.Fill(ds)
             dgw.DataSource = ds.Tables(0)
-
-
-
             Myconnection.Close()
+            loangrid()
+
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Sub loangrid()
+
+        Try
+            Myconnection.Close()
+            Myconnection.Open()
+
+            Dim selectQuery As String = "select * from loan"
+            cmd = New MySql.Data.MySqlClient.MySqlCommand(selectQuery, Myconnection)
+            da = New MySql.Data.MySqlClient.MySqlDataAdapter(cmd)
+            ds = New DataSet
+            da.Fill(ds)
+            DataGridView2.DataSource = ds.Tables(0)
+            Myconnection.Close()
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
 
     Private Sub txtm_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtm.SelectedIndexChanged
         If txtm.SelectedIndex = 0 Then 'LTCL
@@ -1649,5 +1673,60 @@ Public Class Form2
         Dim a As Integer
         a = Val(txtmonth.Text)
         DateTimePicker4.Value = DateTimePicker3.Value.AddMonths(a)
+    End Sub
+
+    Sub vouncher()
+        firstdate = CDate(dtp1.Text)
+        seconddate = CDate(dtp2.Text)
+        msg2 = DateDiff(DateInterval.Day, firstdate, seconddate)
+        If msg2 < 28 Then
+            MsgBox("Please select a range of 28 days !", vbInformation)
+        Else
+
+            Myconnection.Open()
+            Dim ds As DataSet = New DataSet
+            Dim da As MySqlDataAdapter
+            Dim tables As DataTableCollection = ds.Tables
+            Dim source1 As New BindingSource()
+            da = New MySqlDataAdapter("Select  * from loan", Myconnection)
+            da.Fill(ds, "Items")
+            Dim view1 As New DataView(tables(0))
+            source1.DataSource = view1
+            DataGridView2.DataSource = view1
+            DataGridView2.Refresh()
+            source1.Filter = "startdate >= '" & firstdate & "' and enddate <= '" & seconddate & "' and ippsno <= '" & txtsort.Text & "'"
+            DataGridView2.Refresh()
+            Myconnection.Close()
+
+        End If
+    End Sub
+
+
+    Private Sub ITalk_Button_22_Click(sender As System.Object, e As System.EventArgs) Handles ITalk_Button_22.Click
+        vouncher()
+
+    End Sub
+
+    Sub querymethod()
+        Myconnection.Close()
+
+        Myconnection.Open()
+        Dim ds As DataSet = New DataSet
+        Dim da As MySqlDataAdapter
+        Dim tables As DataTableCollection = ds.Tables
+        Dim source1 As New BindingSource()
+        da = New MySqlDataAdapter("Select  * from members", Myconnection)
+        da.Fill(ds, "Items")
+        Dim view1 As New DataView(tables(0))
+        source1.DataSource = view1
+        dgw.DataSource = view1
+        dgw.Refresh()
+        source1.Filter = "ippsno <= '" & txtquery.Text & "'"
+        dgw.Refresh()
+        Myconnection.Close()
+    End Sub
+
+    Private Sub ITalk_Button_26_Click(sender As System.Object, e As System.EventArgs) Handles btnquery.Click
+        querymethod()
     End Sub
 End Class
