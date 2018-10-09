@@ -58,4 +58,8 @@ Public Class Form1
     Private Sub btncancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btncancel.Click
         clear()
     End Sub
+
+    Private Sub BunifuCards1_Paint(sender As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles BunifuCards1.Paint
+
+    End Sub
 End Class

@@ -37,6 +37,8 @@ Partial Class Form2
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.group3 = New System.Windows.Forms.GroupBox()
+        Me.group2 = New System.Windows.Forms.GroupBox()
         Me.group1 = New System.Windows.Forms.GroupBox()
         Me.btnNext = New EIMCS.iTalk.iTalk_Button_2()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -78,7 +80,6 @@ Partial Class Form2
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.group2 = New System.Windows.Forms.GroupBox()
         Me.btnprev1 = New EIMCS.iTalk.iTalk_Button_2()
         Me.BunifuCustomLabel83 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel85 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -115,7 +116,6 @@ Partial Class Form2
         Me.BunifuCustomLabel107 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.btnnext2 = New EIMCS.iTalk.iTalk_Button_2()
         Me.BunifuCustomLabel108 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.group3 = New System.Windows.Forms.GroupBox()
         Me.txtGdate = New System.Windows.Forms.DateTimePicker()
         Me.txtpdate = New System.Windows.Forms.DateTimePicker()
         Me.txtMDate = New System.Windows.Forms.DateTimePicker()
@@ -277,10 +277,10 @@ Partial Class Form2
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.group3.SuspendLayout()
+        Me.group2.SuspendLayout()
         Me.group1.SuspendLayout()
         CType(Me.imgpix, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.group2.SuspendLayout()
-        Me.group3.SuspendLayout()
         CType(Me.imgGSignature, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgPsignature, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgMsignature, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -490,8 +490,6 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.GroupBox1.Controls.Add(Me.group1)
-        Me.GroupBox1.Controls.Add(Me.group2)
         Me.GroupBox1.Controls.Add(Me.group3)
         Me.GroupBox1.Controls.Add(Me.txtSearch)
         Me.GroupBox1.Controls.Add(Me.BunifuCustomLabel59)
@@ -502,6 +500,95 @@ Partial Class Form2
         Me.GroupBox1.Size = New System.Drawing.Size(1221, 589)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
+        '
+        'group3
+        '
+        Me.group3.Controls.Add(Me.group2)
+        Me.group3.Controls.Add(Me.txtGdate)
+        Me.group3.Controls.Add(Me.txtpdate)
+        Me.group3.Controls.Add(Me.txtMDate)
+        Me.group3.Controls.Add(Me.btnclear)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel82)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel81)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel80)
+        Me.group3.Controls.Add(Me.supload)
+        Me.group3.Controls.Add(Me.imgGSignature)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel79)
+        Me.group3.Controls.Add(Me.puppload)
+        Me.group3.Controls.Add(Me.imgPsignature)
+        Me.group3.Controls.Add(Me.txtEimcs)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel77)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel78)
+        Me.group3.Controls.Add(Me.txtApproved)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel61)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel62)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel60)
+        Me.group3.Controls.Add(Me.btnprevious)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel29)
+        Me.group3.Controls.Add(Me.aupload)
+        Me.group3.Controls.Add(Me.imgMsignature)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel27)
+        Me.group3.Controls.Add(Me.Label27)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel28)
+        Me.group3.Controls.Add(Me.txtFullname)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel84)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel87)
+        Me.group3.Controls.Add(Me.Label26)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel89)
+        Me.group3.Controls.Add(Me.btnsubmit)
+        Me.group3.Controls.Add(Me.BunifuCustomLabel90)
+        Me.group3.Location = New System.Drawing.Point(6, 81)
+        Me.group3.Name = "group3"
+        Me.group3.Size = New System.Drawing.Size(1182, 461)
+        Me.group3.TabIndex = 102
+        Me.group3.TabStop = False
+        Me.group3.Visible = False
+        '
+        'group2
+        '
+        Me.group2.Controls.Add(Me.group1)
+        Me.group2.Controls.Add(Me.btnprev1)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel83)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel85)
+        Me.group2.Controls.Add(Me.txtshares)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel86)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel88)
+        Me.group2.Controls.Add(Me.txtSavings)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel91)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel92)
+        Me.group2.Controls.Add(Me.txtRegFee)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel93)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel94)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel95)
+        Me.group2.Controls.Add(Me.nokAddress2)
+        Me.group2.Controls.Add(Me.nokPhoneno2)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel96)
+        Me.group2.Controls.Add(Me.nokName2)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel97)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel98)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel99)
+        Me.group2.Controls.Add(Me.nokRelationship2)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel100)
+        Me.group2.Controls.Add(Me.nokAddress1)
+        Me.group2.Controls.Add(Me.nokPhone1)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel101)
+        Me.group2.Controls.Add(Me.nokName1)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel102)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel103)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel104)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel105)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel106)
+        Me.group2.Controls.Add(Me.nokRelationship1)
+        Me.group2.Controls.Add(Me.Label28)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel107)
+        Me.group2.Controls.Add(Me.btnnext2)
+        Me.group2.Controls.Add(Me.BunifuCustomLabel108)
+        Me.group2.Location = New System.Drawing.Point(101, 43)
+        Me.group2.Name = "group2"
+        Me.group2.Size = New System.Drawing.Size(1201, 473)
+        Me.group2.TabIndex = 104
+        Me.group2.TabStop = False
+        Me.group2.Visible = False
         '
         'group1
         '
@@ -545,7 +632,7 @@ Partial Class Form2
         Me.group1.Controls.Add(Me.BunifuCustomLabel3)
         Me.group1.Controls.Add(Me.BunifuCustomLabel2)
         Me.group1.Controls.Add(Me.BunifuCustomLabel1)
-        Me.group1.Location = New System.Drawing.Point(3, 90)
+        Me.group1.Location = New System.Drawing.Point(65, 62)
         Me.group1.Name = "group1"
         Me.group1.Size = New System.Drawing.Size(1212, 476)
         Me.group1.TabIndex = 141
@@ -1102,51 +1189,6 @@ Partial Class Form2
         Me.BunifuCustomLabel1.TabIndex = 4
         Me.BunifuCustomLabel1.Text = "Name"
         '
-        'group2
-        '
-        Me.group2.Controls.Add(Me.btnprev1)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel83)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel85)
-        Me.group2.Controls.Add(Me.txtshares)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel86)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel88)
-        Me.group2.Controls.Add(Me.txtSavings)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel91)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel92)
-        Me.group2.Controls.Add(Me.txtRegFee)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel93)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel94)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel95)
-        Me.group2.Controls.Add(Me.nokAddress2)
-        Me.group2.Controls.Add(Me.nokPhoneno2)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel96)
-        Me.group2.Controls.Add(Me.nokName2)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel97)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel98)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel99)
-        Me.group2.Controls.Add(Me.nokRelationship2)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel100)
-        Me.group2.Controls.Add(Me.nokAddress1)
-        Me.group2.Controls.Add(Me.nokPhone1)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel101)
-        Me.group2.Controls.Add(Me.nokName1)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel102)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel103)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel104)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel105)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel106)
-        Me.group2.Controls.Add(Me.nokRelationship1)
-        Me.group2.Controls.Add(Me.Label28)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel107)
-        Me.group2.Controls.Add(Me.btnnext2)
-        Me.group2.Controls.Add(Me.BunifuCustomLabel108)
-        Me.group2.Location = New System.Drawing.Point(6, 81)
-        Me.group2.Name = "group2"
-        Me.group2.Size = New System.Drawing.Size(1201, 473)
-        Me.group2.TabIndex = 104
-        Me.group2.TabStop = False
-        Me.group2.Visible = False
-        '
         'btnprev1
         '
         Me.btnprev1.BackColor = System.Drawing.Color.Transparent
@@ -1657,48 +1699,6 @@ Partial Class Form2
         Me.BunifuCustomLabel108.Name = "BunifuCustomLabel108"
         Me.BunifuCustomLabel108.Size = New System.Drawing.Size(0, 17)
         Me.BunifuCustomLabel108.TabIndex = 74
-        '
-        'group3
-        '
-        Me.group3.Controls.Add(Me.txtGdate)
-        Me.group3.Controls.Add(Me.txtpdate)
-        Me.group3.Controls.Add(Me.txtMDate)
-        Me.group3.Controls.Add(Me.btnclear)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel82)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel81)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel80)
-        Me.group3.Controls.Add(Me.supload)
-        Me.group3.Controls.Add(Me.imgGSignature)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel79)
-        Me.group3.Controls.Add(Me.puppload)
-        Me.group3.Controls.Add(Me.imgPsignature)
-        Me.group3.Controls.Add(Me.txtEimcs)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel77)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel78)
-        Me.group3.Controls.Add(Me.txtApproved)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel61)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel62)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel60)
-        Me.group3.Controls.Add(Me.btnprevious)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel29)
-        Me.group3.Controls.Add(Me.aupload)
-        Me.group3.Controls.Add(Me.imgMsignature)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel27)
-        Me.group3.Controls.Add(Me.Label27)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel28)
-        Me.group3.Controls.Add(Me.txtFullname)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel84)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel87)
-        Me.group3.Controls.Add(Me.Label26)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel89)
-        Me.group3.Controls.Add(Me.btnsubmit)
-        Me.group3.Controls.Add(Me.BunifuCustomLabel90)
-        Me.group3.Location = New System.Drawing.Point(6, 81)
-        Me.group3.Name = "group3"
-        Me.group3.Size = New System.Drawing.Size(1182, 461)
-        Me.group3.TabIndex = 102
-        Me.group3.TabStop = False
-        Me.group3.Visible = False
         '
         'txtGdate
         '
@@ -2461,7 +2461,7 @@ Partial Class Form2
         'txtm
         '
         Me.txtm.FormattingEnabled = True
-        Me.txtm.Items.AddRange(New Object() {"Long Term Cash Loan LTCL", "Short Term Cash Loan STCL", "Long Term Material Sales LMTS", "Short Term Material Sales STMS I", "Short Term Material Sales STMS II", "Emergency Loan", "Savings Withdrawal", "Special Savings"})
+        Me.txtm.Items.AddRange(New Object() {"Long Term Cash Loan LTCL", "Short Term Cash Loan STCL", "Long Term Material Sales LMTS", "4 months Short Term Material Sales STMS ", "12 months Short Term Material Sales STMS ", "Emergency Loan", "Savings Withdrawal", "Special Savings"})
         Me.txtm.Location = New System.Drawing.Point(219, 83)
         Me.txtm.Name = "txtm"
         Me.txtm.Size = New System.Drawing.Size(331, 30)
@@ -2490,9 +2490,9 @@ Partial Class Form2
         Me.BunifuCustomLabel53.AutoSize = True
         Me.BunifuCustomLabel53.Location = New System.Drawing.Point(15, 168)
         Me.BunifuCustomLabel53.Name = "BunifuCustomLabel53"
-        Me.BunifuCustomLabel53.Size = New System.Drawing.Size(106, 22)
+        Me.BunifuCustomLabel53.Size = New System.Drawing.Size(58, 22)
         Me.BunifuCustomLabel53.TabIndex = 14
-        Me.BunifuCustomLabel53.Text = "Interest Rate"
+        Me.BunifuCustomLabel53.Text = "Profit "
         '
         'BunifuCustomLabel56
         '
@@ -3514,13 +3514,13 @@ Partial Class Form2
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.group3.ResumeLayout(False)
+        Me.group3.PerformLayout()
+        Me.group2.ResumeLayout(False)
+        Me.group2.PerformLayout()
         Me.group1.ResumeLayout(False)
         Me.group1.PerformLayout()
         CType(Me.imgpix, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.group2.ResumeLayout(False)
-        Me.group2.PerformLayout()
-        Me.group3.ResumeLayout(False)
-        Me.group3.PerformLayout()
         CType(Me.imgGSignature, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgPsignature, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgMsignature, System.ComponentModel.ISupportInitialize).EndInit()

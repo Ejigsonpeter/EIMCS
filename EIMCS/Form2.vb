@@ -1037,7 +1037,7 @@ Public Class Form2
     End Sub
 
     Sub totalshare()
-       myconnection.Open()
+        myconnection.Open()
         Dim selectQuery As String = "select * from shares where ippsno = '" & txtlean.Text & "'"
         cmd = New MySql.Data.MySqlClient.MySqlCommand(selectQuery, Myconnection)
         da = New MySql.Data.MySqlClient.MySqlDataAdapter(cmd)
@@ -1047,7 +1047,7 @@ Public Class Form2
         Dim a As Double
         For Line As Integer = 0 To DataGridView1.RowCount - 1
             a = (a + DataGridView1.Rows(Line).Cells(3).Value)
-          
+
 
         Next
         txtshare.Text = a
@@ -1110,7 +1110,7 @@ Public Class Form2
                 txtstcl.Text = "No"
             End If
             '---reset the timer to another five seconds---
-           
+
 
         Catch ex As Exception
 
@@ -1177,8 +1177,8 @@ Public Class Form2
             type1 = "Long Term Cash Loan LTCL"
             type2 = "Short Term Cash Loan STCL"
             type3 = "Long Term Material Sales LMTS"
-            type4 = " Short Term Material Sales STMS I"
-            type5 = "Short Term Material Sales STMS II"
+            type4 = "4 months Short Term Material Sales STMS"
+            type5 = "12 months Short Term Material Sales STMS"
 
 
 
@@ -1227,9 +1227,8 @@ Public Class Form2
             type1 = "Long Term Cash Loan LTCL"
             type2 = "Short Term Cash Loan STCL"
             type3 = "Long Term Material Sales LMTS"
-            type4 = " Short Term Material Sales STMS I"
-            type5 = "Short Term Material Sales STMS II"
-
+            type4 = "4 months Short Term Material Sales STMS"
+            type5 = "12 months Short Term Material Sales STMS"
 
 
             '----retrieve student's particulars
@@ -1278,8 +1277,8 @@ Public Class Form2
             type1 = "Long Term Cash Loan LTCL"
             type2 = "Short Term Cash Loan STCL"
             type3 = "Long Term Material Sales LMTS"
-            type4 = " Short Term Material Sales STMS I"
-            type5 = "Short Term Material Sales STMS II"
+            type4 = "4 months Short Term Material Sales STMS"
+            type5 = "12 months Short Term Material Sales STMS"
 
 
 
@@ -1728,5 +1727,13 @@ Public Class Form2
 
     Private Sub ITalk_Button_26_Click(sender As System.Object, e As System.EventArgs) Handles btnquery.Click
         querymethod()
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As System.Object, e As System.EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub dgw_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgw.CellContentClick
+
     End Sub
 End Class
